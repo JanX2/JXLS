@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'DHxls' target in the 'DHxls' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+// So we get unichar strings for effortless movement between Objective-C and C++
+#define __FRAMEWORK__

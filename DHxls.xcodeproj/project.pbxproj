@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		DE1A834B0E9AF33B005F2430 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83410E9AF33B005F2430 /* config.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A834F0E9AF33B005F2430 /* stringtok.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83450E9AF33B005F2430 /* stringtok.h */; };
+		DE1A83500E9AF33B005F2430 /* systype.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83460E9AF33B005F2430 /* systype.h */; };
+		DE1A83510E9AF33B005F2430 /* timespan.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83470E9AF33B005F2430 /* timespan.h */; };
+		DE1A83540E9AF33B005F2430 /* xlslib.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A834A0E9AF33B005F2430 /* xlslib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A83680E9AF386005F2430 /* binfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83600E9AF386005F2430 /* binfile.cpp */; };
+		DE1A83690E9AF386005F2430 /* binfile.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83610E9AF386005F2430 /* binfile.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A836A0E9AF386005F2430 /* oledoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83620E9AF386005F2430 /* oledoc.cpp */; };
+		DE1A836B0E9AF386005F2430 /* oledoc.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83630E9AF386005F2430 /* oledoc.h */; };
+		DE1A836C0E9AF386005F2430 /* olefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83640E9AF386005F2430 /* olefs.cpp */; };
+		DE1A836D0E9AF386005F2430 /* olefs.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83650E9AF386005F2430 /* olefs.h */; };
+		DE1A836E0E9AF386005F2430 /* oleprop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83660E9AF386005F2430 /* oleprop.cpp */; };
+		DE1A836F0E9AF386005F2430 /* oleprop.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83670E9AF386005F2430 /* oleprop.h */; };
+		DE1A83A70E9AF3AE005F2430 /* biffsection.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83710E9AF3AE005F2430 /* biffsection.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83A80E9AF3AE005F2430 /* blank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83720E9AF3AE005F2430 /* blank.cpp */; };
+		DE1A83A90E9AF3AE005F2430 /* blank.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83730E9AF3AE005F2430 /* blank.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83AC0E9AF3AE005F2430 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83760E9AF3AE005F2430 /* cell.cpp */; };
+		DE1A83AD0E9AF3AE005F2430 /* cell.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83770E9AF3AE005F2430 /* cell.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83AE0E9AF3AE005F2430 /* colinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83780E9AF3AE005F2430 /* colinfo.cpp */; };
+		DE1A83AF0E9AF3AE005F2430 /* colinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83790E9AF3AE005F2430 /* colinfo.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83B00E9AF3AE005F2430 /* colors.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A837A0E9AF3AE005F2430 /* colors.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83B10E9AF3AE005F2430 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A837B0E9AF3AE005F2430 /* common.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83B20E9AF3AE005F2430 /* continue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A837C0E9AF3AE005F2430 /* continue.cpp */; };
+		DE1A83B30E9AF3AE005F2430 /* continue.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A837D0E9AF3AE005F2430 /* continue.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83B60E9AF3AE005F2430 /* datast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83800E9AF3AE005F2430 /* datast.cpp */; };
+		DE1A83B70E9AF3AE005F2430 /* datast.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83810E9AF3AE005F2430 /* datast.h */; settings = {ATTRIBUTES = (); }; };
+		DE1A83B80E9AF3AE005F2430 /* docsumminfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83820E9AF3AE005F2430 /* docsumminfo.cpp */; };
+		DE1A83B90E9AF3AE005F2430 /* docsumminfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83830E9AF3AE005F2430 /* docsumminfo.h */; };
+		DE1A83BA0E9AF3AE005F2430 /* extformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83840E9AF3AE005F2430 /* extformat.cpp */; };
+		DE1A83BB0E9AF3AE005F2430 /* extformat.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83850E9AF3AE005F2430 /* extformat.h */; };
+		DE1A83BC0E9AF3AE005F2430 /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83860E9AF3AE005F2430 /* font.cpp */; };
+		DE1A83BD0E9AF3AE005F2430 /* font.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83870E9AF3AE005F2430 /* font.h */; };
+		DE1A83BE0E9AF3AE005F2430 /* format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83880E9AF3AE005F2430 /* format.cpp */; };
+		DE1A83BF0E9AF3AE005F2430 /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83890E9AF3AE005F2430 /* format.h */; };
+		DE1A83C00E9AF3AE005F2430 /* formtags.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A838A0E9AF3AE005F2430 /* formtags.h */; };
+		DE1A83C10E9AF3AE005F2430 /* globalrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A838B0E9AF3AE005F2430 /* globalrec.cpp */; };
+		DE1A83C20E9AF3AE005F2430 /* globalrec.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A838C0E9AF3AE005F2430 /* globalrec.h */; };
+		DE1A83C30E9AF3AE005F2430 /* index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A838D0E9AF3AE005F2430 /* index.cpp */; };
+		DE1A83C40E9AF3AE005F2430 /* index.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A838E0E9AF3AE005F2430 /* index.h */; };
+		DE1A83C50E9AF3AE005F2430 /* label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A838F0E9AF3AE005F2430 /* label.cpp */; };
+		DE1A83C60E9AF3AE005F2430 /* label.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83900E9AF3AE005F2430 /* label.h */; };
+		DE1A83C70E9AF3AE005F2430 /* merged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83910E9AF3AE005F2430 /* merged.cpp */; };
+		DE1A83C80E9AF3AE005F2430 /* merged.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83920E9AF3AE005F2430 /* merged.h */; };
+		DE1A83C90E9AF3AE005F2430 /* number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83930E9AF3AE005F2430 /* number.cpp */; };
+		DE1A83CA0E9AF3AE005F2430 /* number.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83940E9AF3AE005F2430 /* number.h */; };
+		DE1A83CB0E9AF3AE005F2430 /* range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83950E9AF3AE005F2430 /* range.cpp */; };
+		DE1A83CC0E9AF3AE005F2430 /* range.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83960E9AF3AE005F2430 /* range.h */; };
+		DE1A83CD0E9AF3AE005F2430 /* recdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83970E9AF3AE005F2430 /* recdef.cpp */; };
+		DE1A83CE0E9AF3AE005F2430 /* recdef.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83980E9AF3AE005F2430 /* recdef.h */; };
+		DE1A83CF0E9AF3AE005F2430 /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83990E9AF3AE005F2430 /* record.cpp */; };
+		DE1A83D00E9AF3AE005F2430 /* record.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A839A0E9AF3AE005F2430 /* record.h */; };
+		DE1A83D10E9AF3AE005F2430 /* rectypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A839B0E9AF3AE005F2430 /* rectypes.h */; };
+		DE1A83D20E9AF3AE005F2430 /* row.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A839C0E9AF3AE005F2430 /* row.cpp */; };
+		DE1A83D30E9AF3AE005F2430 /* row.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A839D0E9AF3AE005F2430 /* row.h */; };
+		DE1A83D40E9AF3AE005F2430 /* sheetrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A839E0E9AF3AE005F2430 /* sheetrec.cpp */; };
+		DE1A83D50E9AF3AE005F2430 /* sheetrec.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A839F0E9AF3AE005F2430 /* sheetrec.h */; };
+		DE1A83D60E9AF3AE005F2430 /* summinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83A00E9AF3AE005F2430 /* summinfo.cpp */; };
+		DE1A83D70E9AF3AE005F2430 /* summinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83A10E9AF3AE005F2430 /* summinfo.h */; };
+		DE1A83D90E9AF3AE005F2430 /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83A30E9AF3AE005F2430 /* unit.cpp */; };
+		DE1A83DA0E9AF3AE005F2430 /* unit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83A40E9AF3AE005F2430 /* unit.h */; };
+		DE1A83DB0E9AF3AE005F2430 /* workbook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE1A83A50E9AF3AE005F2430 /* workbook.cpp */; };
+		DE1A83DC0E9AF3AE005F2430 /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A83A60E9AF3AE005F2430 /* workbook.h */; };
+		DE1A83FE0E9AF44A005F2430 /* libiconv.la in Resources */ = {isa = PBXBuildFile; fileRef = DE1A83FD0E9AF44A005F2430 /* libiconv.la */; };
+		DE1A84240E9AF6C1005F2430 /* DHWorkBook.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84220E9AF6C1005F2430 /* DHWorkBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A84250E9AF6C1005F2430 /* DHWorkBook.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A84230E9AF6C1005F2430 /* DHWorkBook.mm */; settings = {COMPILER_FLAGS = "-Wimplicit "; }; };
+		DE1A84C90E9B9942005F2430 /* DHWorkSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84C70E9B9942005F2430 /* DHWorkSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A84CA0E9B9942005F2430 /* DHWorkSheet.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A84C80E9B9942005F2430 /* DHWorkSheet.mm */; settings = {COMPILER_FLAGS = "-Wimplicit"; }; };
+		DE1A858D0E9BB216005F2430 /* DHFont.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A858B0E9BB216005F2430 /* DHFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A858E0E9BB216005F2430 /* DHFont.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A858C0E9BB216005F2430 /* DHFont.mm */; };
+		DE1A85910E9BB227005F2430 /* DHFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A858F0E9BB227005F2430 /* DHFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A85920E9BB227005F2430 /* DHFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A85900E9BB227005F2430 /* DHFormat.mm */; };
+		DE1A85950E9BB245005F2430 /* DHExtendedFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A85930E9BB245005F2430 /* DHExtendedFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A85960E9BB245005F2430 /* DHExtendedFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A85940E9BB245005F2430 /* DHExtendedFormat.mm */; };
+		DE7F16210F16E2670082A155 /* HPSF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE7F160B0F16E1550082A155 /* HPSF.cpp */; };
+		DE7F16220F16E2680082A155 /* HPSF.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7F160C0F16E1550082A155 /* HPSF.h */; };
+		DEC407F20F64A52D001817EF /* colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEC407E20F64A4D5001817EF /* colors.cpp */; };
+		DEC408500F64A5FB001817EF /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC407F80F64A590001817EF /* xlstypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEFF5B820EB5636900F6F6C6 /* DHCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEFF5B800EB5636900F6F6C6 /* DHCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEFF5B830EB5636900F6F6C6 /* DHCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEFF5B810EB5636900F6F6C6 /* DHCell.mm */; };
+		DEFF68260EBBD21300F6F6C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		DEFF68660EBBD91100F6F6C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFF65190EB925C600F6F6C6 /* main.m */; };
+		DEFF68680EBBD93200F6F6C6 /* DHxls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFF65580EB92BD900F6F6C6 /* DHxls.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* DHxls_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxls_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* DHxls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DHxls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1A83410E9AF33B005F2430 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = xlslib/src/common/config.h; sourceTree = "<group>"; };
+		DE1A83450E9AF33B005F2430 /* stringtok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stringtok.h; path = xlslib/src/common/stringtok.h; sourceTree = "<group>"; };
+		DE1A83460E9AF33B005F2430 /* systype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = systype.h; path = xlslib/src/common/systype.h; sourceTree = "<group>"; };
+		DE1A83470E9AF33B005F2430 /* timespan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = timespan.h; path = xlslib/src/common/timespan.h; sourceTree = "<group>"; };
+		DE1A83480E9AF33B005F2430 /* xlconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlconfig.h; sourceTree = "<group>"; };
+		DE1A83490E9AF33B005F2430 /* xlconfig.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = xlconfig.h.in; path = xlslib/src/common/xlconfig.h.in; sourceTree = "<group>"; };
+		DE1A834A0E9AF33B005F2430 /* xlslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xlslib.h; path = xlslib/src/common/xlslib.h; sourceTree = "<group>"; };
+		DE1A83600E9AF386005F2430 /* binfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binfile.cpp; path = xlslib/src/oledoc/binfile.cpp; sourceTree = "<group>"; };
+		DE1A83610E9AF386005F2430 /* binfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = binfile.h; path = xlslib/src/oledoc/binfile.h; sourceTree = "<group>"; };
+		DE1A83620E9AF386005F2430 /* oledoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oledoc.cpp; path = xlslib/src/oledoc/oledoc.cpp; sourceTree = "<group>"; };
+		DE1A83630E9AF386005F2430 /* oledoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oledoc.h; path = xlslib/src/oledoc/oledoc.h; sourceTree = "<group>"; };
+		DE1A83640E9AF386005F2430 /* olefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = olefs.cpp; path = xlslib/src/oledoc/olefs.cpp; sourceTree = "<group>"; };
+		DE1A83650E9AF386005F2430 /* olefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = olefs.h; path = xlslib/src/oledoc/olefs.h; sourceTree = "<group>"; };
+		DE1A83660E9AF386005F2430 /* oleprop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oleprop.cpp; path = xlslib/src/oledoc/oleprop.cpp; sourceTree = "<group>"; };
+		DE1A83670E9AF386005F2430 /* oleprop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oleprop.h; path = xlslib/src/oledoc/oleprop.h; sourceTree = "<group>"; };
+		DE1A83710E9AF3AE005F2430 /* biffsection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = biffsection.h; path = xlslib/src/xlslib/biffsection.h; sourceTree = "<group>"; };
+		DE1A83720E9AF3AE005F2430 /* blank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blank.cpp; path = xlslib/src/xlslib/blank.cpp; sourceTree = "<group>"; };
+		DE1A83730E9AF3AE005F2430 /* blank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blank.h; path = xlslib/src/xlslib/blank.h; sourceTree = "<group>"; };
+		DE1A83760E9AF3AE005F2430 /* cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cell.cpp; path = xlslib/src/xlslib/cell.cpp; sourceTree = "<group>"; };
+		DE1A83770E9AF3AE005F2430 /* cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cell.h; path = xlslib/src/xlslib/cell.h; sourceTree = "<group>"; };
+		DE1A83780E9AF3AE005F2430 /* colinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = colinfo.cpp; path = xlslib/src/xlslib/colinfo.cpp; sourceTree = "<group>"; };
+		DE1A83790E9AF3AE005F2430 /* colinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = colinfo.h; path = xlslib/src/xlslib/colinfo.h; sourceTree = "<group>"; };
+		DE1A837A0E9AF3AE005F2430 /* colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = colors.h; path = xlslib/src/xlslib/colors.h; sourceTree = "<group>"; };
+		DE1A837B0E9AF3AE005F2430 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = xlslib/src/xlslib/common.h; sourceTree = "<group>"; };
+		DE1A837C0E9AF3AE005F2430 /* continue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = continue.cpp; path = xlslib/src/xlslib/continue.cpp; sourceTree = "<group>"; };
+		DE1A837D0E9AF3AE005F2430 /* continue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = continue.h; path = xlslib/src/xlslib/continue.h; sourceTree = "<group>"; };
+		DE1A83800E9AF3AE005F2430 /* datast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = datast.cpp; path = xlslib/src/xlslib/datast.cpp; sourceTree = "<group>"; };
+		DE1A83810E9AF3AE005F2430 /* datast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = datast.h; path = xlslib/src/xlslib/datast.h; sourceTree = "<group>"; };
+		DE1A83820E9AF3AE005F2430 /* docsumminfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = docsumminfo.cpp; path = xlslib/src/xlslib/docsumminfo.cpp; sourceTree = "<group>"; };
+		DE1A83830E9AF3AE005F2430 /* docsumminfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = docsumminfo.h; path = xlslib/src/xlslib/docsumminfo.h; sourceTree = "<group>"; };
+		DE1A83840E9AF3AE005F2430 /* extformat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = extformat.cpp; path = xlslib/src/xlslib/extformat.cpp; sourceTree = "<group>"; };
+		DE1A83850E9AF3AE005F2430 /* extformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extformat.h; path = xlslib/src/xlslib/extformat.h; sourceTree = "<group>"; };
+		DE1A83860E9AF3AE005F2430 /* font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = font.cpp; path = xlslib/src/xlslib/font.cpp; sourceTree = "<group>"; };
+		DE1A83870E9AF3AE005F2430 /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = font.h; path = xlslib/src/xlslib/font.h; sourceTree = "<group>"; };
+		DE1A83880E9AF3AE005F2430 /* format.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = format.cpp; path = xlslib/src/xlslib/format.cpp; sourceTree = "<group>"; };
+		DE1A83890E9AF3AE005F2430 /* format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = format.h; path = xlslib/src/xlslib/format.h; sourceTree = "<group>"; };
+		DE1A838A0E9AF3AE005F2430 /* formtags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = formtags.h; path = xlslib/src/xlslib/formtags.h; sourceTree = "<group>"; };
+		DE1A838B0E9AF3AE005F2430 /* globalrec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = globalrec.cpp; path = xlslib/src/xlslib/globalrec.cpp; sourceTree = "<group>"; };
+		DE1A838C0E9AF3AE005F2430 /* globalrec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = globalrec.h; path = xlslib/src/xlslib/globalrec.h; sourceTree = "<group>"; };
+		DE1A838D0E9AF3AE005F2430 /* index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = index.cpp; path = xlslib/src/xlslib/index.cpp; sourceTree = "<group>"; };
+		DE1A838E0E9AF3AE005F2430 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = index.h; path = xlslib/src/xlslib/index.h; sourceTree = "<group>"; };
+		DE1A838F0E9AF3AE005F2430 /* label.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = label.cpp; path = xlslib/src/xlslib/label.cpp; sourceTree = "<group>"; };
+		DE1A83900E9AF3AE005F2430 /* label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = label.h; path = xlslib/src/xlslib/label.h; sourceTree = "<group>"; };
+		DE1A83910E9AF3AE005F2430 /* merged.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = merged.cpp; path = xlslib/src/xlslib/merged.cpp; sourceTree = "<group>"; };
+		DE1A83920E9AF3AE005F2430 /* merged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = merged.h; path = xlslib/src/xlslib/merged.h; sourceTree = "<group>"; };
+		DE1A83930E9AF3AE005F2430 /* number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = number.cpp; path = xlslib/src/xlslib/number.cpp; sourceTree = "<group>"; };
+		DE1A83940E9AF3AE005F2430 /* number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = number.h; path = xlslib/src/xlslib/number.h; sourceTree = "<group>"; };
+		DE1A83950E9AF3AE005F2430 /* range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = range.cpp; path = xlslib/src/xlslib/range.cpp; sourceTree = "<group>"; };
+		DE1A83960E9AF3AE005F2430 /* range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = range.h; path = xlslib/src/xlslib/range.h; sourceTree = "<group>"; };
+		DE1A83970E9AF3AE005F2430 /* recdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = recdef.cpp; path = xlslib/src/xlslib/recdef.cpp; sourceTree = "<group>"; };
+		DE1A83980E9AF3AE005F2430 /* recdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recdef.h; path = xlslib/src/xlslib/recdef.h; sourceTree = "<group>"; };
+		DE1A83990E9AF3AE005F2430 /* record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = record.cpp; path = xlslib/src/xlslib/record.cpp; sourceTree = "<group>"; };
+		DE1A839A0E9AF3AE005F2430 /* record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = record.h; path = xlslib/src/xlslib/record.h; sourceTree = "<group>"; };
+		DE1A839B0E9AF3AE005F2430 /* rectypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rectypes.h; path = xlslib/src/xlslib/rectypes.h; sourceTree = "<group>"; };
+		DE1A839C0E9AF3AE005F2430 /* row.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = row.cpp; path = xlslib/src/xlslib/row.cpp; sourceTree = "<group>"; };
+		DE1A839D0E9AF3AE005F2430 /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = row.h; path = xlslib/src/xlslib/row.h; sourceTree = "<group>"; };
+		DE1A839E0E9AF3AE005F2430 /* sheetrec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sheetrec.cpp; path = xlslib/src/xlslib/sheetrec.cpp; sourceTree = "<group>"; };
+		DE1A839F0E9AF3AE005F2430 /* sheetrec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sheetrec.h; path = xlslib/src/xlslib/sheetrec.h; sourceTree = "<group>"; };
+		DE1A83A00E9AF3AE005F2430 /* summinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = summinfo.cpp; path = xlslib/src/xlslib/summinfo.cpp; sourceTree = "<group>"; };
+		DE1A83A10E9AF3AE005F2430 /* summinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = summinfo.h; path = xlslib/src/xlslib/summinfo.h; sourceTree = "<group>"; };
+		DE1A83A30E9AF3AE005F2430 /* unit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unit.cpp; path = xlslib/src/xlslib/unit.cpp; sourceTree = "<group>"; };
+		DE1A83A40E9AF3AE005F2430 /* unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unit.h; path = xlslib/src/xlslib/unit.h; sourceTree = "<group>"; };
+		DE1A83A50E9AF3AE005F2430 /* workbook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = workbook.cpp; path = xlslib/src/xlslib/workbook.cpp; sourceTree = "<group>"; };
+		DE1A83A60E9AF3AE005F2430 /* workbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = xlslib/src/xlslib/workbook.h; sourceTree = "<group>"; };
+		DE1A83FD0E9AF44A005F2430 /* libiconv.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = libiconv.la; path = /usr/lib/libiconv.la; sourceTree = "<absolute>"; };
+		DE1A84220E9AF6C1005F2430 /* DHWorkBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHWorkBook.h; sourceTree = "<group>"; };
+		DE1A84230E9AF6C1005F2430 /* DHWorkBook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHWorkBook.mm; sourceTree = "<group>"; };
+		DE1A84C70E9B9942005F2430 /* DHWorkSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHWorkSheet.h; sourceTree = "<group>"; };
+		DE1A84C80E9B9942005F2430 /* DHWorkSheet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHWorkSheet.mm; sourceTree = "<group>"; };
+		DE1A85770E9BADED005F2430 /* StandardObjectiveC++.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StandardObjectiveC++.xcconfig"; sourceTree = "<group>"; };
+		DE1A858B0E9BB216005F2430 /* DHFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFont.h; sourceTree = "<group>"; };
+		DE1A858C0E9BB216005F2430 /* DHFont.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHFont.mm; sourceTree = "<group>"; };
+		DE1A858F0E9BB227005F2430 /* DHFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFormat.h; sourceTree = "<group>"; };
+		DE1A85900E9BB227005F2430 /* DHFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHFormat.mm; sourceTree = "<group>"; };
+		DE1A85930E9BB245005F2430 /* DHExtendedFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHExtendedFormat.h; sourceTree = "<group>"; };
+		DE1A85940E9BB245005F2430 /* DHExtendedFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHExtendedFormat.mm; sourceTree = "<group>"; };
+		DE1A85A10E9BB4DD005F2430 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DE3B34E40EC48567005D9B64 /* cbridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cbridge.cpp; path = xlslib/src/xlslib/cbridge.cpp; sourceTree = "<group>"; };
+		DE7F160B0F16E1550082A155 /* HPSF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HPSF.cpp; path = xlslib/src/xlslib/HPSF.cpp; sourceTree = "<group>"; };
+		DE7F160C0F16E1550082A155 /* HPSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSF.h; path = xlslib/src/xlslib/HPSF.h; sourceTree = "<group>"; };
+		DEC407E20F64A4D5001817EF /* colors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = colors.cpp; path = ../svn/trunk/xlslib/src/xlslib/colors.cpp; sourceTree = SOURCE_ROOT; };
+		DEC407F80F64A590001817EF /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xlstypes.h; path = ../svn/trunk/xlslib/src/common/xlstypes.h; sourceTree = SOURCE_ROOT; };
+		DEFF5B800EB5636900F6F6C6 /* DHCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHCell.h; sourceTree = "<group>"; };
+		DEFF5B810EB5636900F6F6C6 /* DHCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHCell.mm; sourceTree = "<group>"; };
+		DEFF650E0EB9252900F6F6C6 /* testXlsLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testXlsLib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEFF65190EB925C600F6F6C6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Test/main.m; sourceTree = "<group>"; };
+		DEFF65580EB92BD900F6F6C6 /* DHxls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DHxls.framework; path = /Library/Frameworks/DHxls.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFF650C0EB9252900F6F6C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFF68260EBBD21300F6F6C6 /* Cocoa.framework in Frameworks */,
+				DEFF68680EBBD93200F6F6C6 /* DHxls.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* DHxls.framework */,
+				DEFF650E0EB9252900F6F6C6 /* testXlsLib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* DHxls */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A85A10E9BB4DD005F2430 /* README */,
+				DE1A83480E9AF33B005F2430 /* xlconfig.h */,
+				DEFF65160EB9258A00F6F6C6 /* Test Files */,
+				DE1A84090E9AF51F005F2430 /* ObjectiveC++ Classes */,
+				08FB77AEFE84172EC02AAC07 /* C++ Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = DHxls;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A83FC0E9AF42B005F2430 /* Libraries */,
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A85770E9BADED005F2430 /* StandardObjectiveC++.xcconfig */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* C++ Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A83550E9AF340005F2430 /* Common */,
+				DE1A835F0E9AF367005F2430 /* Ole */,
+				DE1A83700E9AF394005F2430 /* xlslib */,
+			);
+			name = "C++ Classes";
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				DEFF65580EB92BD900F6F6C6 /* DHxls.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* DHxls_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DE1A83550E9AF340005F2430 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEC407F80F64A590001817EF /* xlstypes.h */,
+				DE1A83410E9AF33B005F2430 /* config.h */,
+				DE1A83450E9AF33B005F2430 /* stringtok.h */,
+				DE1A83460E9AF33B005F2430 /* systype.h */,
+				DE1A83470E9AF33B005F2430 /* timespan.h */,
+				DE1A83490E9AF33B005F2430 /* xlconfig.h.in */,
+				DE1A834A0E9AF33B005F2430 /* xlslib.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		DE1A835F0E9AF367005F2430 /* Ole */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A83600E9AF386005F2430 /* binfile.cpp */,
+				DE1A83610E9AF386005F2430 /* binfile.h */,
+				DE1A83620E9AF386005F2430 /* oledoc.cpp */,
+				DE1A83630E9AF386005F2430 /* oledoc.h */,
+				DE1A83640E9AF386005F2430 /* olefs.cpp */,
+				DE1A83650E9AF386005F2430 /* olefs.h */,
+				DE1A83660E9AF386005F2430 /* oleprop.cpp */,
+				DE1A83670E9AF386005F2430 /* oleprop.h */,
+			);
+			name = Ole;
+			sourceTree = "<group>";
+		};
+		DE1A83700E9AF394005F2430 /* xlslib */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F160B0F16E1550082A155 /* HPSF.cpp */,
+				DE7F160C0F16E1550082A155 /* HPSF.h */,
+				DE1A83710E9AF3AE005F2430 /* biffsection.h */,
+				DE1A83720E9AF3AE005F2430 /* blank.cpp */,
+				DE1A83730E9AF3AE005F2430 /* blank.h */,
+				DE3B34E40EC48567005D9B64 /* cbridge.cpp */,
+				DE1A83760E9AF3AE005F2430 /* cell.cpp */,
+				DE1A83770E9AF3AE005F2430 /* cell.h */,
+				DE1A83780E9AF3AE005F2430 /* colinfo.cpp */,
+				DE1A83790E9AF3AE005F2430 /* colinfo.h */,
+				DE1A837A0E9AF3AE005F2430 /* colors.h */,
+				DEC407E20F64A4D5001817EF /* colors.cpp */,
+				DE1A837B0E9AF3AE005F2430 /* common.h */,
+				DE1A837C0E9AF3AE005F2430 /* continue.cpp */,
+				DE1A837D0E9AF3AE005F2430 /* continue.h */,
+				DE1A83800E9AF3AE005F2430 /* datast.cpp */,
+				DE1A83810E9AF3AE005F2430 /* datast.h */,
+				DE1A83820E9AF3AE005F2430 /* docsumminfo.cpp */,
+				DE1A83830E9AF3AE005F2430 /* docsumminfo.h */,
+				DE1A83840E9AF3AE005F2430 /* extformat.cpp */,
+				DE1A83850E9AF3AE005F2430 /* extformat.h */,
+				DE1A83860E9AF3AE005F2430 /* font.cpp */,
+				DE1A83870E9AF3AE005F2430 /* font.h */,
+				DE1A83880E9AF3AE005F2430 /* format.cpp */,
+				DE1A83890E9AF3AE005F2430 /* format.h */,
+				DE1A838A0E9AF3AE005F2430 /* formtags.h */,
+				DE1A838B0E9AF3AE005F2430 /* globalrec.cpp */,
+				DE1A838C0E9AF3AE005F2430 /* globalrec.h */,
+				DE1A838D0E9AF3AE005F2430 /* index.cpp */,
+				DE1A838E0E9AF3AE005F2430 /* index.h */,
+				DE1A838F0E9AF3AE005F2430 /* label.cpp */,
+				DE1A83900E9AF3AE005F2430 /* label.h */,
+				DE1A83910E9AF3AE005F2430 /* merged.cpp */,
+				DE1A83920E9AF3AE005F2430 /* merged.h */,
+				DE1A83930E9AF3AE005F2430 /* number.cpp */,
+				DE1A83940E9AF3AE005F2430 /* number.h */,
+				DE1A83950E9AF3AE005F2430 /* range.cpp */,
+				DE1A83960E9AF3AE005F2430 /* range.h */,
+				DE1A83970E9AF3AE005F2430 /* recdef.cpp */,
+				DE1A83980E9AF3AE005F2430 /* recdef.h */,
+				DE1A83990E9AF3AE005F2430 /* record.cpp */,
+				DE1A839A0E9AF3AE005F2430 /* record.h */,
+				DE1A839B0E9AF3AE005F2430 /* rectypes.h */,
+				DE1A839C0E9AF3AE005F2430 /* row.cpp */,
+				DE1A839D0E9AF3AE005F2430 /* row.h */,
+				DE1A839E0E9AF3AE005F2430 /* sheetrec.cpp */,
+				DE1A839F0E9AF3AE005F2430 /* sheetrec.h */,
+				DE1A83A00E9AF3AE005F2430 /* summinfo.cpp */,
+				DE1A83A10E9AF3AE005F2430 /* summinfo.h */,
+				DE1A83A30E9AF3AE005F2430 /* unit.cpp */,
+				DE1A83A40E9AF3AE005F2430 /* unit.h */,
+				DE1A83A50E9AF3AE005F2430 /* workbook.cpp */,
+				DE1A83A60E9AF3AE005F2430 /* workbook.h */,
+			);
+			name = xlslib;
+			sourceTree = "<group>";
+		};
+		DE1A83FC0E9AF42B005F2430 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A83FD0E9AF44A005F2430 /* libiconv.la */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		DE1A84090E9AF51F005F2430 /* ObjectiveC++ Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE1A84220E9AF6C1005F2430 /* DHWorkBook.h */,
+				DE1A84230E9AF6C1005F2430 /* DHWorkBook.mm */,
+				DE1A84C70E9B9942005F2430 /* DHWorkSheet.h */,
+				DE1A84C80E9B9942005F2430 /* DHWorkSheet.mm */,
+				DEFF5B800EB5636900F6F6C6 /* DHCell.h */,
+				DEFF5B810EB5636900F6F6C6 /* DHCell.mm */,
+				DE1A858B0E9BB216005F2430 /* DHFont.h */,
+				DE1A858C0E9BB216005F2430 /* DHFont.mm */,
+				DE1A858F0E9BB227005F2430 /* DHFormat.h */,
+				DE1A85900E9BB227005F2430 /* DHFormat.mm */,
+				DE1A85930E9BB245005F2430 /* DHExtendedFormat.h */,
+				DE1A85940E9BB245005F2430 /* DHExtendedFormat.mm */,
+			);
+			name = "ObjectiveC++ Classes";
+			sourceTree = "<group>";
+		};
+		DEFF65160EB9258A00F6F6C6 /* Test Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEFF65190EB925C600F6F6C6 /* main.m */,
+			);
+			name = "Test Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1A834B0E9AF33B005F2430 /* config.h in Headers */,
+				DE1A834F0E9AF33B005F2430 /* stringtok.h in Headers */,
+				DE1A83500E9AF33B005F2430 /* systype.h in Headers */,
+				DE1A83510E9AF33B005F2430 /* timespan.h in Headers */,
+				DE1A83540E9AF33B005F2430 /* xlslib.h in Headers */,
+				DE1A83690E9AF386005F2430 /* binfile.h in Headers */,
+				DE1A836B0E9AF386005F2430 /* oledoc.h in Headers */,
+				DE1A836D0E9AF386005F2430 /* olefs.h in Headers */,
+				DE1A836F0E9AF386005F2430 /* oleprop.h in Headers */,
+				DE1A83A70E9AF3AE005F2430 /* biffsection.h in Headers */,
+				DE1A83A90E9AF3AE005F2430 /* blank.h in Headers */,
+				DE1A83AD0E9AF3AE005F2430 /* cell.h in Headers */,
+				DE1A83AF0E9AF3AE005F2430 /* colinfo.h in Headers */,
+				DE1A83B00E9AF3AE005F2430 /* colors.h in Headers */,
+				DE1A83B10E9AF3AE005F2430 /* common.h in Headers */,
+				DE1A83B30E9AF3AE005F2430 /* continue.h in Headers */,
+				DE1A83B70E9AF3AE005F2430 /* datast.h in Headers */,
+				DE1A83B90E9AF3AE005F2430 /* docsumminfo.h in Headers */,
+				DE1A83BB0E9AF3AE005F2430 /* extformat.h in Headers */,
+				DE1A83BD0E9AF3AE005F2430 /* font.h in Headers */,
+				DE1A83BF0E9AF3AE005F2430 /* format.h in Headers */,
+				DE1A83C00E9AF3AE005F2430 /* formtags.h in Headers */,
+				DE1A83C20E9AF3AE005F2430 /* globalrec.h in Headers */,
+				DE1A83C40E9AF3AE005F2430 /* index.h in Headers */,
+				DE1A83C60E9AF3AE005F2430 /* label.h in Headers */,
+				DE1A83C80E9AF3AE005F2430 /* merged.h in Headers */,
+				DE1A83CA0E9AF3AE005F2430 /* number.h in Headers */,
+				DE1A83CC0E9AF3AE005F2430 /* range.h in Headers */,
+				DE1A83CE0E9AF3AE005F2430 /* recdef.h in Headers */,
+				DE1A83D00E9AF3AE005F2430 /* record.h in Headers */,
+				DE1A83D10E9AF3AE005F2430 /* rectypes.h in Headers */,
+				DE1A83D30E9AF3AE005F2430 /* row.h in Headers */,
+				DE1A83D50E9AF3AE005F2430 /* sheetrec.h in Headers */,
+				DE1A83D70E9AF3AE005F2430 /* summinfo.h in Headers */,
+				DE1A83DA0E9AF3AE005F2430 /* unit.h in Headers */,
+				DE1A83DC0E9AF3AE005F2430 /* workbook.h in Headers */,
+				DE1A84240E9AF6C1005F2430 /* DHWorkBook.h in Headers */,
+				DE1A84C90E9B9942005F2430 /* DHWorkSheet.h in Headers */,
+				DE1A858D0E9BB216005F2430 /* DHFont.h in Headers */,
+				DE1A85910E9BB227005F2430 /* DHFormat.h in Headers */,
+				DE1A85950E9BB245005F2430 /* DHExtendedFormat.h in Headers */,
+				DEFF5B820EB5636900F6F6C6 /* DHCell.h in Headers */,
+				DE7F16220F16E2680082A155 /* HPSF.h in Headers */,
+				DEC408500F64A5FB001817EF /* xlstypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* DHxls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DHxls" */;
+			buildPhases = (
+				DEFF5B0C0EB53E6200F6F6C6 /* ShellScript */,
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHxls;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = DHxls;
+			productReference = 8DC2EF5B0486A6940098B216 /* DHxls.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DEFF650D0EB9252900F6F6C6 /* testXlsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEFF65130EB9254800F6F6C6 /* Build configuration list for PBXNativeTarget "testXlsLib" */;
+			buildPhases = (
+				DEFF650B0EB9252900F6F6C6 /* Sources */,
+				DEFF650C0EB9252900F6F6C6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testXlsLib;
+			productName = testXlsLib;
+			productReference = DEFF650E0EB9252900F6F6C6 /* testXlsLib */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "DHxls" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* DHxls */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* DHxls */,
+				DEFF650D0EB9252900F6F6C6 /* testXlsLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				DE1A83FE0E9AF44A005F2430 /* libiconv.la in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DEFF5B0C0EB53E6200F6F6C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/ksh;
+			shellScript = "exit 0\n\nif [ ! -e xlslib/configure ] \nthen \n\tcd xlslib && ./bootstrap &&\t./configure\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1A83680E9AF386005F2430 /* binfile.cpp in Sources */,
+				DE1A836A0E9AF386005F2430 /* oledoc.cpp in Sources */,
+				DE1A836C0E9AF386005F2430 /* olefs.cpp in Sources */,
+				DE1A836E0E9AF386005F2430 /* oleprop.cpp in Sources */,
+				DE1A83A80E9AF3AE005F2430 /* blank.cpp in Sources */,
+				DE1A83AC0E9AF3AE005F2430 /* cell.cpp in Sources */,
+				DE1A83AE0E9AF3AE005F2430 /* colinfo.cpp in Sources */,
+				DE1A83B20E9AF3AE005F2430 /* continue.cpp in Sources */,
+				DE1A83B60E9AF3AE005F2430 /* datast.cpp in Sources */,
+				DE1A83B80E9AF3AE005F2430 /* docsumminfo.cpp in Sources */,
+				DE1A83BA0E9AF3AE005F2430 /* extformat.cpp in Sources */,
+				DE1A83BC0E9AF3AE005F2430 /* font.cpp in Sources */,
+				DE1A83BE0E9AF3AE005F2430 /* format.cpp in Sources */,
+				DE1A83C10E9AF3AE005F2430 /* globalrec.cpp in Sources */,
+				DE1A83C30E9AF3AE005F2430 /* index.cpp in Sources */,
+				DE1A83C50E9AF3AE005F2430 /* label.cpp in Sources */,
+				DE1A83C70E9AF3AE005F2430 /* merged.cpp in Sources */,
+				DE1A83C90E9AF3AE005F2430 /* number.cpp in Sources */,
+				DE1A83CB0E9AF3AE005F2430 /* range.cpp in Sources */,
+				DE1A83CD0E9AF3AE005F2430 /* recdef.cpp in Sources */,
+				DE1A83CF0E9AF3AE005F2430 /* record.cpp in Sources */,
+				DE1A83D20E9AF3AE005F2430 /* row.cpp in Sources */,
+				DE1A83D40E9AF3AE005F2430 /* sheetrec.cpp in Sources */,
+				DE1A83D60E9AF3AE005F2430 /* summinfo.cpp in Sources */,
+				DE1A83D90E9AF3AE005F2430 /* unit.cpp in Sources */,
+				DE1A83DB0E9AF3AE005F2430 /* workbook.cpp in Sources */,
+				DE1A84250E9AF6C1005F2430 /* DHWorkBook.mm in Sources */,
+				DE1A84CA0E9B9942005F2430 /* DHWorkSheet.mm in Sources */,
+				DE1A858E0E9BB216005F2430 /* DHFont.mm in Sources */,
+				DE1A85920E9BB227005F2430 /* DHFormat.mm in Sources */,
+				DE1A85960E9BB245005F2430 /* DHExtendedFormat.mm in Sources */,
+				DEFF5B830EB5636900F6F6C6 /* DHCell.mm in Sources */,
+				DE7F16210F16E2670082A155 /* HPSF.cpp in Sources */,
+				DEC407F20F64A52D001817EF /* colors.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFF650B0EB9252900F6F6C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFF68660EBBD91100F6F6C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DHxls_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = DHxls;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DHxls_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = DHxls;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DHxls_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "xlslib/**";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DHxls_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "xlslib/**";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		DEFF64C60EB9211700F6F6C6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DHxls_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "xlslib/**";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Deployment;
+		};
+		DEFF64C70EB9211700F6F6C6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DHxls_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = Library/Frameworks;
+				PRODUCT_NAME = DHxls;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Deployment;
+		};
+		DEFF65100EB9252A00F6F6C6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = testXlsLib;
+			};
+			name = Deployment;
+		};
+		DEFF65110EB9252A00F6F6C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testXlsLib;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		DEFF65120EB9252A00F6F6C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testXlsLib;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DHxls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFF64C70EB9211700F6F6C6 /* Deployment */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+				1DEB91AE08733DA50010E9CD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "DHxls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFF64C60EB9211700F6F6C6 /* Deployment */,
+				1DEB91B308733DA50010E9CD /* Release */,
+				1DEB91B208733DA50010E9CD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEFF65130EB9254800F6F6C6 /* Build configuration list for PBXNativeTarget "testXlsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFF65100EB9252A00F6F6C6 /* Deployment */,
+				DEFF65110EB9252A00F6F6C6 /* Release */,
+				DEFF65120EB9252A00F6F6C6 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
