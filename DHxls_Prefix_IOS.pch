@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'DHxls' target in the 'DHxls' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreGraphics/CoreGraphics.h>	// CGRect
+#endif
+
+// So we get unichar strings for effortless movement between Objective-C and C++
+#define __FRAMEWORK__
+#define __IOS_LIBRARY__

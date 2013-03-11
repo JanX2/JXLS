@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #include <stdint.h>
@@ -15,14 +15,18 @@
 #import "font.h"
 #endif
 
-using namespace std;
 using namespace xlslib_core;
+using namespace xlslib_strings;
 
 #import "DHFont.h"
 
 #define FONT(a) ((xlslib_core::font_t *)(a))
 
 @implementation DHFont
+{
+	void		*aFont;		// xlslib_core::CFont *
+}
+
 -(id)initWithFont:(void *)ft
 {
 	self = [super init];
@@ -36,19 +40,15 @@ using namespace xlslib_core;
 	return aFont;
 }
 
-
 -(void)setName:(NSString *)name
 {
 	FONT(aFont)->SetName([name cStringUsingEncoding:NSASCIIStringEncoding]);
 }
 -(NSString *)name
 {
-	NSString			*string;
-	const std::string	*name;
+	const std::string&	name = FONT(aFont)->GetName();
 	
-	name = FONT(aFont)->GetName();
-	
-	string = [NSString stringWithCString:name->c_str()];
+	NSString *string = [NSString stringWithCString:name.c_str() encoding:NSASCIIStringEncoding];
 	
 	return string;
 }

@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #include <stdint.h>
@@ -15,8 +15,8 @@
 #import "extformat.h"
 #endif
 
-using namespace std;
 using namespace xlslib_core;
+using namespace xlslib_strings;
 
 #import "DHExtendedFormat.h"
 #import "DHFont.h"
@@ -24,13 +24,17 @@ using namespace xlslib_core;
 #define FORMAT(a) ((xlslib_core::xf_t *)(a))
 
 @implementation DHExtendedFormat
+{
+	void		*aExtFormat;		// xlslib_core::CExtFormat
+}
+
 +(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat
 {
 	xf_t	*xf;
 	
 	xf = xf_t::xfDup((xf_t *)aFormat->aExtFormat);
 	
-	return [[[DHExtendedFormat alloc] initWithExtFormat:xf] autorelease];
+	return [[DHExtendedFormat alloc] initWithExtFormat:xf];
 }
 
 -(id)initWithExtFormat:(void *)xft
@@ -56,7 +60,7 @@ using namespace xlslib_core;
 	
 	fidx = FORMAT(aExtFormat)->GetFont();
 	
-	return [[[DHFont alloc] initWithFont:fidx] autorelease];
+	return [[DHFont alloc] initWithFont:fidx];
 }
 -(void)setFormatBuiltin:(format_number_t)formatidx
 {
@@ -165,7 +169,5 @@ using namespace xlslib_core;
 {
 	FORMAT(aExtFormat)->GetBorderStyle(side);
 }
-
-
 
 @end

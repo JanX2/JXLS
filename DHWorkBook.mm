@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/6/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #include <stdint.h>
@@ -20,8 +20,8 @@
 #include "extformat.h"
 #endif
 
-using namespace std;
 using namespace xlslib_core;
+using namespace xlslib_strings;
 
 #import "DHWorkBook.h"
 
@@ -34,6 +34,11 @@ using namespace xlslib_core;
 
 
 @implementation DHWorkBook
+{
+	void						*aBook;						// xlslib_core::workbook
+	NSMutableArray				*workSheets;	
+}
+
 -(id)init
 {
 	self = [super init];
@@ -41,15 +46,13 @@ using namespace xlslib_core;
 	// only time we actually allocate a C++ object
 	aBook = new workbook;
 	
-	workSheets = [[NSMutableArray arrayWithCapacity:3] retain];  
+	workSheets = [NSMutableArray arrayWithCapacity:3];  
 	
 	return self;
 }
 -(void)dealloc
 {
 	delete WORKBOOK(aBook);	
-
-	[super dealloc];
 }
 
 -(DHWorkSheet *)workSheetWithName:(NSString *)name
@@ -72,7 +75,6 @@ using namespace xlslib_core;
 	
 	aWorkSheet = [[DHWorkSheet alloc] initWithWorkSheet:ws];
 	[workSheets addObject:aWorkSheet];
-	[aWorkSheet release];
 	
 	return aWorkSheet;
 }
@@ -90,7 +92,7 @@ using namespace xlslib_core;
 	
 	ft = WORKBOOK(aBook)->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
 
-	aFont = [[[DHFont alloc] initWithFont:ft] autorelease];
+	aFont = [[DHFont alloc] initWithFont:ft];
 	
 	return aFont;
 }
@@ -111,7 +113,7 @@ using namespace xlslib_core;
 
 	ft = WORKBOOK(aBook)->format(uniStr);
 
-	format = [[(DHFormat *)[DHFormat alloc] initWithFormat:ft] autorelease];
+	format = [(DHFormat *)[DHFormat alloc] initWithFormat:ft];
 	
 	return format;
 }
@@ -130,7 +132,7 @@ using namespace xlslib_core;
 		ft = WORKBOOK(aBook)->xformat();
 	}
 	
-	xFormat = [[[DHExtendedFormat alloc] initWithExtFormat:ft] autorelease];
+	xFormat = [[DHExtendedFormat alloc] initWithExtFormat:ft];
 	
 	return xFormat;
 }

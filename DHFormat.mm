@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #include <stdint.h>
@@ -15,14 +15,18 @@
 #import "format.h"
 #endif
 
-using namespace std;
 using namespace xlslib_core;
+using namespace xlslib_strings;
 
 #import "DHFormat.h"
 
 #define FORMAT(a) ((xlslib_core::format_t *)(a))
 
 @implementation DHFormat
+{
+	void		*aFormat;		// xlslib_core::CFormat
+}
+
 -(id)initWithFormat:(void *)ft
 {
 	self = [super init];

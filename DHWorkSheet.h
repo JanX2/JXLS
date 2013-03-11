@@ -3,17 +3,22 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
+
+#if defined(NSRect)
+#define DHRECT NSRect
+#else
+#define DHRECT CGRect
+#endif
 
 @class DHRange;
 @class DHCell;
 @class DHExtendedFormat;
 @class DHNumberFormat;
 
-@interface DHWorkSheet : NSObject {
-	void	*aWorkSheet;	// xlslib_core::worksheet *
-}
+@interface DHWorkSheet : NSObject
+
 -(id)initWithWorkSheet:(void *)ws;	// worksheet *
 
 -(void)makeActive;
@@ -35,7 +40,8 @@
 -(void)height:(unsigned short)row row:(unsigned short)row format:(DHExtendedFormat *)extFormat;	// NULL format OK
 -(void)width:(unsigned short)col col:(unsigned short)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
 
--(void)merge:(NSRect)range;
+-(void)merge:(DHRECT)range;
 
 //-(DHRange *)rangegroup:(NSRect)range;
+
 @end

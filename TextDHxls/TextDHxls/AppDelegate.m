@@ -1,26 +1,29 @@
-/*
- *  main.c
- *  DHxls
- *
- *  Created by David Hoerl on 10/29/08.
- *  Copyright 2008 David Hoerl. All rights reserved.
- *
- */
+//
+//  AppDelegate.m
+//  TextDHxls
+//
+//  Created by David Hoerl on 3/5/13.
+//  Copyright (c) 2013 David Hoerl. All rights reserved.
+//
 
-//#import <Cocoa/Cocoa.h>
-//#import <App/Foundation.h>
+#import "AppDelegate.h"
 
-//#undef __FRAMEWORK__
-
+//#import "AppDelegate.h"
 #import <DHxls/DHWorkBook.h>
 
-int main (int argc, const char * argv[])	// NSDate
+
+@implementation AppDelegate
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	NSAutoreleasePool	*pool;
+	// Insert code here to initialize your application
+	[self myTest];
+}
+
+- (void)myTest
+{
 	DHCell				*cell;
-	
-    pool = [NSAutoreleasePool new];
-	
+		
 	DHWorkBook *dhWB = [DHWorkBook new];
 	
 	DHWorkSheet *dhWS = [dhWB workSheetWithName:@"SHEET1"];
@@ -60,10 +63,10 @@ int main (int argc, const char * argv[])	// NSDate
 	}
 	
 	int fud = [dhWB writeFile:@"/tmp/foo.xls"];
-	[dhWB release];
 
 NSLog(@"OK - bye! fud=%d", fud);	
 	[[NSWorkspace sharedWorkspace] openFile:@"/tmp/foo.xls" withApplication:@"Microsoft Excel" andDeactivate:YES];
-	
-	[pool drain];
 }
+
+@end
+

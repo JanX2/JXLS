@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'TextDHxls' target in the 'TextDHxls' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#define __FRAMEWORK__
+#endif

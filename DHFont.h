@@ -3,13 +3,11 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
+@interface DHFont : NSObject
 
-@interface DHFont : NSObject {
-	void		*aFont;		// xlslib_core::CFont *
-}
 //+(DHFont *)fontWithName:(NSString *)fontName;
 -(id)initWithFont:(void *)ft;	// xlslib_core::CFont *
 -(void *)font;
@@ -27,14 +25,14 @@
 -(void)setColorName:(color_name_t)fntcolor;
 -(void)setColorIndex:(unsigned8_t)fntcolor;
 -(unsigned short)colorIndex;
-#if 1
+
 -(void)setItalic:(BOOL)italic;
 -(BOOL)italic;
 -(void)setStrikeout:(BOOL)so;
 -(BOOL)strikeOut;
 -(void)setOutline:(BOOL)ol;
 -(BOOL)outline;
-#endif
+
 -(void)setFamily:(unsigned char)fam;
 -(unsigned char)family;
 -(void)setCharset:(unsigned char)fam;

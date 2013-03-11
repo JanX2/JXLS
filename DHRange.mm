@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/26/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #import "xlslib.h"
@@ -19,6 +19,10 @@ using namespace xlslib_core;
 #define RANGE(a) ((xlslib_core::range *)(a))
 
 @implementation DHRange
+{
+	void		*aRange;		// xlslib_core::range
+}
+
 -(id)initWithRange:(void *)range
 {
 	self = [super init];

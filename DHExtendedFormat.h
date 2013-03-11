@@ -3,14 +3,13 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 @class DHFont;	// NSCopying
 
-@interface DHExtendedFormat : NSObject {
-	void		*aExtFormat;		// xlslib_core::CExtFormat
-}
+@interface DHExtendedFormat : NSObject
+
 +(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat;
 
 -(id)initWithExtFormat:(void *)xft;	// xlslib_core::CExtFormat *
@@ -18,7 +17,6 @@
 
 -(void)setFont:(DHFont *)fontidx;
 -(DHFont *)font;
-
 
 -(void)setFormatBuiltin:(format_number_t)formatidx;
 -(void)setFormat:(format_t *)fmt;
@@ -41,7 +39,6 @@
 -(void)setHidden:(BOOL)hidden_opt;
 -(BOOL)hidden;
 -(void)setWrap:(BOOL)wrap_opt;
--(BOOL)hidden;
 -(void)setBorderStyle:(border_side_t)side style:(border_style_t)style;
 -(void)setBorderColor:(border_side_t)side color:(color_name_t)color;
 -(void)borderStyle:(border_side_t)side;

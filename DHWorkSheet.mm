@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #include <stdint.h>
@@ -17,8 +17,8 @@
 #include "sheetrec.h"
 #endif
 
-using namespace std;
 using namespace xlslib_core;
+using namespace xlslib_strings;
 
 #import "DHWorkSheet.h"
 
@@ -29,6 +29,9 @@ using namespace xlslib_core;
 #define WORKSHEET(a) ((xlslib_core::worksheet *)(a))
 
 @implementation DHWorkSheet
+{
+	void	*aWorkSheet;	// xlslib_core::worksheet *
+}
 
 -(id)initWithWorkSheet:(void *)ws
 {
@@ -51,7 +54,7 @@ using namespace xlslib_core;
 	cl = WORKSHEET(aWorkSheet)->FindCell(row, col);
 	
 	if(cl) {
-		aCell = [[[DHCell alloc] initWithCell:cl] autorelease];
+		aCell = [[DHCell alloc] initWithCell:cl];
 	} else {
 		aCell = nil;
 	}
@@ -70,7 +73,7 @@ using namespace xlslib_core;
 
 	cl = WORKSHEET(aWorkSheet)->blank(row, col, (xf_t *)[extFormat extFormat]);
 	
-	aCell = [[[DHCell alloc] initWithCell:cl] autorelease];
+	aCell = [[DHCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
@@ -89,7 +92,7 @@ using namespace xlslib_core;
 
 	cl = WORKSHEET(aWorkSheet)->label(row, col, str, (xf_t *)[extFormat extFormat]);
 	
-	aCell = [[[DHCell alloc] initWithCell:cl] autorelease];
+	aCell = [[DHCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
@@ -115,7 +118,7 @@ using namespace xlslib_core;
 
 	cl = WORKSHEET(aWorkSheet)->label(row, col, uniStr, (xf_t *)[extFormat extFormat]);
 	
-	aCell = [[[DHCell alloc] initWithCell:cl] autorelease];
+	aCell = [[DHCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
@@ -131,7 +134,7 @@ using namespace xlslib_core;
 
 	cl = WORKSHEET(aWorkSheet)->number(row, col, dbl, (format_number_t)numFormat, (xf_t *)NULL);
 	
-	aCell = [[[DHCell alloc] initWithCell:cl] autorelease];
+	aCell = [[DHCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
@@ -142,7 +145,7 @@ using namespace xlslib_core;
 
 	cl = WORKSHEET(aWorkSheet)->number(row, col, dbl, (xf_t *)[extFormat extFormat]);
 	
-	aCell = [[[DHCell alloc] initWithCell:cl] autorelease];
+	aCell = [[DHCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
@@ -156,7 +159,7 @@ using namespace xlslib_core;
 	WORKSHEET(aWorkSheet)->colwidth(col, width, (xf_t *)[extFormat extFormat]);
 }
 
--(void)merge:(NSRect)rect
+-(void)merge:(DHRECT)rect
 {
 	unsigned16_t	first_row, first_col, last_row, last_col;
 
@@ -169,6 +172,7 @@ using namespace xlslib_core;
 
 	return;
 }
+
 #if 0
 -(DHRange *)rangegroup:(NSRect)rect
 {
@@ -188,4 +192,5 @@ using namespace xlslib_core;
 	return aRange;
 }
 #endif
+
 @end

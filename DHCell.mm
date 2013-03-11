@@ -3,7 +3,7 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/26/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 #include <stdint.h>
@@ -17,8 +17,8 @@
 #import "extformat.h"
 #endif
 
-using namespace std;
 using namespace xlslib_core;
+using namespace xlslib_strings;
 
 #import "DHCell.h"
 
@@ -29,6 +29,10 @@ using namespace xlslib_core;
 #define CELL(a) ((xlslib_core::cell_t *)(a))
 
 @implementation DHCell
+{
+	void	*aCell;
+}
+
 -(id)initWithCell:(void *)cl
 {
 	self = [super init];
@@ -158,7 +162,7 @@ using namespace xlslib_core;
 	
 	fmt = CELL(aCell)->GetXF();
 	
-	extFmt = [[[DHExtendedFormat alloc] initWithExtFormat:extFmt] autorelease];
+	extFmt = [[DHExtendedFormat alloc] initWithExtFormat:fmt];
 	
 	return extFmt;
 }

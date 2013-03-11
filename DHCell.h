@@ -3,15 +3,14 @@
 //  DHxls
 //
 //  Created by David Hoerl on 10/26/08.
-//  Copyright 2008 David Hoerl. All rights reserved.
+//  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
 @class DHFont;
 @class DHExtendedFormat;
 
-@interface DHCell : NSObject {
-	void	*aCell;
-}
+@interface DHCell : NSObject
+
 -(id)initWithCell:(void *)cl;
 -(void *)cell;
 
@@ -25,7 +24,6 @@
 -(void)fillFGcolor:(color_name_t)color;
 -(void)fillBGcolor:(color_name_t)color;
 -(void)fillStyle:(fill_option_t)fill;
--(void)locked:(BOOL)locked_opt;
 -(void)locked:(BOOL)locked_opt;
 -(void)hidden:(BOOL)hidden_opt;
 -(void)wrap:(BOOL)wrap_opt;
