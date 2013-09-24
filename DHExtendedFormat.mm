@@ -37,7 +37,7 @@ using namespace xlslib_strings;
 	return [[DHExtendedFormat alloc] initWithExtFormat:xf];
 }
 
--(id)initWithExtFormat:(void *)xft
+-(instancetype)initWithExtFormat:(void *)xft
 {
 	self = [super init];
 	

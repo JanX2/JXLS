@@ -33,7 +33,7 @@ using namespace xlslib_strings;
 	void	*aWorkSheet;	// xlslib_core::worksheet *
 }
 
--(id)initWithWorkSheet:(void *)ws
+-(instancetype)initWithWorkSheet:(void *)ws
 {
 	self = [super init];
 	

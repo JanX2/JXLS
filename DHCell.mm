@@ -33,7 +33,7 @@ using namespace xlslib_strings;
 	void	*aCell;
 }
 
--(id)initWithCell:(void *)cl
+-(instancetype)initWithCell:(void *)cl
 {
 	self = [super init];
 	

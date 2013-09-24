@@ -27,7 +27,7 @@ using namespace xlslib_strings;
 	void		*aFont;		// xlslib_core::CFont *
 }
 
--(id)initWithFont:(void *)ft
+-(instancetype)initWithFont:(void *)ft
 {
 	self = [super init];
 	

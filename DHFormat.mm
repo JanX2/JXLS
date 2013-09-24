@@ -27,7 +27,7 @@ using namespace xlslib_strings;
 	void		*aFormat;		// xlslib_core::CFormat
 }
 
--(id)initWithFormat:(void *)ft
+-(instancetype)initWithFormat:(void *)ft
 {
 	self = [super init];
 	

@@ -39,7 +39,7 @@ using namespace xlslib_strings;
 	NSMutableArray				*workSheets;	
 }
 
--(id)init
+-(instancetype)init
 {
 	self = [super init];
 	

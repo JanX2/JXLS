@@ -9,7 +9,7 @@
 @interface DHFont : NSObject
 
 //+(DHFont *)fontWithName:(NSString *)fontName;
--(id)initWithFont:(void *)ft;	// xlslib_core::CFont *
+-(instancetype)initWithFont:(void *)ft;	// xlslib_core::CFont *
 -(void *)font;
 
 -(void)setName:(NSString *)name;

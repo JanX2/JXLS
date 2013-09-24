@@ -11,7 +11,7 @@
 
 @interface DHCell : NSObject
 
--(id)initWithCell:(void *)cl;
+-(instancetype)initWithCell:(void *)cl;
 -(void *)cell;
 
 -(void)font:(DHFont *)aFont;

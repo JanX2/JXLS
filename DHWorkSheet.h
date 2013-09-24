@@ -19,7 +19,7 @@
 
 @interface DHWorkSheet : NSObject
 
--(id)initWithWorkSheet:(void *)ws;	// worksheet *
+-(instancetype)initWithWorkSheet:(void *)ws;	// worksheet *
 
 -(void)makeActive;
 

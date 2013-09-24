@@ -12,7 +12,7 @@
 
 +(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat;
 
--(id)initWithExtFormat:(void *)xft;	// xlslib_core::CExtFormat *
+-(instancetype)initWithExtFormat:(void *)xft;	// xlslib_core::CExtFormat *
 -(void *)extFormat;
 
 -(void)setFont:(DHFont *)fontidx;

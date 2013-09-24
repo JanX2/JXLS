@@ -8,7 +8,7 @@
 
 @interface DHFormat : NSObject
 
--(id)initWithFormat:(void *)ft;	// xlslib_core::CFormat *
+-(instancetype)initWithFormat:(void *)ft;	// xlslib_core::CFormat *
 -(void *)format;
 
 @end
