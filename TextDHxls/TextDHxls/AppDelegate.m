@@ -62,10 +62,11 @@
 		[cell vertAlign:VALIGN_TOP+idx];
 	}
 	
-	int fud = [dhWB writeFile:@"/tmp/foo.xls"];
+	int fud = [dhWB writeFile:@"foo.xls"];
 
-NSLog(@"OK - bye! fud=%d", fud);	
-	[[NSWorkspace sharedWorkspace] openFile:@"/tmp/foo.xls" withApplication:@"Microsoft Excel" andDeactivate:YES];
+NSLog(@"OK - bye! fud=%d", fud);
+	NSString *xlsApp = nil;//@"Microsoft Excel";
+	[[NSWorkspace sharedWorkspace] openFile:@"foo.xls" withApplication:xlsApp andDeactivate:YES];
 }
 
 @end
