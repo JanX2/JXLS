@@ -145,11 +145,11 @@ using namespace xlslib_strings;
 
 	return ret ? YES : NO;
 }
--(void)windPosition:(uint32_t)horz :(uint32_t)vert
+-(void)windowPositionX:(uint32_t)horz Y:(uint32_t)vert
 {
 	WORKBOOK(aBook)->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
 }
--(void)windSize:(uint32_t)horz :(uint32_t)vert
+-(void)windowSizeX:(uint32_t)horz Y:(uint32_t)vert
 {
 	WORKBOOK(aBook)->windSize((unsigned16_t)horz, (unsigned16_t)vert);
 }

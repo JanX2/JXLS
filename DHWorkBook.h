@@ -32,8 +32,8 @@
 -(DHExtendedFormat *)extendedFormat;						// xf_t* xformat(void)
 -(DHExtendedFormat *)extendedFormat:(DHFont *)formatStr;	// xf_t* xformat(font_t* font)
 -(BOOL)property:(property_t)prop value:(NSString *)content;	// bool property(property_t prop, const std::string& content);
--(void)windPosition:(uint32_t)horz :(uint32_t)vert;			// void SetPosition(unsigned16_t horz, unsigned16_t vert)
--(void)windSize:(uint32_t)horz :(uint32_t)vert;				// void SetSize(unsigned16_t horz, unsigned16_t vert)
+-(void)windowPositionX:(uint32_t)horz Y:(uint32_t)vert;		// void SetPosition(unsigned16_t horz, unsigned16_t vert)
+-(void)windowSizeX:(uint32_t)horz Y:(uint32_t)vert;			// void SetSize(unsigned16_t horz, unsigned16_t vert)
 -(void)firstTab:(uint32_t)tab;								// void SetFirstTab(unsigned16_t firstTab)
 -(void)tabBarWidth:(uint32_t)width;							// void SetTabBarWidth(unsigned16_t width)
 
