@@ -145,19 +145,19 @@ using namespace xlslib_strings;
 
 	return ret ? YES : NO;
 }
--(void)windowPositionX:(uint32_t)horz Y:(uint32_t)vert
+-(void)windowPositionX:(uint16_t)horz Y:(uint16_t)vert
 {
 	WORKBOOK(aBook)->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
 }
--(void)windowSizeX:(uint32_t)horz Y:(uint32_t)vert
+-(void)windowSizeX:(uint16_t)horz Y:(uint16_t)vert
 {
 	WORKBOOK(aBook)->windSize((unsigned16_t)horz, (unsigned16_t)vert);
 }
--(void)firstTab:(uint32_t)tab
+-(void)firstTab:(uint16_t)tab
 {
 	WORKBOOK(aBook)->firstTab((unsigned16_t)tab);
 }
--(void)tabBarWidth:(uint32_t)width
+-(void)tabBarWidth:(uint16_t)width
 {
 	WORKBOOK(aBook)->tabBarWidth((unsigned16_t)width);
 }
