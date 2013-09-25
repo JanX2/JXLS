@@ -275,7 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				DE85A2A516E3E82A00CBE726 /* xlslib.h */,
-				DE1A83550E9AF340005F2430 /* Common */,
+				DE1A83550E9AF340005F2430 /* common */,
 				DEF79B2D16EE18D700E4B803 /* oledoc */,
 				DEF79B3616EE18D700E4B803 /* xlslib */,
 			);
@@ -308,7 +308,7 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		DE1A83550E9AF340005F2430 /* Common */ = {
+		DE1A83550E9AF340005F2430 /* common */ = {
 			isa = PBXGroup;
 			children = (
 				DE85A29716E3E4EE00CBE726 /* xls_poppack.h */,
@@ -318,7 +318,7 @@
 				DE85A29B16E3E4EE00CBE726 /* xlstypes.h */,
 				DE85A29C16E3E4EE00CBE726 /* xlsys.h */,
 			);
-			name = Common;
+			name = common;
 			sourceTree = "<group>";
 		};
 		DE1A83FC0E9AF42B005F2430 /* Libraries */ = {
