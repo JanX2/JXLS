@@ -46,7 +46,7 @@ using namespace xlslib_strings;
 {
 	WORKSHEET(aWorkSheet)->MakeActive();
 }
--(DHCell *)cell:(uint16_t)row col:(uint16_t)col
+-(DHCell *)cell:(uint32_t)row col:(uint32_t)col
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -62,11 +62,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)blank:(id)dontCare row:(uint16_t)row col:(uint16_t)col
+-(DHCell *)blank:(id)dontCare row:(uint32_t)row col:(uint32_t)col
 {
 	return [self blank:dontCare row:row col:col format:nil];
 }
--(DHCell *)blank:(id)dontCare row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat
+-(DHCell *)blank:(id)dontCare row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -78,11 +78,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)cLabel:(char *)lbl row:(uint16_t)row col:(uint16_t)col
+-(DHCell *)cLabel:(char *)lbl row:(uint32_t)row col:(uint32_t)col
 {
 	return [self cLabel:lbl row:row col:col format:nil];
 }
--(DHCell *)cLabel:(char *)lbl row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat
+-(DHCell *)cLabel:(char *)lbl row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -97,11 +97,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)label:(NSString *)lbl row:(uint16_t)row col:(uint16_t)col
+-(DHCell *)label:(NSString *)lbl row:(uint32_t)row col:(uint32_t)col
 {
 	return [self label:lbl row:row col:col format:nil];
 }
--(DHCell *)label:(NSString *)lbl row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat
+-(DHCell *)label:(NSString *)lbl row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -123,11 +123,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)number:(double)dbl row:(uint16_t)row col:(uint16_t)col
+-(DHCell *)number:(double)dbl row:(uint32_t)row col:(uint32_t)col
 {
 	return [self number:dbl row:row col:col format:nil];
 }
--(DHCell *)number:(double)dbl row:(uint16_t)row col:(uint16_t)col numberFormat:(int)numFormat
+-(DHCell *)number:(double)dbl row:(uint32_t)row col:(uint32_t)col numberFormat:(int)numFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -138,7 +138,7 @@ using namespace xlslib_strings;
 	
 	return aCell;
 }
--(DHCell *)number:(double)dbl row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat
+-(DHCell *)number:(double)dbl row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -150,11 +150,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(void)height:(uint16_t)height row:(uint16_t)row format:(DHExtendedFormat *)extFormat
+-(void)height:(uint32_t)height row:(uint32_t)row format:(DHExtendedFormat *)extFormat
 {
 	WORKSHEET(aWorkSheet)->rowheight(row, height, (xf_t *)[extFormat extendedFormat]);
 }
--(void)width:(uint16_t)width col:(uint16_t)col format:(DHExtendedFormat *)extFormat
+-(void)width:(uint32_t)width col:(uint32_t)col format:(DHExtendedFormat *)extFormat
 {
 	WORKSHEET(aWorkSheet)->colwidth(col, width, (xf_t *)[extFormat extendedFormat]);
 }
