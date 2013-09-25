@@ -24,6 +24,7 @@
 -(void)makeActive;
 
 -(DHCell *)cellAtRow:(uint32_t)row col:(uint32_t)col;
+
 -(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col;
 -(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
 
