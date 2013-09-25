@@ -52,11 +52,11 @@ using namespace xlslib_strings;
 	
 	return string;
 }
--(void)setHeight:(unsigned short)fntheight
+-(void)setHeight:(uint16_t)fntheight
 {
 	FONT(aFont)->SetHeight(fntheight);
 }
--(unsigned short)height
+-(uint16_t)height
 {
 	return FONT(aFont)->GetHeight();
 }
@@ -64,7 +64,7 @@ using namespace xlslib_strings;
 {
 	FONT(aFont)->SetBoldStyle(fntboldness);
 }
--(unsigned short)boldStyle
+-(uint16_t)boldStyle
 {
 	return FONT(aFont)->GetBoldStyle();
 }
@@ -72,7 +72,7 @@ using namespace xlslib_strings;
 {
 	FONT(aFont)->SetUnderlineStyle(fntunderline);
 }
--(unsigned char)underlineStyle
+-(uint8_t)underlineStyle
 {
 	return FONT(aFont)->GetBoldStyle();
 }
@@ -80,7 +80,7 @@ using namespace xlslib_strings;
 {
 	FONT(aFont)->SetScriptStyle(fntscript);
 }
--(unsigned short)scriptStyle
+-(uint16_t)scriptStyle
 {
 	return FONT(aFont)->GetBoldStyle();
 }
@@ -92,7 +92,7 @@ using namespace xlslib_strings;
 {
 	FONT(aFont)->SetColor(fntcolor);
 }
--(unsigned short)colorIndex
+-(uint16_t)colorIndex
 {
 	return FONT(aFont)->GetColorIdx();
 }
@@ -131,19 +131,19 @@ using namespace xlslib_strings;
 }
 #endif
 
--(void)setFamily:(unsigned char)fam
+-(void)setFamily:(uint8_t)fam
 {
 	FONT(aFont)->SetFamily(fam);
 }
--(unsigned char)family
+-(uint8_t)family
 {
 	return FONT(aFont)->GetFamily();
 }
--(void)setCharset:(unsigned char)fam
+-(void)setCharset:(uint8_t)fam
 {
 	FONT(aFont)->SetCharset(fam);
 }
--(unsigned char)charset
+-(uint8_t)charset
 {
 	return FONT(aFont)->GetCharset();
 }

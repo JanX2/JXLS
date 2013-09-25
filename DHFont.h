@@ -14,17 +14,17 @@
 
 -(void)setName:(NSString *)name;
 -(NSString *)name;
--(void)setHeight:(unsigned short)fntheight;
--(unsigned short)height;
+-(void)setHeight:(uint16_t)fntheight;
+-(uint16_t)height;
 -(void)setBoldStyle:(boldness_option_t)fntboldness;
--(unsigned short)boldStyle;
+-(uint16_t)boldStyle;
 -(void)setUnderlineStyle:(underline_option_t)fntunderline;
--(unsigned char)underlineStyle;
+-(uint8_t)underlineStyle;
 -(void)SetScriptStyle:(script_option_t)fntscript;
--(unsigned short)scriptStyle;
+-(uint16_t)scriptStyle;
 -(void)setColorName:(color_name_t)fntcolor;
 -(void)setColorIndex:(unsigned8_t)fntcolor;
--(unsigned short)colorIndex;
+-(uint16_t)colorIndex;
 
 -(void)setItalic:(BOOL)italic;
 -(BOOL)italic;
@@ -33,9 +33,9 @@
 -(void)setOutline:(BOOL)ol;
 -(BOOL)outline;
 
--(void)setFamily:(unsigned char)fam;
--(unsigned char)family;
--(void)setCharset:(unsigned char)fam;
--(unsigned char)charset;
+-(void)setFamily:(uint8_t)fam;
+-(uint8_t)family;
+-(void)setCharset:(uint8_t)fam;
+-(uint8_t)charset;
 
 @end

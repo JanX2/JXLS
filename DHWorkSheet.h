@@ -23,22 +23,22 @@
 
 -(void)makeActive;
 
--(DHCell *)cell:(unsigned short)row col:(unsigned short)col;
--(DHCell *)blank:(id)dontCare row:(unsigned short)row col:(unsigned short)col;
--(DHCell *)blank:(id)dontCare row:(unsigned short)row col:(unsigned short)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(DHCell *)cell:(uint16_t)row col:(uint16_t)col;
+-(DHCell *)blank:(id)dontCare row:(uint16_t)row col:(uint16_t)col;
+-(DHCell *)blank:(id)dontCare row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
 
--(DHCell *)cLabel:(char *)lbl row:(unsigned short)row col:(unsigned short)col;
--(DHCell *)cLabel:(char *)lbl row:(unsigned short)row col:(unsigned short)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(DHCell *)cLabel:(char *)lbl row:(uint16_t)row col:(uint16_t)col;
+-(DHCell *)cLabel:(char *)lbl row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
 
--(DHCell *)label:(NSString *)lbl row:(unsigned short)row col:(unsigned short)col;
--(DHCell *)label:(NSString *)lbl row:(unsigned short)row col:(unsigned short)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(DHCell *)label:(NSString *)lbl row:(uint16_t)row col:(uint16_t)col;
+-(DHCell *)label:(NSString *)lbl row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
 
--(DHCell *)number:(double)dbl row:(unsigned short)row col:(unsigned short)col;
--(DHCell *)number:(double)dbl row:(unsigned short)row col:(unsigned short)col numberFormat:(int)numFormat;			// Deprecated
--(DHCell *)number:(double)dbl row:(unsigned short)row col:(unsigned short)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(DHCell *)number:(double)dbl row:(uint16_t)row col:(uint16_t)col;
+-(DHCell *)number:(double)dbl row:(uint16_t)row col:(uint16_t)col numberFormat:(int)numFormat;			// Deprecated
+-(DHCell *)number:(double)dbl row:(uint16_t)row col:(uint16_t)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
 
--(void)height:(unsigned short)row row:(unsigned short)row format:(DHExtendedFormat *)extFormat;	// NULL format OK
--(void)width:(unsigned short)col col:(unsigned short)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(void)height:(uint16_t)row row:(uint16_t)row format:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(void)width:(uint16_t)col col:(uint16_t)col format:(DHExtendedFormat *)extFormat;	// NULL format OK
 
 -(void)merge:(DHRECT)range;
 

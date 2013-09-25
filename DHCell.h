@@ -32,7 +32,7 @@
 
 //font_i interface
 -(void)setFontName:(NSString *)name;
--(void)setFontHeight:(unsigned short)fntheight;
+-(void)setFontHeight:(uint16_t)fntheight;
 -(void)setFontBold:(boldness_option_t)fntboldness;
 -(void)setFontUnderline:(underline_option_t)fntunderline;
 -(void)setFontColor:(color_name_t)fntcolor;

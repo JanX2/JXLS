@@ -105,7 +105,7 @@ using namespace xlslib_strings;
 {
 	CELL(aCell)->fontname([name cStringUsingEncoding:NSASCIIStringEncoding]);
 }
--(void)setFontHeight:(unsigned short)fntheight
+-(void)setFontHeight:(uint16_t)fntheight
 {
 	CELL(aCell)->fontheight((unsigned16_t)fntheight);
 }
