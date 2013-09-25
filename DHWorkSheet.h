@@ -38,8 +38,8 @@
 -(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat;            // Deprecated
 -(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
 
--(void)setHeight:(uint32_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
--(void)setWidth:(uint32_t)height forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(void)setWidth:(uint16_t)height forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
 
 -(void)mergeCellsInRect:(DHRECT)range;
 

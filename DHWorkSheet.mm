@@ -153,11 +153,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(void)setHeight:(uint32_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat
+-(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat
 {
 	WORKSHEET(aWorkSheet)->rowheight(row, height, (xf_t *)[extFormat extendedFormat]);
 }
--(void)setWidth:(uint32_t)width forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat
+-(void)setWidth:(uint16_t)width forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat
 {
 	WORKSHEET(aWorkSheet)->colwidth(col, width, (xf_t *)[extFormat extendedFormat]);
 }
