@@ -37,8 +37,8 @@
 			// prove we can get the cell reference later
 			cell = [dhWS cell:idx col:0];
 		}
-		[cell horzAlign:HALIGN_LEFT];
-		[cell indent:INDENT_0+idx];
+		[cell setHorizontalAlignment:HALIGN_LEFT];
+		[cell setIndentation:INDENT_0 + idx];
 	}
 //	[dhWS merge:(NSRect){{10, 10}, {3, 3} }];
 	
@@ -52,14 +52,14 @@
 	[dhWS width:30000 col:2 format:NULL];
 	for(unsigned short idx=0; idx<7; ++idx) {
 		cell = [dhWS label:@"Hello World" row:idx col:2];
-		[cell horzAlign:HALIGN_GENERAL+idx];
+		[cell setHorizontalAlignment:HALIGN_GENERAL + idx];
 	}
 	
 	[dhWS width:0xFFFF col:3 format:NULL];
 	for(unsigned short idx=0; idx<4; ++idx) {
 		[dhWS height:24 row:idx format:NULL];
 		cell = [dhWS label:@"Hello World" row:idx col:3];
-		[cell vertAlign:VALIGN_TOP+idx];
+		[cell setVerticalAlignment:VALIGN_TOP + idx];
 	}
 	
 	int fud = [dhWB writeFile:@"foo.xls"];
