@@ -71,7 +71,7 @@ using namespace xlslib_strings;
 	DHCell			*aCell;
 	cell_t			*cl;
 
-	cl = WORKSHEET(aWorkSheet)->blank(row, col, (xf_t *)[extFormat extFormat]);
+	cl = WORKSHEET(aWorkSheet)->blank(row, col, (xf_t *)[extFormat extendedFormat]);
 	
 	aCell = [[DHCell alloc] initWithCell:cl];
 	
@@ -90,7 +90,7 @@ using namespace xlslib_strings;
 
 	str.assign(lbl);
 
-	cl = WORKSHEET(aWorkSheet)->label(row, col, str, (xf_t *)[extFormat extFormat]);
+	cl = WORKSHEET(aWorkSheet)->label(row, col, str, (xf_t *)[extFormat extendedFormat]);
 	
 	aCell = [[DHCell alloc] initWithCell:cl];
 	
@@ -116,7 +116,7 @@ using namespace xlslib_strings;
 	uniStr.assign(uniName);
 	free(uniName);
 
-	cl = WORKSHEET(aWorkSheet)->label(row, col, uniStr, (xf_t *)[extFormat extFormat]);
+	cl = WORKSHEET(aWorkSheet)->label(row, col, uniStr, (xf_t *)[extFormat extendedFormat]);
 	
 	aCell = [[DHCell alloc] initWithCell:cl];
 	
@@ -143,7 +143,7 @@ using namespace xlslib_strings;
 	DHCell			*aCell;
 	cell_t			*cl;
 
-	cl = WORKSHEET(aWorkSheet)->number(row, col, dbl, (xf_t *)[extFormat extFormat]);
+	cl = WORKSHEET(aWorkSheet)->number(row, col, dbl, (xf_t *)[extFormat extendedFormat]);
 	
 	aCell = [[DHCell alloc] initWithCell:cl];
 	
@@ -152,11 +152,11 @@ using namespace xlslib_strings;
 
 -(void)height:(unsigned short)height row:(unsigned short)row format:(DHExtendedFormat *)extFormat
 {
-	WORKSHEET(aWorkSheet)->rowheight(row, height, (xf_t *)[extFormat extFormat]);
+	WORKSHEET(aWorkSheet)->rowheight(row, height, (xf_t *)[extFormat extendedFormat]);
 }
 -(void)width:(unsigned short)width col:(unsigned short)col format:(DHExtendedFormat *)extFormat
 {
-	WORKSHEET(aWorkSheet)->colwidth(col, width, (xf_t *)[extFormat extFormat]);
+	WORKSHEET(aWorkSheet)->colwidth(col, width, (xf_t *)[extFormat extendedFormat]);
 }
 
 -(void)merge:(DHRECT)rect

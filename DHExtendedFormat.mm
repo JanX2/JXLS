@@ -34,10 +34,10 @@ using namespace xlslib_strings;
 	
 	xf = xf_t::xfDup((xf_t *)aFormat->aExtFormat);
 	
-	return [[DHExtendedFormat alloc] initWithExtFormat:xf];
+	return [[DHExtendedFormat alloc] initWithExtendedFormat:xf];
 }
 
--(instancetype)initWithExtFormat:(void *)xft
+-(instancetype)initWithExtendedFormat:(void *)xft
 {
 	self = [super init];
 	
@@ -45,14 +45,14 @@ using namespace xlslib_strings;
 	
 	return self;
 }
--(void *)extFormat
+-(void *)extendedFormat
 {
 	return aExtFormat;
 }
 
--(void)setFont:(DHFont *)fontidx
+-(void)setFont:(DHFont *)font
 {
-	 FORMAT(aExtFormat)->SetFont((font_t *)[fontidx font]);
+	 FORMAT(aExtFormat)->SetFont((font_t *)[font font]);
 }
 -(DHFont *)font
 {
@@ -70,56 +70,56 @@ using namespace xlslib_strings;
 {
 	 FORMAT(aExtFormat)->SetFormat((format_t *)fmt);
 }
--(void)setHAlign:(halign_option_t)ha_option
+-(void)setHorizontalAlignment:(halign_option_t)ha_option
 {
 	 FORMAT(aExtFormat)->SetHAlign(ha_option);
 }
--(unsigned char)hAlign
+-(uint8_t)horizontalAlignment
 {
 	return FORMAT(aExtFormat)->GetHAlign();
 
 }
--(void)setVAlign:(valign_option_t)va_option
+-(void)setVerticalAlignment:(valign_option_t)va_option
 {
 	 FORMAT(aExtFormat)->SetVAlign(va_option);
 }
--(unsigned char)vAlign
+-(uint8_t)verticalAlignment
 {
 	return FORMAT(aExtFormat)->GetVAlign();
 
 }
--(void)setIndent:(indent_option_t)indent_option
+-(void)setIndentation:(indent_option_t)indent_option
 {
 	 FORMAT(aExtFormat)->SetIndent(indent_option);
 }
--(unsigned char)indent
+-(uint8_t)indentation
 {
 	return FORMAT(aExtFormat)->GetIndent();
 
 }
--(void)setTxtOrientation:(txtori_option_t)ori_option
+-(void)setTextOrientation:(txtori_option_t)ori_option
 {
 	 FORMAT(aExtFormat)->SetTxtOrientation(ori_option);
 }
--(unsigned char)txtOrientation
+-(uint8_t)textOrientation
 {
 	return FORMAT(aExtFormat)->GetTxtOrientation();
 
 }
--(void)setFillFGColor:(color_name_t)color
+-(void)setForegroundFillColor:(color_name_t)color
 {
 	 FORMAT(aExtFormat)->SetFillFGColor(color);
 }
--(unsigned char)fillFGColor
+-(uint8_t)foregroundFillColor
 {
 	return FORMAT(aExtFormat)->GetFillFGColorIdx();
 
 }
--(void)setFillBGColor:(color_name_t)color
+-(void)setBackgroundFillColor:(color_name_t)color
 {
 	 FORMAT(aExtFormat)->SetFillBGColor(color);
 }
--(unsigned char)fillBGColor
+-(uint8_t)backgroundFillColor
 {
 	return FORMAT(aExtFormat)->GetFillBGColorIdx();
 
@@ -128,7 +128,7 @@ using namespace xlslib_strings;
 {
 	 FORMAT(aExtFormat)->SetFillStyle(fill);
 }
--(unsigned char)fillStyle
+-(uint8_t)fillStyle
 {
 	return FORMAT(aExtFormat)->GetFillStyle();
 
@@ -149,7 +149,7 @@ using namespace xlslib_strings;
 {
 	return (BOOL)FORMAT(aExtFormat)->IsHidden();
 }
--(void)setWrap:(BOOL)wrap_opt
+-(void)setWraps:(BOOL)wrap_opt
 {
 	 FORMAT(aExtFormat)->SetWrap((bool)wrap_opt);
 }
@@ -157,11 +157,11 @@ using namespace xlslib_strings;
 {
 	return (BOOL)FORMAT(aExtFormat)->IsWrap();
 }
--(void)setBorderStyle:(border_side_t)side style:(border_style_t)style
+-(void)setBorderStyle:(border_style_t)style forSide:(border_side_t)side
 {
 	FORMAT(aExtFormat)->SetBorderStyle(side, style);
 }
--(void)setBorderColor:(border_side_t)side color:(color_name_t)color
+-(void)setBorderColor:(color_name_t)color forSide:(border_side_t)side
 {
 	FORMAT(aExtFormat)->SetBorderColor(side, color);
 }

@@ -153,7 +153,7 @@ using namespace xlslib_strings;
 }
 -(void)setExtendedFormat:(DHExtendedFormat *)extFmt
 {
-	CELL(aCell)->SetXF((xf_t *)[extFmt extFormat]);
+	CELL(aCell)->SetXF((xf_t *)[extFmt extendedFormat]);
 }
 -(DHExtendedFormat *)extendedFormat
 {
@@ -162,7 +162,7 @@ using namespace xlslib_strings;
 	
 	fmt = CELL(aCell)->GetXF();
 	
-	extFmt = [[DHExtendedFormat alloc] initWithExtFormat:fmt];
+	extFmt = [[DHExtendedFormat alloc] initWithExtendedFormat:fmt];
 	
 	return extFmt;
 }

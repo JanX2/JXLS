@@ -132,7 +132,7 @@ using namespace xlslib_strings;
 		ft = WORKBOOK(aBook)->xformat();
 	}
 	
-	xFormat = [[DHExtendedFormat alloc] initWithExtFormat:ft];
+	xFormat = [[DHExtendedFormat alloc] initWithExtendedFormat:ft];
 	
 	return xFormat;
 }

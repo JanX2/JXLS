@@ -12,35 +12,35 @@
 
 +(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat;
 
--(instancetype)initWithExtFormat:(void *)xft;	// xlslib_core::CExtFormat *
--(void *)extFormat;
+-(instancetype)initWithExtendedFormat:(void *)xft;	// xlslib_core::CExtFormat *
+-(void *)extendedFormat;
 
--(void)setFont:(DHFont *)fontidx;
+-(void)setFont:(DHFont *)font;
 -(DHFont *)font;
 
 -(void)setFormatBuiltin:(format_number_t)formatidx;
 -(void)setFormat:(format_t *)fmt;
--(void)setHAlign:(halign_option_t)ha_option;
--(unsigned char)hAlign;
--(void)setVAlign:(valign_option_t)va_option;
--(unsigned char)vAlign;
--(void)setIndent:(indent_option_t)indent_option;
--(unsigned char)indent;
--(void)setTxtOrientation:(txtori_option_t)ori_option;
--(unsigned char)txtOrientation;
--(void)setFillFGColor:(color_name_t)color;
--(unsigned char)fillFGColor;
--(void)setFillBGColor:(color_name_t)color;
--(unsigned char)fillBGColor;
+-(void)setHorizontalAlignment:(halign_option_t)ha_option;
+-(uint8_t)horizontalAlignment;
+-(void)setVerticalAlignment:(valign_option_t)va_option;
+-(uint8_t)verticalAlignment;
+-(void)setIndentation:(indent_option_t)indent_option;
+-(uint8_t)indentation;
+-(void)setTextOrientation:(txtori_option_t)ori_option;
+-(uint8_t)textOrientation;
+-(void)setForegroundFillColor:(color_name_t)color;
+-(uint8_t)foregroundFillColor;
+-(void)setBackgroundFillColor:(color_name_t)color;
+-(uint8_t)backgroundFillColor;
 -(void)setFillStyle:(fill_option_t)fill;
--(unsigned char)fillStyle;
+-(uint8_t)fillStyle;
 -(void)setLocked:(BOOL)locked_opt;
 -(BOOL)locked;
 -(void)setHidden:(BOOL)hidden_opt;
 -(BOOL)hidden;
--(void)setWrap:(BOOL)wrap_opt;
--(void)setBorderStyle:(border_side_t)side style:(border_style_t)style;
--(void)setBorderColor:(border_side_t)side color:(color_name_t)color;
+-(void)setWraps:(BOOL)wrap_opt;
+-(void)setBorderStyle:(border_style_t)style forSide:(border_side_t)side;
+-(void)setBorderColor:(color_name_t)color forSide:(border_side_t)side;
 -(void)borderStyle:(border_side_t)side;
 
 @end
