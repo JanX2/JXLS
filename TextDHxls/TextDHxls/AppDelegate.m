@@ -62,7 +62,7 @@
 		[cell setVerticalAlignment:VALIGN_TOP + idx];
 	}
 	
-	int fud = [dhWB writeFile:@"foo.xls"];
+	int fud = [dhWB writeToFile:@"foo.xls"];
 
 NSLog(@"OK - bye! fud=%d", fud);
 	NSString *xlsApp = nil;//@"Microsoft Excel";

@@ -25,17 +25,17 @@
 
 @interface DHWorkBook : NSObject
 
--(DHWorkSheet *)workSheetWithName:(NSString *)sheetName;	// worksheet* sheet(std::string/ustring sheetname);
--(DHWorkSheet *)workSheetByOffset:(NSUInteger)offset;		// worksheet* GetSheet(unsigned16_t sheetnum);
--(DHFont *)font:(NSString *)fontName;						// font_t* font(std::string name);
--(DHFormat *)format:(NSString *)formatStr;					// format_t* format(std::string formatstr);
--(DHExtendedFormat *)extendedFormat;						// xf_t* xformat(void)
--(DHExtendedFormat *)extendedFormat:(DHFont *)formatStr;	// xf_t* xformat(font_t* font)
--(BOOL)property:(property_t)prop value:(NSString *)content;	// bool property(property_t prop, const std::string& content);
--(void)windowPositionX:(uint16_t)horz Y:(uint16_t)vert;		// void SetPosition(unsigned16_t horz, unsigned16_t vert)
--(void)windowSizeX:(uint16_t)horz Y:(uint16_t)vert;			// void SetSize(unsigned16_t horz, unsigned16_t vert)
--(void)firstTab:(uint16_t)tab;								// void SetFirstTab(unsigned16_t firstTab)
--(void)tabBarWidth:(uint16_t)width;							// void SetTabBarWidth(unsigned16_t width)
+-(DHWorkSheet *)workSheetWithName:(NSString *)sheetName;			// worksheet* sheet(std::string/ustring sheetname);
+-(DHWorkSheet *)workSheetForOffset:(uint16_t)offset;				// worksheet* GetSheet(unsigned16_t sheetnum);
+-(DHFont *)fontWithName:(NSString *)fontName;						// font_t* font(std::string name);
+-(DHFormat *)formatWithString:(NSString *)formatStr;				// format_t* format(std::string formatstr);
+-(DHExtendedFormat *)extendedFormat;								// xf_t* xformat(void)
+-(DHExtendedFormat *)extendedFormatForFont:(DHFont *)formatStr;		// xf_t* xformat(font_t* font)
+-(BOOL)setValue:(NSString *)content forProperty:(property_t)prop;	// bool property(property_t prop, const std::string& content);
+-(void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert;			// void SetPosition(unsigned16_t horz, unsigned16_t vert)
+-(void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert;				// void SetSize(unsigned16_t horz, unsigned16_t vert)
+-(void)firstTab:(uint16_t)tab;										// void SetFirstTab(unsigned16_t firstTab)
+-(void)tabBarWidth:(uint16_t)width;									// void SetTabBarWidth(unsigned16_t width)
 
--(int)writeFile:(NSString *)fileName;						// int Dump(std::string filename);
+-(int)writeToFile:(NSString *)fileName;								// int Dump(std::string filename);
 @end

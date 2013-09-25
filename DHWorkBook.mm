@@ -78,14 +78,14 @@ using namespace xlslib_strings;
 	
 	return aWorkSheet;
 }
--(DHWorkSheet *)workSheetByOffset:(NSUInteger)offset
+-(DHWorkSheet *)workSheetForOffset:(uint16_t)offset
 {
 	if([workSheets count] < offset) {
 		return nil;
 	}
 	return [workSheets objectAtIndex:offset];
 }
--(DHFont *)font:(NSString *)name
+-(DHFont *)fontWithName:(NSString *)name
 {	
 	DHFont				*aFont;
 	font_t				*ft;
@@ -96,7 +96,7 @@ using namespace xlslib_strings;
 	
 	return aFont;
 }
--(DHFormat *)format:(NSString *)name
+-(DHFormat *)formatWithString:(NSString *)name
 {
 	DHFormat			*format;
 	format_t			*ft;
@@ -119,9 +119,9 @@ using namespace xlslib_strings;
 }
 -(DHExtendedFormat *)extendedFormat
 {
-	return [self extendedFormat:nil];
+	return [self extendedFormatForFont:nil];
 }
--(DHExtendedFormat *)extendedFormat:(DHFont *)name
+-(DHExtendedFormat *)extendedFormatForFont:(DHFont *)name
 {
 	DHExtendedFormat	*xFormat;
 	xf_t				*ft;
@@ -137,7 +137,7 @@ using namespace xlslib_strings;
 	return xFormat;
 }
 
--(BOOL)property:(property_t)prop value:(NSString *)content
+-(BOOL)setValue:(NSString *)content forProperty:(property_t)prop
 {
 	bool ret;
 
@@ -145,11 +145,11 @@ using namespace xlslib_strings;
 
 	return ret ? YES : NO;
 }
--(void)windowPositionX:(uint16_t)horz Y:(uint16_t)vert
+-(void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert
 {
 	WORKBOOK(aBook)->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
 }
--(void)windowSizeX:(uint16_t)horz Y:(uint16_t)vert
+-(void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert
 {
 	WORKBOOK(aBook)->windSize((unsigned16_t)horz, (unsigned16_t)vert);
 }
@@ -163,7 +163,7 @@ using namespace xlslib_strings;
 }
 
 
--(int)writeFile:(NSString *)name
+-(int)writeToFile:(NSString *)name
 {
 	string filename;
 	
