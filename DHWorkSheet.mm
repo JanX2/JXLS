@@ -46,7 +46,7 @@ using namespace xlslib_strings;
 {
 	WORKSHEET(aWorkSheet)->MakeActive();
 }
--(DHCell *)cell:(uint32_t)row col:(uint32_t)col
+-(DHCell *)cellAtRow:(uint32_t)row col:(uint32_t)col
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -62,11 +62,11 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)blank:(id)dontCare row:(uint32_t)row col:(uint32_t)col
+-(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col
 {
-	return [self blank:dontCare row:row col:col format:nil];
+	return [self addEmptyCellAtRow:row column:col withFormat:nil];
 }
--(DHCell *)blank:(id)dontCare row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
+-(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -78,17 +78,18 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)cLabel:(char *)lbl row:(uint32_t)row col:(uint32_t)col
+- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label
 {
-	return [self cLabel:lbl row:row col:col format:nil];
+	return [self setCellAtRow:row column:col toCString:label withFormat:nil ];
 }
--(DHCell *)cLabel:(char *)lbl row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
+
+- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label withFormat:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
 	std::string		str;
 
-	str.assign(lbl);
+	str.assign(label);
 
 	cl = WORKSHEET(aWorkSheet)->label(row, col, str, (xf_t *)[extFormat extendedFormat]);
 	
@@ -97,11 +98,12 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)label:(NSString *)lbl row:(uint32_t)row col:(uint32_t)col
+- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label
 {
-	return [self label:lbl row:row col:col format:nil];
+	return [self setCellAtRow:row column:col toString:label withFormat:nil ];
 }
--(DHCell *)label:(NSString *)lbl row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
+
+- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label withFormat:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -109,10 +111,10 @@ using namespace xlslib_strings;
 	ustring			uniStr;
 	size_t			len;
 	
-	len = [lbl length];
+	len = [label length];
 	
 	uniName = (unichar *)calloc(len+1, sizeof(unichar));
-	[lbl getCharacters:uniName];
+	[label getCharacters:uniName];
 	uniStr.assign(uniName);
 	free(uniName);
 
@@ -123,11 +125,12 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)number:(double)dbl row:(uint32_t)row col:(uint32_t)col
+-(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl
 {
-	return [self number:dbl row:row col:col format:nil];
+	return [self setCellAtRow:row column:col toDoubleValue:dbl withFormat:nil];
 }
--(DHCell *)number:(double)dbl row:(uint32_t)row col:(uint32_t)col numberFormat:(int)numFormat
+
+- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -138,7 +141,7 @@ using namespace xlslib_strings;
 	
 	return aCell;
 }
--(DHCell *)number:(double)dbl row:(uint32_t)row col:(uint32_t)col format:(DHExtendedFormat *)extFormat
+-(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(DHExtendedFormat *)extFormat
 {
 	DHCell			*aCell;
 	cell_t			*cl;
@@ -150,16 +153,16 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(void)height:(uint32_t)height row:(uint32_t)row format:(DHExtendedFormat *)extFormat
+-(void)setHeight:(uint32_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat
 {
 	WORKSHEET(aWorkSheet)->rowheight(row, height, (xf_t *)[extFormat extendedFormat]);
 }
--(void)width:(uint32_t)width col:(uint32_t)col format:(DHExtendedFormat *)extFormat
+-(void)setWidth:(uint32_t)width forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat
 {
 	WORKSHEET(aWorkSheet)->colwidth(col, width, (xf_t *)[extFormat extendedFormat]);
 }
 
--(void)merge:(DHRECT)rect
+-(void)mergeCellsInRect:(DHRECT)rect
 {
 	unsigned16_t	first_row, first_col, last_row, last_col;
 

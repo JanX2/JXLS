@@ -29,13 +29,13 @@
 	DHWorkSheet *dhWS = [dhWB workSheetWithName:@"SHEET1"];
 	
 	//[dhWS height:100 row:1];
-	[dhWS width:10000 col:0 format:NULL];
+	[dhWS setWidth:10000 forColumn:0 defaultFormat:NULL];
 	
 	for(uint16_t idx=0; idx<10; ++idx) {
-		cell = [dhWS label:[NSString stringWithFormat:@"Row %d", idx+1] row:idx col:0];
+		cell = [dhWS setCellAtRow:idx column:0 toString:[NSString stringWithFormat:@"Row %d", idx + 1]];
 		if(idx & 1) {
 			// prove we can get the cell reference later
-			cell = [dhWS cell:idx col:0];
+			cell = [dhWS cellAtRow:idx col:0];
 		}
 		[cell setHorizontalAlignment:HALIGN_LEFT];
 		[cell setIndentation:INDENT_0 + idx];
@@ -46,19 +46,19 @@
 //	NSDate *then = [NSDate dateWithString:@"1899-01-01 12:00:00 +0000").
 	
 	for(uint16_t idx=0; idx<10; ++idx) {
-		[dhWS number:3.1415f row:idx col:1 numberFormat:FMT_GENERAL+idx];
+		[dhWS setCellAtRow:idx column:1 toDoubleValue:3.1415f withNumberFormat:FMT_GENERAL + idx];
 	}
-	
-	[dhWS width:30000 col:2 format:NULL];
+
+	[dhWS setWidth:30000 forColumn:2 defaultFormat:NULL];
 	for(uint16_t idx=0; idx<7; ++idx) {
-		cell = [dhWS label:@"Hello World" row:idx col:2];
+		cell = [dhWS setCellAtRow:idx column:2 toString:@"Hello World"];
 		[cell setHorizontalAlignment:HALIGN_GENERAL + idx];
 	}
-	
-	[dhWS width:0xFFFF col:3 format:NULL];
+
+	[dhWS setWidth:0xFFFF forColumn:3 defaultFormat:NULL];
 	for(uint16_t idx=0; idx<4; ++idx) {
-		[dhWS height:24 row:idx format:NULL];
-		cell = [dhWS label:@"Hello World" row:idx col:3];
+		[dhWS setHeight:24 forRow:idx defaultFormat:NULL];
+		cell = [dhWS setCellAtRow:idx column:3 toString:@"Hello World"];
 		[cell setVerticalAlignment:VALIGN_TOP + idx];
 	}
 	
