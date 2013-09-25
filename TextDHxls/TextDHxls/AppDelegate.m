@@ -28,7 +28,7 @@
 	
 	DHWorkSheet *workSheet = [workBook workSheetWithName:@"SHEET1"];
 	
-	//[workSheet height:100 row:1];
+	//[workSheet setHeight:100 forRow:1 defaultFormat:NULL];
 	[workSheet setWidth:10000 forColumn:0 defaultFormat:NULL];
 	
 	for(uint32_t idx=0; idx<10; ++idx) {
@@ -40,7 +40,7 @@
 		[cell setHorizontalAlignment:HALIGN_LEFT];
 		[cell setIndentation:INDENT_0 + idx];
 	}
-//	[workSheet merge:(NSRect){{10, 10}, {3, 3} }];
+//	[workSheet mergeCellsInRect:(NSRect){{10, 10}, {3, 3}}];
 	
 //	NSData *now = [NSDate date];
 //	NSDate *then = [NSDate dateWithString:@"1899-01-01 12:00:00 +0000").
