@@ -12,7 +12,7 @@
 #import "DHWorkSheet.h"
 #import "DHCell.h"
 #else
-#import <DHxls/xlstypes.h>
+#import <DHxls/common/xlstypes.h>
 #import <DHxls/xlslib.h>
 #import <DHxls/DHWorkSheet.h>
 #import <DHxls/DHCell.h>
