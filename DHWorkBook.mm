@@ -35,8 +35,8 @@ using namespace xlslib_strings;
 
 @implementation DHWorkBook
 {
-	void						*aBook;						// xlslib_core::workbook
-	NSMutableArray				*workSheets;	
+	void						*_workBook;						// xlslib_core::workbook
+	NSMutableArray				*_workSheets;
 }
 
 -(instancetype)init
@@ -44,15 +44,15 @@ using namespace xlslib_strings;
 	self = [super init];
 	
 	// only time we actually allocate a C++ object
-	aBook = new workbook;
+	_workBook = new workbook;
 	
-	workSheets = [NSMutableArray arrayWithCapacity:3];  
+	_workSheets = [NSMutableArray arrayWithCapacity:3];
 	
 	return self;
 }
 -(void)dealloc
 {
-	delete WORKBOOK(aBook);	
+	delete WORKBOOK(_workBook);
 }
 
 -(DHWorkSheet *)workSheetWithName:(NSString *)name
@@ -71,26 +71,26 @@ using namespace xlslib_strings;
 	uniStr.assign(uniName);
 	free(uniName);
 	
-	ws = WORKBOOK(aBook)->sheet(uniStr);
+	ws = WORKBOOK(_workBook)->sheet(uniStr);
 	
 	aWorkSheet = [[DHWorkSheet alloc] initWithWorkSheet:ws];
-	[workSheets addObject:aWorkSheet];
+	[_workSheets addObject:aWorkSheet];
 	
 	return aWorkSheet;
 }
 -(DHWorkSheet *)workSheetForOffset:(uint16_t)offset
 {
-	if([workSheets count] < offset) {
+	if([_workSheets count] < offset) {
 		return nil;
 	}
-	return [workSheets objectAtIndex:offset];
+	return [_workSheets objectAtIndex:offset];
 }
 -(DHFont *)fontWithName:(NSString *)name
 {	
 	DHFont				*aFont;
 	font_t				*ft;
 	
-	ft = WORKBOOK(aBook)->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
+	ft = WORKBOOK(_workBook)->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
 
 	aFont = [[DHFont alloc] initWithFont:ft];
 	
@@ -111,7 +111,7 @@ using namespace xlslib_strings;
 	uniStr.assign(uniName);
 	free(uniName);
 
-	ft = WORKBOOK(aBook)->format(uniStr);
+	ft = WORKBOOK(_workBook)->format(uniStr);
 
 	format = [(DHFormat *)[DHFormat alloc] initWithFormat:ft];
 	
@@ -127,9 +127,9 @@ using namespace xlslib_strings;
 	xf_t				*ft;
 
 	if(name) {
-		ft = WORKBOOK(aBook)->xformat((font_t *)[name font]);
+		ft = WORKBOOK(_workBook)->xformat((font_t *)[name font]);
 	} else {
-		ft = WORKBOOK(aBook)->xformat();
+		ft = WORKBOOK(_workBook)->xformat();
 	}
 	
 	xFormat = [[DHExtendedFormat alloc] initWithExtendedFormat:ft];
@@ -141,25 +141,25 @@ using namespace xlslib_strings;
 {
 	bool ret;
 
-	ret = WORKBOOK(aBook)->property(prop, [content cStringUsingEncoding:NSUTF8StringEncoding]);
+	ret = WORKBOOK(_workBook)->property(prop, [content cStringUsingEncoding:NSUTF8StringEncoding]);
 
 	return ret ? YES : NO;
 }
 -(void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert
 {
-	WORKBOOK(aBook)->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
+	WORKBOOK(_workBook)->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
 }
 -(void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert
 {
-	WORKBOOK(aBook)->windSize((unsigned16_t)horz, (unsigned16_t)vert);
+	WORKBOOK(_workBook)->windSize((unsigned16_t)horz, (unsigned16_t)vert);
 }
 -(void)firstTab:(uint16_t)tab
 {
-	WORKBOOK(aBook)->firstTab((unsigned16_t)tab);
+	WORKBOOK(_workBook)->firstTab((unsigned16_t)tab);
 }
 -(void)tabBarWidth:(uint16_t)width
 {
-	WORKBOOK(aBook)->tabBarWidth((unsigned16_t)width);
+	WORKBOOK(_workBook)->tabBarWidth((unsigned16_t)width);
 }
 
 
@@ -169,6 +169,6 @@ using namespace xlslib_strings;
 	
 	filename = [name cStringUsingEncoding:NSUTF8StringEncoding];
 	
-	return WORKBOOK(aBook)->Dump(filename);
+	return WORKBOOK(_workBook)->Dump(filename);
 }
 @end

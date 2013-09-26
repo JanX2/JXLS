@@ -24,29 +24,29 @@ using namespace xlslib_strings;
 
 @implementation DHFont
 {
-	void		*aFont;		// xlslib_core::CFont *
+	void		*_font;		// xlslib_core::CFont *
 }
 
 -(instancetype)initWithFont:(void *)ft
 {
 	self = [super init];
 	
-	aFont = ft;
+	_font = ft;
 	
 	return self;
 }
 -(void *)font
 {
-	return aFont;
+	return _font;
 }
 
 -(void)setName:(NSString *)name
 {
-	FONT(aFont)->SetName([name cStringUsingEncoding:NSASCIIStringEncoding]);
+	FONT(_font)->SetName([name cStringUsingEncoding:NSASCIIStringEncoding]);
 }
 -(NSString *)name
 {
-	const std::string&	name = FONT(aFont)->GetName();
+	const std::string&	name = FONT(_font)->GetName();
 	
 	NSString *string = [NSString stringWithCString:name.c_str() encoding:NSASCIIStringEncoding];
 	
@@ -54,97 +54,97 @@ using namespace xlslib_strings;
 }
 -(void)setHeight:(uint16_t)fntheight
 {
-	FONT(aFont)->SetHeight(fntheight);
+	FONT(_font)->SetHeight(fntheight);
 }
 -(uint16_t)height
 {
-	return FONT(aFont)->GetHeight();
+	return FONT(_font)->GetHeight();
 }
 -(void)setBoldStyle:(boldness_option_t)fntboldness
 {
-	FONT(aFont)->SetBoldStyle(fntboldness);
+	FONT(_font)->SetBoldStyle(fntboldness);
 }
 -(uint16_t)boldStyle
 {
-	return FONT(aFont)->GetBoldStyle();
+	return FONT(_font)->GetBoldStyle();
 }
 -(void)setUnderlineStyle:(underline_option_t)fntunderline
 {
-	FONT(aFont)->SetUnderlineStyle(fntunderline);
+	FONT(_font)->SetUnderlineStyle(fntunderline);
 }
 -(uint8_t)underlineStyle
 {
-	return FONT(aFont)->GetBoldStyle();
+	return FONT(_font)->GetBoldStyle();
 }
 -(void)SetScriptStyle:(script_option_t)fntscript
 {
-	FONT(aFont)->SetScriptStyle(fntscript);
+	FONT(_font)->SetScriptStyle(fntscript);
 }
 -(uint16_t)scriptStyle
 {
-	return FONT(aFont)->GetBoldStyle();
+	return FONT(_font)->GetBoldStyle();
 }
 -(void)setColorName:(color_name_t)fntcolor
 {
-	FONT(aFont)->SetColor(fntcolor);
+	FONT(_font)->SetColor(fntcolor);
 }
 -(void)setColorIndex:(unsigned8_t)fntcolor
 {
-	FONT(aFont)->SetColor(fntcolor);
+	FONT(_font)->SetColor(fntcolor);
 }
 -(uint16_t)colorIndex
 {
-	return FONT(aFont)->GetColorIdx();
+	return FONT(_font)->GetColorIdx();
 }
 #if 1
 -(void)setItalic:(BOOL)it
 {
-	FONT(aFont)->SetItalic(it);
+	FONT(_font)->SetItalic(it);
 }
 -(BOOL)italic
 {
-	return (BOOL)FONT(aFont)->GetItalic();
+	return (BOOL)FONT(_font)->GetItalic();
 }
 -(void)setStrikeout:(BOOL)so
 {
-	FONT(aFont)->SetStrikeout(so);
+	FONT(_font)->SetStrikeout(so);
 }
 -(BOOL)strikeOut
 {
-	return (BOOL)FONT(aFont)->GetStrikeout();
+	return (BOOL)FONT(_font)->GetStrikeout();
 }
 -(void)setOutline:(BOOL)ol
 {
-	FONT(aFont)->SetOutline(ol);
+	FONT(_font)->SetOutline(ol);
 }
 -(BOOL)outline
 {
-	return (BOOL)FONT(aFont)->GetOutline();
+	return (BOOL)FONT(_font)->GetOutline();
 }
 -(void)setShadow:(BOOL)sh
 {
-	FONT(aFont)->SetShadow(sh);
+	FONT(_font)->SetShadow(sh);
 }
 -(BOOL)shadow
 {
-	return (BOOL)FONT(aFont)->GetShadow();
+	return (BOOL)FONT(_font)->GetShadow();
 }
 #endif
 
 -(void)setFamily:(uint8_t)fam
 {
-	FONT(aFont)->SetFamily(fam);
+	FONT(_font)->SetFamily(fam);
 }
 -(uint8_t)family
 {
-	return FONT(aFont)->GetFamily();
+	return FONT(_font)->GetFamily();
 }
 -(void)setCharset:(uint8_t)fam
 {
-	FONT(aFont)->SetCharset(fam);
+	FONT(_font)->SetCharset(fam);
 }
 -(uint8_t)charset
 {
-	return FONT(aFont)->GetCharset();
+	return FONT(_font)->GetCharset();
 }
 @end
