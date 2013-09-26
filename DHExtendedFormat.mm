@@ -25,7 +25,7 @@ using namespace xlslib_strings;
 
 @implementation DHExtendedFormat
 {
-	void		*_extFormat;		// xlslib_core::CExtFormat
+	xlslib_core::xf_t *_extFormat;
 }
 
 +(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat
@@ -41,7 +41,7 @@ using namespace xlslib_strings;
 {
 	self = [super init];
 	
-	_extFormat = xft;
+	_extFormat = ((xlslib_core::xf_t *)(xft));
 	
 	return self;
 }
@@ -52,122 +52,122 @@ using namespace xlslib_strings;
 
 -(void)setFont:(DHFont *)font
 {
-	 FORMAT(_extFormat)->SetFont((font_t *)[font font]);
+	_extFormat->SetFont((font_t *)[font font]);
 }
 -(DHFont *)font
 {
 	font_t *fidx;
 	
-	fidx = FORMAT(_extFormat)->GetFont();
+	fidx = _extFormat->GetFont();
 	
 	return [[DHFont alloc] initWithFont:fidx];
 }
 -(void)setFormatBuiltin:(format_number_t)formatidx
 {
-	 FORMAT(_extFormat)->SetFormat(formatidx);
+	_extFormat->SetFormat(formatidx);
 }
 -(void)setFormat:(format_t *)fmt
 {
-	 FORMAT(_extFormat)->SetFormat((format_t *)fmt);
+	_extFormat->SetFormat((format_t *)fmt);
 }
 -(void)setHorizontalAlignment:(halign_option_t)ha_option
 {
-	 FORMAT(_extFormat)->SetHAlign(ha_option);
+	_extFormat->SetHAlign(ha_option);
 }
 -(uint8_t)horizontalAlignment
 {
-	return FORMAT(_extFormat)->GetHAlign();
+	return _extFormat->GetHAlign();
 
 }
 -(void)setVerticalAlignment:(valign_option_t)va_option
 {
-	 FORMAT(_extFormat)->SetVAlign(va_option);
+	_extFormat->SetVAlign(va_option);
 }
 -(uint8_t)verticalAlignment
 {
-	return FORMAT(_extFormat)->GetVAlign();
+	return _extFormat->GetVAlign();
 
 }
 -(void)setIndentation:(indent_option_t)indent_option
 {
-	 FORMAT(_extFormat)->SetIndent(indent_option);
+	_extFormat->SetIndent(indent_option);
 }
 -(uint8_t)indentation
 {
-	return FORMAT(_extFormat)->GetIndent();
+	return _extFormat->GetIndent();
 
 }
 -(void)setTextOrientation:(txtori_option_t)ori_option
 {
-	 FORMAT(_extFormat)->SetTxtOrientation(ori_option);
+	_extFormat->SetTxtOrientation(ori_option);
 }
 -(uint8_t)textOrientation
 {
-	return FORMAT(_extFormat)->GetTxtOrientation();
+	return _extFormat->GetTxtOrientation();
 
 }
 -(void)setForegroundFillColor:(color_name_t)color
 {
-	 FORMAT(_extFormat)->SetFillFGColor(color);
+	_extFormat->SetFillFGColor(color);
 }
 -(uint8_t)foregroundFillColor
 {
-	return FORMAT(_extFormat)->GetFillFGColorIdx();
+	return _extFormat->GetFillFGColorIdx();
 
 }
 -(void)setBackgroundFillColor:(color_name_t)color
 {
-	 FORMAT(_extFormat)->SetFillBGColor(color);
+	_extFormat->SetFillBGColor(color);
 }
 -(uint8_t)backgroundFillColor
 {
-	return FORMAT(_extFormat)->GetFillBGColorIdx();
+	return _extFormat->GetFillBGColorIdx();
 
 }
 -(void)setFillStyle:(fill_option_t)fill
 {
-	 FORMAT(_extFormat)->SetFillStyle(fill);
+	_extFormat->SetFillStyle(fill);
 }
 -(uint8_t)fillStyle
 {
-	return FORMAT(_extFormat)->GetFillStyle();
+	return _extFormat->GetFillStyle();
 
 }
 -(void)setLocked:(BOOL)locked_opt
 {
-	 FORMAT(_extFormat)->SetLocked((bool)locked_opt);
+	_extFormat->SetLocked((bool)locked_opt);
 }
 -(BOOL)locked
 {
-	return (BOOL)FORMAT(_extFormat)->IsLocked();
+	return (BOOL)_extFormat->IsLocked();
 }
 -(void)setHidden:(BOOL)hidden_opt
 {
-	 FORMAT(_extFormat)->SetHidden((bool)hidden_opt);
+	_extFormat->SetHidden((bool)hidden_opt);
 }
 -(BOOL)hidden
 {
-	return (BOOL)FORMAT(_extFormat)->IsHidden();
+	return (BOOL)_extFormat->IsHidden();
 }
 -(void)setWraps:(BOOL)wrap_opt
 {
-	 FORMAT(_extFormat)->SetWrap((bool)wrap_opt);
+	_extFormat->SetWrap((bool)wrap_opt);
 }
 -(BOOL)wrap
 {
-	return (BOOL)FORMAT(_extFormat)->IsWrap();
+	return (BOOL)_extFormat->IsWrap();
 }
 -(void)setBorderStyle:(border_style_t)style forSide:(border_side_t)side
 {
-	FORMAT(_extFormat)->SetBorderStyle(side, style);
+	_extFormat->SetBorderStyle(side, style);
 }
 -(void)setBorderColor:(color_name_t)color forSide:(border_side_t)side
 {
-	FORMAT(_extFormat)->SetBorderColor(side, color);
+	_extFormat->SetBorderColor(side, color);
 }
 -(void)borderStyle:(border_side_t)side
 {
-	FORMAT(_extFormat)->GetBorderStyle(side);
+	_extFormat->GetBorderStyle(side);
 }
 
 @end
