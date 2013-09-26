@@ -30,12 +30,10 @@ using namespace xlslib_strings;
 #import "DHFormat.h"
 #import "DHExtendedFormat.h"
 
-#define WORKBOOK(a) ((xlslib_core::workbook *)(a))
-
 
 @implementation DHWorkBook
 {
-	void						*_workBook;						// xlslib_core::workbook
+	xlslib_core::workbook		*_workBook;
 	NSMutableArray				*_workSheets;
 }
 
@@ -52,7 +50,7 @@ using namespace xlslib_strings;
 }
 -(void)dealloc
 {
-	delete WORKBOOK(_workBook);
+	delete _workBook;
 }
 
 -(DHWorkSheet *)workSheetWithName:(NSString *)name
@@ -71,7 +69,7 @@ using namespace xlslib_strings;
 	uniStr.assign(uniName);
 	free(uniName);
 	
-	ws = WORKBOOK(_workBook)->sheet(uniStr);
+	ws = _workBook->sheet(uniStr);
 	
 	aWorkSheet = [[DHWorkSheet alloc] initWithWorkSheet:ws];
 	[_workSheets addObject:aWorkSheet];
@@ -90,7 +88,7 @@ using namespace xlslib_strings;
 	DHFont				*aFont;
 	font_t				*ft;
 	
-	ft = WORKBOOK(_workBook)->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
+	ft = _workBook->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
 
 	aFont = [[DHFont alloc] initWithFont:ft];
 	
@@ -111,7 +109,7 @@ using namespace xlslib_strings;
 	uniStr.assign(uniName);
 	free(uniName);
 
-	ft = WORKBOOK(_workBook)->format(uniStr);
+	ft = _workBook->format(uniStr);
 
 	format = [(DHFormat *)[DHFormat alloc] initWithFormat:ft];
 	
@@ -127,9 +125,9 @@ using namespace xlslib_strings;
 	xf_t				*ft;
 
 	if(name) {
-		ft = WORKBOOK(_workBook)->xformat((font_t *)[name font]);
+		ft = _workBook->xformat((font_t *)[name font]);
 	} else {
-		ft = WORKBOOK(_workBook)->xformat();
+		ft = _workBook->xformat();
 	}
 	
 	xFormat = [[DHExtendedFormat alloc] initWithExtendedFormat:ft];
@@ -141,25 +139,25 @@ using namespace xlslib_strings;
 {
 	bool ret;
 
-	ret = WORKBOOK(_workBook)->property(prop, [content cStringUsingEncoding:NSUTF8StringEncoding]);
+	ret = _workBook->property(prop, [content cStringUsingEncoding:NSUTF8StringEncoding]);
 
 	return ret ? YES : NO;
 }
 -(void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert
 {
-	WORKBOOK(_workBook)->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
+	_workBook->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
 }
 -(void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert
 {
-	WORKBOOK(_workBook)->windSize((unsigned16_t)horz, (unsigned16_t)vert);
+	_workBook->windSize((unsigned16_t)horz, (unsigned16_t)vert);
 }
 -(void)firstTab:(uint16_t)tab
 {
-	WORKBOOK(_workBook)->firstTab((unsigned16_t)tab);
+	_workBook->firstTab((unsigned16_t)tab);
 }
 -(void)tabBarWidth:(uint16_t)width
 {
-	WORKBOOK(_workBook)->tabBarWidth((unsigned16_t)width);
+	_workBook->tabBarWidth((unsigned16_t)width);
 }
 
 
@@ -169,6 +167,6 @@ using namespace xlslib_strings;
 	
 	filename = [name cStringUsingEncoding:NSUTF8StringEncoding];
 	
-	return WORKBOOK(_workBook)->Dump(filename);
+	return _workBook->Dump(filename);
 }
 @end
