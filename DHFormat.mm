@@ -24,14 +24,14 @@ using namespace xlslib_strings;
 
 @implementation DHFormat
 {
-	void		*_format;		// xlslib_core::CFormat
+	xlslib_core::format_t *_format;
 }
 
 -(instancetype)initWithFormat:(void *)ft
 {
 	self = [super init];
 	
-	_format = ft;
+	_format = FORMAT(ft);
 	
 	return self;
 }
