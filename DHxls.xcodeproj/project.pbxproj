@@ -127,7 +127,7 @@
 		DE1A85900E9BB227005F2430 /* DHFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHFormat.mm; sourceTree = "<group>"; };
 		DE1A85930E9BB245005F2430 /* DHExtendedFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHExtendedFormat.h; sourceTree = "<group>"; };
 		DE1A85940E9BB245005F2430 /* DHExtendedFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DHExtendedFormat.mm; sourceTree = "<group>"; };
-		DE1A85A10E9BB4DD005F2430 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DE1A85A10E9BB4DD005F2430 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DE85A29716E3E4EE00CBE726 /* xls_poppack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xls_poppack.h; path = External/xlslib/xlslib/src/common/xls_poppack.h; sourceTree = "<group>"; };
 		DE85A29816E3E4EE00CBE726 /* xls_pshpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xls_pshpack1.h; path = External/xlslib/xlslib/src/common/xls_pshpack1.h; sourceTree = "<group>"; };
 		DE85A29916E3E4EE00CBE726 /* xls_pshpack2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xls_pshpack2.h; path = External/xlslib/xlslib/src/common/xls_pshpack2.h; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 		0867D691FE84028FC02AAC07 /* DHxls */ = {
 			isa = PBXGroup;
 			children = (
-				DE1A85A10E9BB4DD005F2430 /* README */,
+				DE1A85A10E9BB4DD005F2430 /* README.md */,
 				DE1A83480E9AF33B005F2430 /* xlconfig.h */,
 				DE1A84090E9AF51F005F2430 /* Objective-C++ Classes */,
 				08FB77AEFE84172EC02AAC07 /* C++ Classes */,
