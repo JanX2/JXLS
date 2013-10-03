@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'TextJXLS' target in the 'TextJXLS' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#define __FRAMEWORK__
+#endif

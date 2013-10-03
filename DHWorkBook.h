@@ -1,6 +1,6 @@
 //
 //  DHWorkBook.h
-//  DHxls
+//  JXLS
 //
 //  Created by David Hoerl on 10/6/08.
 //  Copyright 2008-2013 David Hoerl. All rights reserved.
@@ -12,10 +12,10 @@
 #import "DHWorkSheet.h"
 #import "DHCell.h"
 #else
-#import <DHxls/common/xlstypes.h>
-#import <DHxls/xlslib.h>
-#import <DHxls/DHWorkSheet.h>
-#import <DHxls/DHCell.h>
+#import <JXLS/common/xlstypes.h>
+#import <JXLS/xlslib.h>
+#import <JXLS/DHWorkSheet.h>
+#import <JXLS/DHCell.h>
 #endif
 
 @class DHWorkSheet;

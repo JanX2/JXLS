@@ -1,7 +1,7 @@
-DHxls
+JXLS
 =====
 
-DHxls is an ObjC++ wrapper and framework for xlslib. xlslib is a C++/C library to construct Excel .xls files in code. 
+JXLS is an ObjC++ wrapper and framework for xlslib. xlslib is a C++/C library to construct Excel .xls files in code. 
 
 There is an Xcode project for building on iOS, but it is not actively maintained. If it doesn’t *just work* please fix and send a pull request!
 
@@ -27,7 +27,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 Notes
 -----
 
-- This project allows you to both create a Framework called DHxls, and to build a test file that uses it
+- This project allows you to both create a Framework called JXLS, and to build a test file that uses it
 
 - To configure this project, you must 
 	git submodule update --init --recursive
@@ -38,7 +38,7 @@ Notes
 Usage
 -----
 
-Add “DHxls.xcodeproj” to your project (preferably into “Frameworks” to keep things tidy).
+Add “JXLS.xcodeproj” to your project (preferably into “Frameworks” to keep things tidy).
 
 ###Xcode 4
 
@@ -58,7 +58,7 @@ In your target’s “Build Phases”:
 
 ###Both
 
-Add “DHxls.framework” to the following build phases (via the +-buttons):
+Add “JXLS.framework” to the following build phases (via the +-buttons):
 
 * “Target Dependencies”
 * “Link Binary With Libraries”
@@ -66,4 +66,4 @@ Add “DHxls.framework” to the following build phases (via the +-buttons):
 
 And finally add the header to your code:
 
-    #import <DHxls/DHWorkBook.h>
+    #import <JXLS/DHWorkBook.h>
