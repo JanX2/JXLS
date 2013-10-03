@@ -1,7 +1,17 @@
 JXLS
-=====
+====
 
-JXLS is an ObjC++ wrapper and framework for xlslib. xlslib is a C++/C library to construct Excel .xls files in code. 
+JXLS is an ObjC++ wrapper and framework for xlslib. xlslib is a C++/C library to construct Microsoft Excel™ .xls files in code. 
+
+This Framework is based on the xlslib open source project and includes it as a git submodule.
+
+To configure this project, you should 
+
+	git submodule update --init --recursive
+
+after cloning from within your JXLS git repo.
+
+The xlconfig.h file was produced by doing a "./bootstrap" inside the root xlslib folder - you can replace it with the same if you wish. This library has only been tested on 64-bit Intel as it uses ARC.
 
 There is an Xcode project for building on iOS, but it is not actively maintained. If it doesn’t *just work* please fix and send a pull request!
 
@@ -22,17 +32,6 @@ Redistribution and use in source and binary forms, with or without modification,
  • Neither the name of David Hoerl nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
-Notes
------
-
-- This project allows you to both create a Framework called JXLS, and to build a test file that uses it
-
-- To configure this project, you must 
-	git submodule update --init --recursive
-
-- The xlconfig.h file was produced by doing a "./bootstrap" inside the xlslib folder - you can replace it with the same if you wish. This library has only been tested 64 bit Intel as it now uses ARC
 
 
 Usage
