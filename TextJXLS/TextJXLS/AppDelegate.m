@@ -22,6 +22,8 @@
 
 - (void)myTest
 {
+	NSString *filePath = @"foo.xls";
+	
 	JXLSCell				*cell;
 		
 	JXLSWorkBook *workBook = [JXLSWorkBook new];
@@ -62,11 +64,13 @@
 		[cell setVerticalAlignment:VALIGN_TOP + idx];
 	}
 	
-	int fud = [workBook writeToFile:@"foo.xls"];
+	int fud = [workBook writeToFile:filePath];
 
 NSLog(@"OK - bye! fud=%d", fud);
 	NSString *xlsApp = nil;//@"Microsoft Excel";
-	[[NSWorkspace sharedWorkspace] openFile:@"foo.xls" withApplication:xlsApp andDeactivate:YES];
+	[[NSWorkspace sharedWorkspace] openFile:filePath
+							withApplication:xlsApp
+							  andDeactivate:YES];
 }
 
 @end
