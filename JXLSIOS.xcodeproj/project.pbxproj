@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D7F076217FD72A300D4F342 /* xlstypes.h in Copy Common Headers */ = {isa = PBXBuildFile; fileRef = DEF79A5516E80BFD00E4B803 /* xlstypes.h */; };
 		DEF79A2616E80B5200E4B803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF79A2516E80B5200E4B803 /* Foundation.framework */; };
 		DEF79A4216E80BCC00E4B803 /* JXLSCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEF79A3516E80BCC00E4B803 /* JXLSCell.mm */; };
 		DEF79A4316E80BCC00E4B803 /* JXLSExtendedFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEF79A3716E80BCC00E4B803 /* JXLSExtendedFormat.mm */; };
@@ -52,34 +53,44 @@
 		DEF79ACF16E80BFD00E4B803 /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79AA616E80BFD00E4B803 /* unit.cpp */; };
 		DEF79AD016E80BFD00E4B803 /* workbook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79AA816E80BFD00E4B803 /* workbook.cpp */; };
 		DEF79ADE16EA89BD00E4B803 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF79ADA16EA89BD00E4B803 /* CoreGraphics.framework */; };
-		DEF79B1C16EA93A800E4B803 /* JXLSCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A3416E80BCC00E4B803 /* JXLSCell.h */; };
-		DEF79B1D16EA93A800E4B803 /* JXLSExtendedFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A3616E80BCC00E4B803 /* JXLSExtendedFormat.h */; };
-		DEF79B1E16EA93A800E4B803 /* JXLSFont.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A3816E80BCC00E4B803 /* JXLSFont.h */; };
-		DEF79B1F16EA93A800E4B803 /* JXLSFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A3A16E80BCC00E4B803 /* JXLSFormat.h */; };
-		DEF79B2016EA93A800E4B803 /* JXLSRange.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A3C16E80BCC00E4B803 /* JXLSRange.h */; };
-		DEF79B2116EA93A800E4B803 /* JXLSWorkBook.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A3E16E80BCC00E4B803 /* JXLSWorkBook.h */; };
-		DEF79B2216EA93A800E4B803 /* JXLSWorkSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A4016E80BCC00E4B803 /* JXLSWorkSheet.h */; };
-		DEF79B2316EA943A00E4B803 /* xlstypes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79A5516E80BFD00E4B803 /* xlstypes.h */; };
-		DEF79B2816EA970100E4B803 /* xlslib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEF79AAA16E80BFD00E4B803 /* xlslib.h */; };
+		DEF79B1C16EA93A800E4B803 /* JXLSCell.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A3416E80BCC00E4B803 /* JXLSCell.h */; };
+		DEF79B1D16EA93A800E4B803 /* JXLSExtendedFormat.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A3616E80BCC00E4B803 /* JXLSExtendedFormat.h */; };
+		DEF79B1E16EA93A800E4B803 /* JXLSFont.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A3816E80BCC00E4B803 /* JXLSFont.h */; };
+		DEF79B1F16EA93A800E4B803 /* JXLSFormat.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A3A16E80BCC00E4B803 /* JXLSFormat.h */; };
+		DEF79B2016EA93A800E4B803 /* JXLSRange.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A3C16E80BCC00E4B803 /* JXLSRange.h */; };
+		DEF79B2116EA93A800E4B803 /* JXLSWorkBook.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A3E16E80BCC00E4B803 /* JXLSWorkBook.h */; };
+		DEF79B2216EA93A800E4B803 /* JXLSWorkSheet.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79A4016E80BCC00E4B803 /* JXLSWorkSheet.h */; };
+		DEF79B2816EA970100E4B803 /* xlslib.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DEF79AAA16E80BFD00E4B803 /* xlslib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DEF79A2016E80B5200E4B803 /* CopyFiles */ = {
+		3D7F076117FD728900D4F342 /* Copy Common Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${PRODUCT_NAME}/common";
+			dstSubfolderSpec = 16;
+			files = (
+				3D7F076217FD72A300D4F342 /* xlstypes.h in Copy Common Headers */,
+			);
+			name = "Copy Common Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF79A2016E80B5200E4B803 /* Copy Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				DEF79B2816EA970100E4B803 /* xlslib.h in CopyFiles */,
-				DEF79B2316EA943A00E4B803 /* xlstypes.h in CopyFiles */,
-				DEF79B1C16EA93A800E4B803 /* JXLSCell.h in CopyFiles */,
-				DEF79B1D16EA93A800E4B803 /* JXLSExtendedFormat.h in CopyFiles */,
-				DEF79B1E16EA93A800E4B803 /* JXLSFont.h in CopyFiles */,
-				DEF79B1F16EA93A800E4B803 /* JXLSFormat.h in CopyFiles */,
-				DEF79B2016EA93A800E4B803 /* JXLSRange.h in CopyFiles */,
-				DEF79B2116EA93A800E4B803 /* JXLSWorkBook.h in CopyFiles */,
-				DEF79B2216EA93A800E4B803 /* JXLSWorkSheet.h in CopyFiles */,
+				DEF79B2816EA970100E4B803 /* xlslib.h in Copy Headers */,
+				DEF79B1C16EA93A800E4B803 /* JXLSCell.h in Copy Headers */,
+				DEF79B1D16EA93A800E4B803 /* JXLSExtendedFormat.h in Copy Headers */,
+				DEF79B1E16EA93A800E4B803 /* JXLSFont.h in Copy Headers */,
+				DEF79B1F16EA93A800E4B803 /* JXLSFormat.h in Copy Headers */,
+				DEF79B2016EA93A800E4B803 /* JXLSRange.h in Copy Headers */,
+				DEF79B2116EA93A800E4B803 /* JXLSWorkBook.h in Copy Headers */,
+				DEF79B2216EA93A800E4B803 /* JXLSWorkSheet.h in Copy Headers */,
 			);
+			name = "Copy Headers";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -390,7 +401,8 @@
 			buildPhases = (
 				DEF79A1E16E80B5200E4B803 /* Sources */,
 				DEF79A1F16E80B5200E4B803 /* Frameworks */,
-				DEF79A2016E80B5200E4B803 /* CopyFiles */,
+				DEF79A2016E80B5200E4B803 /* Copy Headers */,
+				3D7F076117FD728900D4F342 /* Copy Common Headers */,
 			);
 			buildRules = (
 			);
