@@ -3,7 +3,8 @@
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
-//  Copyright 2008-2013 David Hoerl. All rights reserved.
+//  Copyright (c) 2008-2013 David Hoerl. Some rights reserved: <http://opensource.org/licenses/BSD-3-Clause>
+//  Copyright (c) 2013 Jan Weiß. Some rights reserved: <http://opensource.org/licenses/BSD-3-Clause>
 //
 
 #include <stdint.h>
