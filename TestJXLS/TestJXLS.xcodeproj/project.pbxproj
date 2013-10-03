@@ -67,7 +67,6 @@
 		DE85A2CB16E6425C00CBE726 = {
 			isa = PBXGroup;
 			children = (
-				DE85A2F716E6455400CBE726 /* JXLS.xcodeproj */,
 				DE85A2DD16E6425C00CBE726 /* TestJXLS */,
 				DE85A2D616E6425C00CBE726 /* Frameworks */,
 				DE85A2D516E6425C00CBE726 /* Products */,
@@ -85,6 +84,7 @@
 		DE85A2D616E6425C00CBE726 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE85A2F716E6455400CBE726 /* JXLS.xcodeproj */,
 				DE85A2D716E6425C00CBE726 /* Cocoa.framework */,
 				DE85A2D916E6425C00CBE726 /* Other Frameworks */,
 			);

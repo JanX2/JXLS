@@ -79,7 +79,6 @@
 		DEF79AE316EA91AB00E4B803 = {
 			isa = PBXGroup;
 			children = (
-				DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */,
 				DEF79AF516EA91AB00E4B803 /* TestJXLSiOS */,
 				DEF79AEE16EA91AB00E4B803 /* Frameworks */,
 				DEF79AED16EA91AB00E4B803 /* Products */,
@@ -97,6 +96,7 @@
 		DEF79AEE16EA91AB00E4B803 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */,
 				DEF79B2916EA9A8200E4B803 /* libc++.dylib */,
 				DEF79AEF16EA91AB00E4B803 /* UIKit.framework */,
 				DEF79AF116EA91AB00E4B803 /* Foundation.framework */,
