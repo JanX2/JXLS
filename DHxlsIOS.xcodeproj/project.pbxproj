@@ -188,7 +188,7 @@
 		DEF79AA716E80BFD00E4B803 /* unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unit.h; sourceTree = "<group>"; };
 		DEF79AA816E80BFD00E4B803 /* workbook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = workbook.cpp; sourceTree = "<group>"; };
 		DEF79AA916E80BFD00E4B803 /* workbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = workbook.h; sourceTree = "<group>"; };
-		DEF79AAA16E80BFD00E4B803 /* xlslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xlslib.h; path = ../xlslib/src/xlslib.h; sourceTree = "<group>"; };
+		DEF79AAA16E80BFD00E4B803 /* xlslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xlslib.h; path = External/xlslib/xlslib/src/xlslib.h; sourceTree = "<group>"; };
 		DEF79AD216E8E5E900E4B803 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		DEF79AD516E8F37000E4B803 /* DHxls_Prefix_IOS.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxls_Prefix_IOS.pch; sourceTree = "<group>"; };
 		DEF79AD616E8F3C700E4B803 /* xlconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlconfig.h; sourceTree = "<group>"; };
@@ -284,7 +284,7 @@
 				DEF79A5616E80BFD00E4B803 /* xlsys.h */,
 			);
 			name = common;
-			path = ../xlslib/src/common;
+			path = External/xlslib/xlslib/src/common;
 			sourceTree = "<group>";
 		};
 		DEF79A5716E80BFD00E4B803 /* oledoc */ = {
@@ -300,7 +300,7 @@
 				DEF79A5F16E80BFD00E4B803 /* oleprop.h */,
 			);
 			name = oledoc;
-			path = ../xlslib/src/oledoc;
+			path = External/xlslib/xlslib/src/oledoc;
 			sourceTree = "<group>";
 		};
 		DEF79A6016E80BFD00E4B803 /* xlslib */ = {
@@ -378,7 +378,7 @@
 				DEF79AA916E80BFD00E4B803 /* workbook.h */,
 			);
 			name = xlslib;
-			path = ../xlslib/src/xlslib;
+			path = External/xlslib/xlslib/src/xlslib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"../xlslib/src/**",
+					"External/xlslib/xlslib/src/**",
 					..,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -536,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"../xlslib/src/**",
+					"External/xlslib/xlslib/src/**",
 					..,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;

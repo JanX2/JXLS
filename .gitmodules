@@ -1,0 +1,3 @@
+[submodule "External/xlslib"]
+	path = External/xlslib
+	url = https://github.com/JanX2/xlslib.git
