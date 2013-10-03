@@ -25,29 +25,29 @@
 /* Begin PBXContainerItemProxy section */
 		DEF79B1616EA91CF00E4B803 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEF79B1216EA91CE00E4B803 /* JXLSIOS.xcodeproj */;
+			containerPortal = DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DEF79A2216E80B5200E4B803;
-			remoteInfo = JXLSIOS;
+			remoteInfo = JXLSiOS;
 		};
 		DEF79B1816EA91DC00E4B803 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEF79B1216EA91CE00E4B803 /* JXLSIOS.xcodeproj */;
+			containerPortal = DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = DEF79A2116E80B5200E4B803;
-			remoteInfo = JXLSIOS;
+			remoteInfo = JXLSiOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DEF79AEC16EA91AB00E4B803 /* TestJXLSIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestJXLSIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF79AEC16EA91AB00E4B803 /* TestJXLSiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestJXLSiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF79AEF16EA91AB00E4B803 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DEF79AF116EA91AB00E4B803 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEF79AF316EA91AB00E4B803 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DEF79AF716EA91AB00E4B803 /* TestJXLSIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestJXLSIOS-Info.plist"; sourceTree = "<group>"; };
+		DEF79AF716EA91AB00E4B803 /* TestJXLSiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestJXLSiOS-Info.plist"; sourceTree = "<group>"; };
 		DEF79AF916EA91AB00E4B803 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DEF79AFB16EA91AB00E4B803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DEF79AFD16EA91AB00E4B803 /* TestJXLSIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestJXLSIOS-Prefix.pch"; sourceTree = "<group>"; };
+		DEF79AFD16EA91AB00E4B803 /* TestJXLSiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestJXLSiOS-Prefix.pch"; sourceTree = "<group>"; };
 		DEF79AFE16EA91AB00E4B803 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEF79AFF16EA91AB00E4B803 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DEF79B0116EA91AB00E4B803 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		DEF79B0716EA91AB00E4B803 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DEF79B0816EA91AB00E4B803 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DEF79B0B16EA91AB00E4B803 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		DEF79B1216EA91CE00E4B803 /* JXLSIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXLSIOS.xcodeproj; path = ../JXLSIOS.xcodeproj; sourceTree = "<group>"; };
+		DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXLSiOS.xcodeproj; path = ../JXLSiOS.xcodeproj; sourceTree = "<group>"; };
 		DEF79B2916EA9A8200E4B803 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -79,8 +79,8 @@
 		DEF79AE316EA91AB00E4B803 = {
 			isa = PBXGroup;
 			children = (
-				DEF79B1216EA91CE00E4B803 /* JXLSIOS.xcodeproj */,
-				DEF79AF516EA91AB00E4B803 /* TestJXLSIOS */,
+				DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */,
+				DEF79AF516EA91AB00E4B803 /* TestJXLSiOS */,
 				DEF79AEE16EA91AB00E4B803 /* Frameworks */,
 				DEF79AED16EA91AB00E4B803 /* Products */,
 			);
@@ -89,7 +89,7 @@
 		DEF79AED16EA91AB00E4B803 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEF79AEC16EA91AB00E4B803 /* TestJXLSIOS.app */,
+				DEF79AEC16EA91AB00E4B803 /* TestJXLSiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEF79AF516EA91AB00E4B803 /* TestJXLSIOS */ = {
+		DEF79AF516EA91AB00E4B803 /* TestJXLSiOS */ = {
 			isa = PBXGroup;
 			children = (
 				DEF79AFE16EA91AB00E4B803 /* AppDelegate.h */,
@@ -115,16 +115,16 @@
 				DEF79B0A16EA91AB00E4B803 /* ViewController.xib */,
 				DEF79AF616EA91AB00E4B803 /* Supporting Files */,
 			);
-			path = TestJXLSIOS;
+			path = TestJXLSiOS;
 			sourceTree = "<group>";
 		};
 		DEF79AF616EA91AB00E4B803 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DEF79AF716EA91AB00E4B803 /* TestJXLSIOS-Info.plist */,
+				DEF79AF716EA91AB00E4B803 /* TestJXLSiOS-Info.plist */,
 				DEF79AF816EA91AB00E4B803 /* InfoPlist.strings */,
 				DEF79AFB16EA91AB00E4B803 /* main.m */,
-				DEF79AFD16EA91AB00E4B803 /* TestJXLSIOS-Prefix.pch */,
+				DEF79AFD16EA91AB00E4B803 /* TestJXLSiOS-Prefix.pch */,
 				DEF79B0116EA91AB00E4B803 /* Default.png */,
 				DEF79B0316EA91AB00E4B803 /* Default@2x.png */,
 				DEF79B0516EA91AB00E4B803 /* Default-568h@2x.png */,
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEF79AEB16EA91AB00E4B803 /* TestJXLSIOS */ = {
+		DEF79AEB16EA91AB00E4B803 /* TestJXLSiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEF79B0F16EA91AB00E4B803 /* Build configuration list for PBXNativeTarget "TestJXLSIOS" */;
+			buildConfigurationList = DEF79B0F16EA91AB00E4B803 /* Build configuration list for PBXNativeTarget "TestJXLSiOS" */;
 			buildPhases = (
 				DEF79AE816EA91AB00E4B803 /* Sources */,
 				DEF79AE916EA91AB00E4B803 /* Frameworks */,
@@ -156,9 +156,9 @@
 			dependencies = (
 				DEF79B1916EA91DC00E4B803 /* PBXTargetDependency */,
 			);
-			name = TestJXLSIOS;
-			productName = TestJXLSIOS;
-			productReference = DEF79AEC16EA91AB00E4B803 /* TestJXLSIOS.app */;
+			name = TestJXLSiOS;
+			productName = TestJXLSiOS;
+			productReference = DEF79AEC16EA91AB00E4B803 /* TestJXLSiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "David Hoerl";
 			};
-			buildConfigurationList = DEF79AE716EA91AB00E4B803 /* Build configuration list for PBXProject "TestJXLSIOS" */;
+			buildConfigurationList = DEF79AE716EA91AB00E4B803 /* Build configuration list for PBXProject "TestJXLSiOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,12 +183,12 @@
 			projectReferences = (
 				{
 					ProductGroup = DEF79B1316EA91CE00E4B803 /* Products */;
-					ProjectRef = DEF79B1216EA91CE00E4B803 /* JXLSIOS.xcodeproj */;
+					ProjectRef = DEF79B1216EA91CE00E4B803 /* JXLSiOS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				DEF79AEB16EA91AB00E4B803 /* TestJXLSIOS */,
+				DEF79AEB16EA91AB00E4B803 /* TestJXLSiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		DEF79B1916EA91DC00E4B803 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JXLSIOS;
+			name = JXLSiOS;
 			targetProxy = DEF79B1816EA91DC00E4B803 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -323,8 +323,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestJXLSIOS/TestJXLSIOS-Prefix.pch";
-				INFOPLIST_FILE = "TestJXLSIOS/TestJXLSIOS-Info.plist";
+				GCC_PREFIX_HEADER = "TestJXLSiOS/TestJXLSiOS-Prefix.pch";
+				INFOPLIST_FILE = "TestJXLSiOS/TestJXLSiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -334,8 +334,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestJXLSIOS/TestJXLSIOS-Prefix.pch";
-				INFOPLIST_FILE = "TestJXLSIOS/TestJXLSIOS-Info.plist";
+				GCC_PREFIX_HEADER = "TestJXLSiOS/TestJXLSiOS-Prefix.pch";
+				INFOPLIST_FILE = "TestJXLSiOS/TestJXLSiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -344,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEF79AE716EA91AB00E4B803 /* Build configuration list for PBXProject "TestJXLSIOS" */ = {
+		DEF79AE716EA91AB00E4B803 /* Build configuration list for PBXProject "TestJXLSiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEF79B0D16EA91AB00E4B803 /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEF79B0F16EA91AB00E4B803 /* Build configuration list for PBXNativeTarget "TestJXLSIOS" */ = {
+		DEF79B0F16EA91AB00E4B803 /* Build configuration list for PBXNativeTarget "TestJXLSiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEF79B1016EA91AB00E4B803 /* Debug */,

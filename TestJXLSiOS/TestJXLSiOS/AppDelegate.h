@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  TestJXLSIOS
+//  TestJXLSiOS
 //
 //  Created by David Hoerl on 3/8/13.
 //  Copyright (c) 2013 David Hoerl. All rights reserved.

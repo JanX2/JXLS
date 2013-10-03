@@ -201,7 +201,7 @@
 		DEF79AA916E80BFD00E4B803 /* workbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = workbook.h; sourceTree = "<group>"; };
 		DEF79AAA16E80BFD00E4B803 /* xlslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xlslib.h; path = External/xlslib/xlslib/src/xlslib.h; sourceTree = "<group>"; };
 		DEF79AD216E8E5E900E4B803 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		DEF79AD516E8F37000E4B803 /* JXLS_Prefix_IOS.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS_Prefix_IOS.pch; sourceTree = "<group>"; };
+		DEF79AD516E8F37000E4B803 /* JXLS_Prefix_iOS.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS_Prefix_iOS.pch; sourceTree = "<group>"; };
 		DEF79AD616E8F3C700E4B803 /* xlconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlconfig.h; sourceTree = "<group>"; };
 		DEF79ADA16EA89BD00E4B803 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -225,7 +225,7 @@
 				DEF79AD216E8E5E900E4B803 /* README.md */,
 				DEF79A4916E80BDF00E4B803 /* C++ */,
 				DEF79A3316E80BB300E4B803 /* ObjectiveC++ */,
-				DEF79AD516E8F37000E4B803 /* JXLS_Prefix_IOS.pch */,
+				DEF79AD516E8F37000E4B803 /* JXLS_Prefix_iOS.pch */,
 				DEF79A2416E80B5200E4B803 /* Frameworks */,
 				DEF79A2316E80B5200E4B803 /* Products */,
 			);
@@ -409,7 +409,7 @@
 			dependencies = (
 			);
 			name = JXLS;
-			productName = JXLSIOS;
+			productName = JXLSiOS;
 			productReference = DEF79A2216E80B5200E4B803 /* libJXLS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -422,7 +422,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "David Hoerl";
 			};
-			buildConfigurationList = DEF79A1D16E80B5200E4B803 /* Build configuration list for PBXProject "JXLSIOS" */;
+			buildConfigurationList = DEF79A1D16E80B5200E4B803 /* Build configuration list for PBXProject "JXLSiOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -563,7 +563,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/JXLS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = JXLS_Prefix_IOS.pch;
+				GCC_PREFIX_HEADER = JXLS_Prefix_iOS.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -575,7 +575,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/JXLS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = JXLS_Prefix_IOS.pch;
+				GCC_PREFIX_HEADER = JXLS_Prefix_iOS.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -585,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEF79A1D16E80B5200E4B803 /* Build configuration list for PBXProject "JXLSIOS" */ = {
+		DEF79A1D16E80B5200E4B803 /* Build configuration list for PBXProject "JXLSiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEF79A2E16E80B5200E4B803 /* Debug */,
