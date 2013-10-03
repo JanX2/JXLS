@@ -67,7 +67,7 @@
 		3D7F076117FD728900D4F342 /* Copy Common Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "${PRODUCT_NAME}/common";
+			dstPath = "include/${PRODUCT_NAME}/common";
 			dstSubfolderSpec = 16;
 			files = (
 				3D7F076217FD72A300D4F342 /* xlstypes.h in Copy Common Headers */,
