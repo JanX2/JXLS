@@ -1,5 +1,5 @@
 //
-//  DHCell.mm
+//  JXLSCell.mm
 //  JXLS
 //
 //  Created by David Hoerl on 10/26/08.
@@ -20,15 +20,15 @@
 using namespace xlslib_core;
 using namespace xlslib_strings;
 
-#import "DHCell.h"
+#import "JXLSCell.h"
 
-#import "DHFont.h"
-#import "DHFormat.h"
-#import "DHExtendedFormat.h"
+#import "JXLSFont.h"
+#import "JXLSFormat.h"
+#import "JXLSExtendedFormat.h"
 
 #define CELL(a) ((xlslib_core::cell_t *)(a))
 
-@implementation DHCell
+@implementation JXLSCell
 {
 	xlslib_core::cell_t *_cell;
 }
@@ -47,7 +47,7 @@ using namespace xlslib_strings;
 }
 
 // xf_i interface
--(void)setFont:(DHFont *)aFont
+-(void)setFont:(JXLSFont *)aFont
 {
 	_cell->font((font_t *)[aFont font]);
 }
@@ -151,18 +151,18 @@ using namespace xlslib_strings;
 {
 	return _cell->GetCol();
 }
--(void)setExtendedFormat:(DHExtendedFormat *)extFmt
+-(void)setExtendedFormat:(JXLSExtendedFormat *)extFmt
 {
 	_cell->SetXF((xf_t *)[extFmt extendedFormat]);
 }
--(DHExtendedFormat *)extendedFormat
+-(JXLSExtendedFormat *)extendedFormat
 {
-	DHExtendedFormat	*extFmt;
+	JXLSExtendedFormat	*extFmt;
 	xf_t				*fmt;
 	
 	fmt = _cell->GetXF();
 	
-	extFmt = [[DHExtendedFormat alloc] initWithExtendedFormat:fmt];
+	extFmt = [[JXLSExtendedFormat alloc] initWithExtendedFormat:fmt];
 	
 	return extFmt;
 }

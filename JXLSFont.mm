@@ -1,5 +1,5 @@
 //
-//  DHFont.m
+//  JXLSFont.m
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
@@ -18,11 +18,11 @@
 using namespace xlslib_core;
 using namespace xlslib_strings;
 
-#import "DHFont.h"
+#import "JXLSFont.h"
 
 #define FONT(a) ((xlslib_core::font_t *)(a))
 
-@implementation DHFont
+@implementation JXLSFont
 {
 	xlslib_core::font_t *_font;
 }

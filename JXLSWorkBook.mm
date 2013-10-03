@@ -1,5 +1,5 @@
 //
-//  DHWorkBook.m
+//  JXLSWorkBook.m
 //  JXLS
 //
 //  Created by David Hoerl on 10/6/08.
@@ -23,15 +23,15 @@
 using namespace xlslib_core;
 using namespace xlslib_strings;
 
-#import "DHWorkBook.h"
+#import "JXLSWorkBook.h"
 
-#import "DHWorkSheet.h"
-#import "DHFont.h"
-#import "DHFormat.h"
-#import "DHExtendedFormat.h"
+#import "JXLSWorkSheet.h"
+#import "JXLSFont.h"
+#import "JXLSFormat.h"
+#import "JXLSExtendedFormat.h"
 
 
-@implementation DHWorkBook
+@implementation JXLSWorkBook
 {
 	xlslib_core::workbook		*_workBook;
 	NSMutableArray				*_workSheets;
@@ -53,9 +53,9 @@ using namespace xlslib_strings;
 	delete _workBook;
 }
 
--(DHWorkSheet *)workSheetWithName:(NSString *)name
+-(JXLSWorkSheet *)workSheetWithName:(NSString *)name
 {
-	DHWorkSheet			*aWorkSheet;
+	JXLSWorkSheet			*aWorkSheet;
 	worksheet			*ws;
 	unichar				*uniName;
 	ustring				uniStr;
@@ -71,32 +71,32 @@ using namespace xlslib_strings;
 	
 	ws = _workBook->sheet(uniStr);
 	
-	aWorkSheet = [[DHWorkSheet alloc] initWithWorkSheet:ws];
+	aWorkSheet = [[JXLSWorkSheet alloc] initWithWorkSheet:ws];
 	[_workSheets addObject:aWorkSheet];
 	
 	return aWorkSheet;
 }
--(DHWorkSheet *)workSheetForOffset:(uint16_t)offset
+-(JXLSWorkSheet *)workSheetForOffset:(uint16_t)offset
 {
 	if([_workSheets count] < offset) {
 		return nil;
 	}
 	return [_workSheets objectAtIndex:offset];
 }
--(DHFont *)fontWithName:(NSString *)name
+-(JXLSFont *)fontWithName:(NSString *)name
 {	
-	DHFont				*aFont;
+	JXLSFont				*aFont;
 	font_t				*ft;
 	
 	ft = _workBook->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
 
-	aFont = [[DHFont alloc] initWithFont:ft];
+	aFont = [[JXLSFont alloc] initWithFont:ft];
 	
 	return aFont;
 }
--(DHFormat *)formatWithString:(NSString *)name
+-(JXLSFormat *)formatWithString:(NSString *)name
 {
-	DHFormat			*format;
+	JXLSFormat			*format;
 	format_t			*ft;
 	unichar				*uniName;
 	ustring				uniStr;
@@ -111,17 +111,17 @@ using namespace xlslib_strings;
 
 	ft = _workBook->format(uniStr);
 
-	format = [(DHFormat *)[DHFormat alloc] initWithFormat:ft];
+	format = [(JXLSFormat *)[JXLSFormat alloc] initWithFormat:ft];
 	
 	return format;
 }
--(DHExtendedFormat *)extendedFormat
+-(JXLSExtendedFormat *)extendedFormat
 {
 	return [self extendedFormatForFont:nil];
 }
--(DHExtendedFormat *)extendedFormatForFont:(DHFont *)name
+-(JXLSExtendedFormat *)extendedFormatForFont:(JXLSFont *)name
 {
-	DHExtendedFormat	*xFormat;
+	JXLSExtendedFormat	*xFormat;
 	xf_t				*ft;
 
 	if(name) {
@@ -130,7 +130,7 @@ using namespace xlslib_strings;
 		ft = _workBook->xformat();
 	}
 	
-	xFormat = [[DHExtendedFormat alloc] initWithExtendedFormat:ft];
+	xFormat = [[JXLSExtendedFormat alloc] initWithExtendedFormat:ft];
 	
 	return xFormat;
 }

@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 //#import "AppDelegate.h"
-#import <JXLS/DHWorkBook.h>
+#import <JXLS/JXLSWorkBook.h>
 
 
 @implementation AppDelegate
@@ -22,11 +22,11 @@
 
 - (void)myTest
 {
-	DHCell				*cell;
+	JXLSCell				*cell;
 		
-	DHWorkBook *workBook = [DHWorkBook new];
+	JXLSWorkBook *workBook = [JXLSWorkBook new];
 	
-	DHWorkSheet *workSheet = [workBook workSheetWithName:@"SHEET1"];
+	JXLSWorkSheet *workSheet = [workBook workSheetWithName:@"SHEET1"];
 	
 	//[workSheet setHeight:100 forRow:1 defaultFormat:NULL];
 	[workSheet setWidth:10000 forColumn:0 defaultFormat:NULL];

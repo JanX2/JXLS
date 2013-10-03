@@ -1,5 +1,5 @@
 //
-//  DHFormat.m
+//  JXLSFormat.m
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
@@ -18,11 +18,11 @@
 using namespace xlslib_core;
 using namespace xlslib_strings;
 
-#import "DHFormat.h"
+#import "JXLSFormat.h"
 
 #define FORMAT(a) ((xlslib_core::format_t *)(a))
 
-@implementation DHFormat
+@implementation JXLSFormat
 {
 	xlslib_core::format_t *_format;
 }

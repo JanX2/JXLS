@@ -66,4 +66,4 @@ Add “JXLS.framework” to the following build phases (via the +-buttons):
 
 And finally add the header to your code:
 
-    #import <JXLS/DHWorkBook.h>
+    #import <JXLS/JXLSWorkBook.h>

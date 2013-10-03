@@ -1,5 +1,5 @@
 //
-//  DHWorkBook.h
+//  JXLSWorkBook.h
 //  JXLS
 //
 //  Created by David Hoerl on 10/6/08.
@@ -9,28 +9,28 @@
 #ifdef __IOS_LIBRARY__
 #import "xlstypes.h"
 #import "xlslib.h"
-#import "DHWorkSheet.h"
-#import "DHCell.h"
+#import "JXLSWorkSheet.h"
+#import "JXLSCell.h"
 #else
 #import <JXLS/common/xlstypes.h>
 #import <JXLS/xlslib.h>
-#import <JXLS/DHWorkSheet.h>
-#import <JXLS/DHCell.h>
+#import <JXLS/JXLSWorkSheet.h>
+#import <JXLS/JXLSCell.h>
 #endif
 
-@class DHWorkSheet;
-@class DHFont;
-@class DHFormat;
-@class DHExtendedFormat;
+@class JXLSWorkSheet;
+@class JXLSFont;
+@class JXLSFormat;
+@class JXLSExtendedFormat;
 
-@interface DHWorkBook : NSObject
+@interface JXLSWorkBook : NSObject
 
--(DHWorkSheet *)workSheetWithName:(NSString *)sheetName;			// worksheet* sheet(std::string/ustring sheetname);
--(DHWorkSheet *)workSheetForOffset:(uint16_t)offset;				// worksheet* GetSheet(unsigned16_t sheetnum);
--(DHFont *)fontWithName:(NSString *)fontName;						// font_t* font(std::string name);
--(DHFormat *)formatWithString:(NSString *)formatStr;				// format_t* format(std::string formatstr);
--(DHExtendedFormat *)extendedFormat;								// xf_t* xformat(void)
--(DHExtendedFormat *)extendedFormatForFont:(DHFont *)formatStr;		// xf_t* xformat(font_t* font)
+-(JXLSWorkSheet *)workSheetWithName:(NSString *)sheetName;			// worksheet* sheet(std::string/ustring sheetname);
+-(JXLSWorkSheet *)workSheetForOffset:(uint16_t)offset;				// worksheet* GetSheet(unsigned16_t sheetnum);
+-(JXLSFont *)fontWithName:(NSString *)fontName;						// font_t* font(std::string name);
+-(JXLSFormat *)formatWithString:(NSString *)formatStr;				// format_t* format(std::string formatstr);
+-(JXLSExtendedFormat *)extendedFormat;								// xf_t* xformat(void)
+-(JXLSExtendedFormat *)extendedFormatForFont:(JXLSFont *)formatStr;		// xf_t* xformat(font_t* font)
 -(BOOL)setValue:(NSString *)content forProperty:(property_t)prop;	// bool property(property_t prop, const std::string& content);
 -(void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert;			// void SetPosition(unsigned16_t horz, unsigned16_t vert)
 -(void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert;				// void SetSize(unsigned16_t horz, unsigned16_t vert)

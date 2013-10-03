@@ -1,5 +1,5 @@
 //
-//  DHWorkSheet.h
+//  JXLSWorkSheet.h
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
@@ -7,42 +7,42 @@
 //
 
 #if defined(NSRect)
-#define DHRECT NSRect
+#define JXLSRECT NSRect
 #else
-#define DHRECT CGRect
+#define JXLSRECT CGRect
 #endif
 
-@class DHRange;
-@class DHCell;
-@class DHExtendedFormat;
-@class DHNumberFormat;
+@class JXLSRange;
+@class JXLSCell;
+@class JXLSExtendedFormat;
+@class JXLSNumberFormat;
 
-@interface DHWorkSheet : NSObject
+@interface JXLSWorkSheet : NSObject
 
 -(instancetype)initWithWorkSheet:(void *)ws;	// worksheet *
 
 -(void)makeActive;
 
--(DHCell *)cellAtRow:(uint32_t)row col:(uint32_t)col;
+-(JXLSCell *)cellAtRow:(uint32_t)row col:(uint32_t)col;
 
--(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col;
--(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col;
+-(JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(JXLSExtendedFormat *)extFormat;	// NULL format OK
 
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label;
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label withFormat:(DHExtendedFormat *)extFormat;    // NULL format OK
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label;
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label withFormat:(JXLSExtendedFormat *)extFormat;    // NULL format OK
 
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label;
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label withFormat:(DHExtendedFormat *)extFormat;    // NULL format OK
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label;
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label withFormat:(JXLSExtendedFormat *)extFormat;    // NULL format OK
 
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl;
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat;            // Deprecated
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl;
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat;            // Deprecated
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(JXLSExtendedFormat *)extFormat;	// NULL format OK
 
--(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
--(void)setWidth:(uint16_t)height forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat;	// NULL format OK
+-(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(JXLSExtendedFormat *)extFormat;	// NULL format OK
+-(void)setWidth:(uint16_t)height forColumn:(uint32_t)col defaultFormat:(JXLSExtendedFormat *)extFormat;	// NULL format OK
 
--(void)mergeCellsInRect:(DHRECT)range;
+-(void)mergeCellsInRect:(JXLSRECT)range;
 
-//-(DHRange *)rangegroup:(NSRect)range;
+//-(JXLSRange *)rangegroup:(NSRect)range;
 
 @end

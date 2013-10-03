@@ -1,22 +1,22 @@
 //
-//  DHExtendedFormat.h
+//  JXLSExtendedFormat.h
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
 //  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
-@class DHFont;	// NSCopying
+@class JXLSFont;	// NSCopying
 
-@interface DHExtendedFormat : NSObject
+@interface JXLSExtendedFormat : NSObject
 
-+(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat;
++(JXLSExtendedFormat *)formatWithFormat:(JXLSExtendedFormat *)aFormat;
 
 -(instancetype)initWithExtendedFormat:(void *)xft;	// xlslib_core::CExtFormat *
 -(void *)extendedFormat;
 
--(void)setFont:(DHFont *)font;
--(DHFont *)font;
+-(void)setFont:(JXLSFont *)font;
+-(JXLSFont *)font;
 
 -(void)setFormatBuiltin:(format_number_t)formatidx;
 -(void)setFormat:(format_t *)fmt;

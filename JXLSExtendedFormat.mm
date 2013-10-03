@@ -1,5 +1,5 @@
 //
-//  DHExtendedFormat.m
+//  JXLSExtendedFormat.m
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
@@ -18,23 +18,23 @@
 using namespace xlslib_core;
 using namespace xlslib_strings;
 
-#import "DHExtendedFormat.h"
-#import "DHFont.h"
+#import "JXLSExtendedFormat.h"
+#import "JXLSFont.h"
 
 #define FORMAT(a) ((xlslib_core::xf_t *)(a))
 
-@implementation DHExtendedFormat
+@implementation JXLSExtendedFormat
 {
 	xlslib_core::xf_t *_extFormat;
 }
 
-+(DHExtendedFormat *)formatWithFormat:(DHExtendedFormat *)aFormat
++(JXLSExtendedFormat *)formatWithFormat:(JXLSExtendedFormat *)aFormat
 {
 	xf_t	*xf;
 	
 	xf = xf_t::xfDup((xf_t *)aFormat->_extFormat);
 	
-	return [[DHExtendedFormat alloc] initWithExtendedFormat:xf];
+	return [[JXLSExtendedFormat alloc] initWithExtendedFormat:xf];
 }
 
 -(instancetype)initWithExtendedFormat:(void *)xft
@@ -50,17 +50,17 @@ using namespace xlslib_strings;
 	return _extFormat;
 }
 
--(void)setFont:(DHFont *)font
+-(void)setFont:(JXLSFont *)font
 {
 	_extFormat->SetFont((font_t *)[font font]);
 }
--(DHFont *)font
+-(JXLSFont *)font
 {
 	font_t *fidx;
 	
 	fidx = _extFormat->GetFont();
 	
-	return [[DHFont alloc] initWithFont:fidx];
+	return [[JXLSFont alloc] initWithFont:fidx];
 }
 -(void)setFormatBuiltin:(format_number_t)formatidx
 {

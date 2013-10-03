@@ -1,20 +1,20 @@
 //
-//  DHCell.h
+//  JXLSCell.h
 //  JXLS
 //
 //  Created by David Hoerl on 10/26/08.
 //  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
-@class DHFont;
-@class DHExtendedFormat;
+@class JXLSFont;
+@class JXLSExtendedFormat;
 
-@interface DHCell : NSObject
+@interface JXLSCell : NSObject
 
 -(instancetype)initWithCell:(void *)cl;
 -(void *)cell;
 
--(void)setFont:(DHFont *)aFont;
+-(void)setFont:(JXLSFont *)aFont;
 -(void)setHorizontalAlignment:(halign_option_t)ha_option;
 -(void)setVerticalAlignment:(valign_option_t)va_option;
 
@@ -44,7 +44,7 @@
 // Other
 -(uint32_t)row;
 -(uint32_t)column;
--(void)setExtendedFormat:(DHExtendedFormat *)extFmt;
--(DHExtendedFormat *)extendedFormat;
+-(void)setExtendedFormat:(JXLSExtendedFormat *)extFmt;
+-(JXLSExtendedFormat *)extendedFormat;
 
 @end

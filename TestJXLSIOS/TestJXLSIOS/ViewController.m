@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 David Hoerl. All rights reserved.
 //
 
-#import <JXLS/DHWorkBook.h>
+#import <JXLS/JXLSWorkBook.h>
 
 #import "ViewController.h"
 
@@ -32,11 +32,11 @@
 
 - (void)myTest
 {
-	DHCell				*cell;
+	JXLSCell				*cell;
 		
-	DHWorkBook *dhWB = [DHWorkBook new];
+	JXLSWorkBook *dhWB = [JXLSWorkBook new];
 	
-	DHWorkSheet *dhWS = [dhWB workSheetWithName:@"SHEET1"];
+	JXLSWorkSheet *dhWS = [dhWB workSheetWithName:@"SHEET1"];
 	
 	//[dhWS height:100 row:1];
 	[dhWS width:10000 col:0 format:NULL];

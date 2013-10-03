@@ -1,5 +1,5 @@
 //
-//  DHRange.m
+//  JXLSRange.m
 //  JXLS
 //
 //  Created by David Hoerl on 10/26/08.
@@ -14,11 +14,11 @@
 using namespace std;
 using namespace xlslib_core;
 
-#import "DHRange.h"
+#import "JXLSRange.h"
 
 #define RANGE(a) ((xlslib_core::range *)(a))
 
-@implementation DHRange
+@implementation JXLSRange
 {
 	void		*aRange;		// xlslib_core::range
 }

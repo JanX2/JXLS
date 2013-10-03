@@ -1,14 +1,14 @@
 //
-//  DHFont.h
+//  JXLSFont.h
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
 //  Copyright 2008-2013 David Hoerl. All rights reserved.
 //
 
-@interface DHFont : NSObject
+@interface JXLSFont : NSObject
 
-//+(DHFont *)fontWithName:(NSString *)fontName;
+//+(JXLSFont *)fontWithName:(NSString *)fontName;
 -(instancetype)initWithFont:(void *)ft;	// xlslib_core::CFont *
 -(void *)font;
 

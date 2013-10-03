@@ -1,5 +1,5 @@
 //
-//  DHWorkSheet.m
+//  JXLSWorkSheet.m
 //  JXLS
 //
 //  Created by David Hoerl on 10/7/08.
@@ -20,15 +20,15 @@
 using namespace xlslib_core;
 using namespace xlslib_strings;
 
-#import "DHWorkSheet.h"
+#import "JXLSWorkSheet.h"
 
-#import "DHRange.h"
-#import "DHCell.h"
-#import "DHExtendedFormat.h"
+#import "JXLSRange.h"
+#import "JXLSCell.h"
+#import "JXLSExtendedFormat.h"
 
 #define WORKSHEET(a) ((xlslib_core::worksheet *)(a))
 
-@implementation DHWorkSheet
+@implementation JXLSWorkSheet
 {
 	xlslib_core::worksheet *_workSheet;
 }
@@ -46,15 +46,15 @@ using namespace xlslib_strings;
 {
 	_workSheet->MakeActive();
 }
--(DHCell *)cellAtRow:(uint32_t)row col:(uint32_t)col
+-(JXLSCell *)cellAtRow:(uint32_t)row col:(uint32_t)col
 {
-	DHCell			*aCell;
+	JXLSCell			*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->FindCell(row, col);
 	
 	if(cl) {
-		aCell = [[DHCell alloc] initWithCell:cl];
+		aCell = [[JXLSCell alloc] initWithCell:cl];
 	} else {
 		aCell = nil;
 	}
@@ -62,30 +62,30 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col
+-(JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col
 {
 	return [self addEmptyCellAtRow:row column:col withFormat:nil];
 }
--(DHCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(DHExtendedFormat *)extFormat
+-(JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(JXLSExtendedFormat *)extFormat
 {
-	DHCell			*aCell;
+	JXLSCell			*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->blank(row, col, (xf_t *)[extFormat extendedFormat]);
 	
-	aCell = [[DHCell alloc] initWithCell:cl];
+	aCell = [[JXLSCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
 
-- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label
 {
 	return [self setCellAtRow:row column:col toCString:label withFormat:nil ];
 }
 
-- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label withFormat:(DHExtendedFormat *)extFormat
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label withFormat:(JXLSExtendedFormat *)extFormat
 {
-	DHCell			*aCell;
+	JXLSCell			*aCell;
 	cell_t			*cl;
 	std::string		str;
 
@@ -93,19 +93,19 @@ using namespace xlslib_strings;
 
 	cl = _workSheet->label(row, col, str, (xf_t *)[extFormat extendedFormat]);
 	
-	aCell = [[DHCell alloc] initWithCell:cl];
+	aCell = [[JXLSCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
 
-- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label
 {
 	return [self setCellAtRow:row column:col toString:label withFormat:nil ];
 }
 
-- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label withFormat:(DHExtendedFormat *)extFormat
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label withFormat:(JXLSExtendedFormat *)extFormat
 {
-	DHCell			*aCell;
+	JXLSCell			*aCell;
 	cell_t			*cl;
 	unichar			*uniName;
 	ustring			uniStr;
@@ -120,49 +120,49 @@ using namespace xlslib_strings;
 
 	cl = _workSheet->label(row, col, uniStr, (xf_t *)[extFormat extendedFormat]);
 	
-	aCell = [[DHCell alloc] initWithCell:cl];
+	aCell = [[JXLSCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
 
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl
 {
 	return [self setCellAtRow:row column:col toDoubleValue:dbl withFormat:nil];
 }
 
-- (DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat
 {
-	DHCell			*aCell;
+	JXLSCell			*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->number(row, col, dbl, (format_number_t)numFormat, (xf_t *)NULL);
 	
-	aCell = [[DHCell alloc] initWithCell:cl];
+	aCell = [[JXLSCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
--(DHCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(DHExtendedFormat *)extFormat
+-(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(JXLSExtendedFormat *)extFormat
 {
-	DHCell			*aCell;
+	JXLSCell			*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->number(row, col, dbl, (xf_t *)[extFormat extendedFormat]);
 	
-	aCell = [[DHCell alloc] initWithCell:cl];
+	aCell = [[JXLSCell alloc] initWithCell:cl];
 	
 	return aCell;
 }
 
--(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(DHExtendedFormat *)extFormat
+-(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(JXLSExtendedFormat *)extFormat
 {
 	_workSheet->rowheight(row, height, (xf_t *)[extFormat extendedFormat]);
 }
--(void)setWidth:(uint16_t)width forColumn:(uint32_t)col defaultFormat:(DHExtendedFormat *)extFormat
+-(void)setWidth:(uint16_t)width forColumn:(uint32_t)col defaultFormat:(JXLSExtendedFormat *)extFormat
 {
 	_workSheet->colwidth(col, width, (xf_t *)[extFormat extendedFormat]);
 }
 
--(void)mergeCellsInRect:(DHRECT)rect
+-(void)mergeCellsInRect:(JXLSRECT)rect
 {
 	unsigned16_t	first_row, first_col, last_row, last_col;
 
@@ -177,9 +177,9 @@ using namespace xlslib_strings;
 }
 
 #if 0
--(DHRange *)rangegroup:(NSRect)rect
+-(JXLSRange *)rangegroup:(NSRect)rect
 {
-	DHRange			*aRange;
+	JXLSRange			*aRange;
 	range			*rg;
 	unsigned16_t	first_row, first_col, last_row, last_col;
 
@@ -190,7 +190,7 @@ using namespace xlslib_strings;
 	
 	rg = WORKSHEET(aWorkSheet)->rangegroup(first_row, first_col, last_row, last_col);
 	
-	aRange = [[[DHRange alloc] initWithRange:rg] autorelease];
+	aRange = [[[JXLSRange alloc] initWithRange:rg] autorelease];
 	
 	return aRange;
 }
