@@ -1,6 +1,6 @@
 //
 //  main.m
-//  TextJXLS
+//  TestJXLS
 //
 //  Created by David Hoerl on 3/5/13.
 //  Copyright (c) 2013 David Hoerl. All rights reserved.

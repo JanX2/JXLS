@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'TextJXLS' target in the 'TextJXLS' project
+// Prefix header for all source files of the 'TestJXLS' target in the 'TestJXLS' project
 //
 
 #ifdef __OBJC__

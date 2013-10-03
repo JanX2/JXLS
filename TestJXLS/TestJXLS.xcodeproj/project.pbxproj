@@ -35,15 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE85A2D416E6425C00CBE726 /* TextJXLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextJXLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE85A2D416E6425C00CBE726 /* TestJXLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestJXLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE85A2D716E6425C00CBE726 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DE85A2DA16E6425C00CBE726 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DE85A2DB16E6425C00CBE726 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DE85A2DC16E6425C00CBE726 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DE85A2DF16E6425C00CBE726 /* TextJXLS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextJXLS-Info.plist"; sourceTree = "<group>"; };
+		DE85A2DF16E6425C00CBE726 /* TestJXLS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestJXLS-Info.plist"; sourceTree = "<group>"; };
 		DE85A2E116E6425C00CBE726 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE85A2E316E6425C00CBE726 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE85A2E516E6425C00CBE726 /* TextJXLS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextJXLS-Prefix.pch"; sourceTree = "<group>"; };
+		DE85A2E516E6425C00CBE726 /* TestJXLS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestJXLS-Prefix.pch"; sourceTree = "<group>"; };
 		DE85A2E716E6425C00CBE726 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DE85A2E916E6425C00CBE726 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE85A2EA16E6425C00CBE726 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				DE85A2F716E6455400CBE726 /* JXLS.xcodeproj */,
-				DE85A2DD16E6425C00CBE726 /* TextJXLS */,
+				DE85A2DD16E6425C00CBE726 /* TestJXLS */,
 				DE85A2D616E6425C00CBE726 /* Frameworks */,
 				DE85A2D516E6425C00CBE726 /* Products */,
 			);
@@ -77,7 +77,7 @@
 		DE85A2D516E6425C00CBE726 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE85A2D416E6425C00CBE726 /* TextJXLS.app */,
+				DE85A2D416E6425C00CBE726 /* TestJXLS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,7 +101,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		DE85A2DD16E6425C00CBE726 /* TextJXLS */ = {
+		DE85A2DD16E6425C00CBE726 /* TestJXLS */ = {
 			isa = PBXGroup;
 			children = (
 				DE85A2E916E6425C00CBE726 /* AppDelegate.h */,
@@ -109,16 +109,16 @@
 				DE85A2EC16E6425D00CBE726 /* MainMenu.xib */,
 				DE85A2DE16E6425C00CBE726 /* Supporting Files */,
 			);
-			path = TextJXLS;
+			path = TestJXLS;
 			sourceTree = "<group>";
 		};
 		DE85A2DE16E6425C00CBE726 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE85A2DF16E6425C00CBE726 /* TextJXLS-Info.plist */,
+				DE85A2DF16E6425C00CBE726 /* TestJXLS-Info.plist */,
 				DE85A2E016E6425C00CBE726 /* InfoPlist.strings */,
 				DE85A2E316E6425C00CBE726 /* main.m */,
-				DE85A2E516E6425C00CBE726 /* TextJXLS-Prefix.pch */,
+				DE85A2E516E6425C00CBE726 /* TestJXLS-Prefix.pch */,
 				DE85A2E616E6425C00CBE726 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE85A2D316E6425C00CBE726 /* TextJXLS */ = {
+		DE85A2D316E6425C00CBE726 /* TestJXLS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE85A2F116E6425D00CBE726 /* Build configuration list for PBXNativeTarget "TextJXLS" */;
+			buildConfigurationList = DE85A2F116E6425D00CBE726 /* Build configuration list for PBXNativeTarget "TestJXLS" */;
 			buildPhases = (
 				DE85A2D016E6425C00CBE726 /* Sources */,
 				DE85A2D116E6425C00CBE726 /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				DE85A30116E6457C00CBE726 /* PBXTargetDependency */,
 			);
-			name = TextJXLS;
-			productName = TextJXLS;
-			productReference = DE85A2D416E6425C00CBE726 /* TextJXLS.app */;
+			name = TestJXLS;
+			productName = TestJXLS;
+			productReference = DE85A2D416E6425C00CBE726 /* TestJXLS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "David Hoerl";
 			};
-			buildConfigurationList = DE85A2CF16E6425C00CBE726 /* Build configuration list for PBXProject "TextJXLS" */;
+			buildConfigurationList = DE85A2CF16E6425C00CBE726 /* Build configuration list for PBXProject "TestJXLS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -180,7 +180,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				DE85A2D316E6425C00CBE726 /* TextJXLS */,
+				DE85A2D316E6425C00CBE726 /* TestJXLS */,
 			);
 		};
 /* End PBXProject section */
@@ -321,8 +321,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TextJXLS/TextJXLS-Prefix.pch";
-				INFOPLIST_FILE = "TextJXLS/TextJXLS-Info.plist";
+				GCC_PREFIX_HEADER = "TestJXLS/TestJXLS-Prefix.pch";
+				INFOPLIST_FILE = "TestJXLS/TestJXLS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -333,8 +333,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TextJXLS/TextJXLS-Prefix.pch";
-				INFOPLIST_FILE = "TextJXLS/TextJXLS-Info.plist";
+				GCC_PREFIX_HEADER = "TestJXLS/TestJXLS-Prefix.pch";
+				INFOPLIST_FILE = "TestJXLS/TestJXLS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE85A2CF16E6425C00CBE726 /* Build configuration list for PBXProject "TextJXLS" */ = {
+		DE85A2CF16E6425C00CBE726 /* Build configuration list for PBXProject "TestJXLS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE85A2EF16E6425D00CBE726 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE85A2F116E6425D00CBE726 /* Build configuration list for PBXNativeTarget "TextJXLS" */ = {
+		DE85A2F116E6425D00CBE726 /* Build configuration list for PBXNativeTarget "TestJXLS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE85A2F216E6425D00CBE726 /* Debug */,
