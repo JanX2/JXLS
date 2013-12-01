@@ -166,7 +166,7 @@ using namespace xlslib_strings;
 {
 	string filename;
 	
-	filename = [name cStringUsingEncoding:NSUTF8StringEncoding];
+	filename = [name fileSystemRepresentation];
 	
 	return _workBook->Dump(filename);
 }
