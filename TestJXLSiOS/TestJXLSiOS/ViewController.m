@@ -8,6 +8,8 @@
 //
 
 #import <JXLS/JXLSWorkBook.h>
+#import <JXLS/JXLSWorkSheet.h>
+#import <JXLS/JXLSCell.h>
 
 #import "ViewController.h"
 
