@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D7F076217FD72A300D4F342 /* xlstypes.h in Copy Common Headers */ = {isa = PBXBuildFile; fileRef = DEF79A5516E80BFD00E4B803 /* xlstypes.h */; };
+		633D27781960875500DFB38B /* JXLS.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 633D27771960863F00DFB38B /* JXLS.h */; };
 		DEF79A2616E80B5200E4B803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF79A2516E80B5200E4B803 /* Foundation.framework */; };
 		DEF79A4216E80BCC00E4B803 /* JXLSCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEF79A3516E80BCC00E4B803 /* JXLSCell.mm */; };
 		DEF79A4316E80BCC00E4B803 /* JXLSExtendedFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEF79A3716E80BCC00E4B803 /* JXLSExtendedFormat.mm */; };
@@ -81,6 +82,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				633D27781960875500DFB38B /* JXLS.h in Copy Headers */,
 				DEF79B2816EA970100E4B803 /* xlslib.h in Copy Headers */,
 				DEF79B1C16EA93A800E4B803 /* JXLSCell.h in Copy Headers */,
 				DEF79B1D16EA93A800E4B803 /* JXLSExtendedFormat.h in Copy Headers */,
@@ -96,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		633D27771960863F00DFB38B /* JXLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS.h; sourceTree = "<group>"; };
 		DEF79A2216E80B5200E4B803 /* libJXLS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJXLS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF79A2516E80B5200E4B803 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEF79A3416E80BCC00E4B803 /* JXLSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLSCell.h; sourceTree = "<group>"; };
@@ -251,6 +254,7 @@
 		DEF79A3316E80BB300E4B803 /* ObjectiveC++ */ = {
 			isa = PBXGroup;
 			children = (
+				633D27771960863F00DFB38B /* JXLS.h */,
 				DEF79A3416E80BCC00E4B803 /* JXLSCell.h */,
 				DEF79A3516E80BCC00E4B803 /* JXLSCell.mm */,
 				DEF79A3616E80BCC00E4B803 /* JXLSExtendedFormat.h */,

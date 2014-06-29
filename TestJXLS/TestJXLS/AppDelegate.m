@@ -8,9 +8,7 @@
 //
 
 #import "AppDelegate.h"
-#import <JXLS/JXLSWorkBook.h>
-#import <JXLS/JXLSCell.h>
-#import <JXLS/JXLSWorkSheet.h>
+#import <JXLS/JXLS.h>
 
 @implementation AppDelegate
 
