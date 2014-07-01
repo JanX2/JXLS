@@ -15,6 +15,14 @@ The xlconfig.h file was produced by doing a "./bootstrap" inside the root xlslib
 
 There is an Xcode project for building on iOS, but it is not actively maintained. If it doesn’t *just work* please fix and send a pull request!
 
+Updating
+--------
+
+If you have been using JXLS versions before 1.0, you will have to change your imports to the umbrella header used in 1.0+:
+
+    #import <JXLS/JXLS.h>
+
+
 License
 -------
 
@@ -37,6 +45,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 Usage
 -----
 
+You can integrate JXLS into your project via CocoaPods or manually as described below. 
+
 Add “JXLS.xcodeproj” to your project (preferably into “Frameworks” to keep things tidy).
 
 ###Xcode 4
@@ -47,7 +57,7 @@ In your target’s “Build Phases”:
 * Destination: Frameworks
 * Change name to “Copy Frameworks” to keep things clean
 
-###Xcode 5
+###Xcode 5 or 6
 
 In your target’s “Build Phases”:
 
@@ -63,6 +73,6 @@ Add “JXLS.framework” to the following build phases (via the +-buttons):
 * “Link Binary With Libraries”
 * “Copy Frameworks” (created above)
 
-And finally add the header to your code:
+And finally import the header in your code:
 
     #import <JXLS/JXLS.h>
