@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3DB8300E17F33AF600EB5E36 /* common in Headers */ = {isa = PBXBuildFile; fileRef = 3DB8300D17F33AF300EB5E36 /* common */; settings = {ATTRIBUTES = (Private, ); }; };
+		633D277D19608FF200DFB38B /* JXLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D277C19608FF200DFB38B /* JXLS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633D2786196093DA00DFB38B /* JXLSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D2784196093DA00DFB38B /* JXLSRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633D2787196093DA00DFB38B /* JXLSRange.mm in Sources */ = {isa = PBXBuildFile; fileRef = 633D2785196093DA00DFB38B /* JXLSRange.mm */; };
 		DE1A84240E9AF6C1005F2430 /* JXLSWorkBook.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84220E9AF6C1005F2430 /* JXLSWorkBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE1A84250E9AF6C1005F2430 /* JXLSWorkBook.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A84230E9AF6C1005F2430 /* JXLSWorkBook.mm */; settings = {COMPILER_FLAGS = "-Wimplicit "; }; };
 		DE1A84C90E9B9942005F2430 /* JXLSWorkSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84C70E9B9942005F2430 /* JXLSWorkSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,6 +116,9 @@
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* JXLS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS_Prefix.pch; sourceTree = "<group>"; };
 		3DB8300D17F33AF300EB5E36 /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = External/xlslib/xlslib/src/common; sourceTree = "<group>"; };
+		633D277C19608FF200DFB38B /* JXLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS.h; sourceTree = "<group>"; };
+		633D2784196093DA00DFB38B /* JXLSRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLSRange.h; sourceTree = "<group>"; };
+		633D2785196093DA00DFB38B /* JXLSRange.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JXLSRange.mm; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* JXLS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXLS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1A83480E9AF33B005F2430 /* xlconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlconfig.h; sourceTree = "<group>"; };
@@ -333,6 +339,7 @@
 		DE1A84090E9AF51F005F2430 /* Objective-C++ Classes */ = {
 			isa = PBXGroup;
 			children = (
+				633D277C19608FF200DFB38B /* JXLS.h */,
 				DE1A84220E9AF6C1005F2430 /* JXLSWorkBook.h */,
 				DE1A84230E9AF6C1005F2430 /* JXLSWorkBook.mm */,
 				DE1A84C70E9B9942005F2430 /* JXLSWorkSheet.h */,
@@ -345,6 +352,8 @@
 				DE1A85900E9BB227005F2430 /* JXLSFormat.mm */,
 				DE1A85930E9BB245005F2430 /* JXLSExtendedFormat.h */,
 				DE1A85940E9BB245005F2430 /* JXLSExtendedFormat.mm */,
+				633D2784196093DA00DFB38B /* JXLSRange.h */,
+				633D2785196093DA00DFB38B /* JXLSRange.mm */,
 			);
 			name = "Objective-C++ Classes";
 			sourceTree = "<group>";
@@ -460,6 +469,7 @@
 				3DB8300E17F33AF600EB5E36 /* common in Headers */,
 				DE85A29F16E3E4EE00CBE726 /* xls_poppack.h in Headers */,
 				DE85A2A016E3E4EE00CBE726 /* xls_pshpack1.h in Headers */,
+				633D277D19608FF200DFB38B /* JXLS.h in Headers */,
 				DE85A2A116E3E4EE00CBE726 /* xls_pshpack2.h in Headers */,
 				DE85A2A216E3E4EE00CBE726 /* xls_pshpack4.h in Headers */,
 				DE85A2A416E3E4EE00CBE726 /* xlsys.h in Headers */,
@@ -496,6 +506,7 @@
 				DEF79BBC16EE18D800E4B803 /* number.h in Headers */,
 				DEF79BBE16EE18D800E4B803 /* range.h in Headers */,
 				DEF79BC016EE18D800E4B803 /* recdef.h in Headers */,
+				633D2786196093DA00DFB38B /* JXLSRange.h in Headers */,
 				DEF79BC216EE18D800E4B803 /* record.h in Headers */,
 				DEF79BC316EE18D800E4B803 /* rectypes.h in Headers */,
 				DEF79BC516EE18D800E4B803 /* row.h in Headers */,
@@ -622,6 +633,7 @@
 				DEF79BB716EE18D800E4B803 /* merged.cpp in Sources */,
 				DEF79BB916EE18D800E4B803 /* note.cpp in Sources */,
 				DEF79BBB16EE18D800E4B803 /* number.cpp in Sources */,
+				633D2787196093DA00DFB38B /* JXLSRange.mm in Sources */,
 				DEF79BBD16EE18D800E4B803 /* range.cpp in Sources */,
 				DEF79BBF16EE18D800E4B803 /* recdef.cpp in Sources */,
 				DEF79BC116EE18D800E4B803 /* record.cpp in Sources */,
