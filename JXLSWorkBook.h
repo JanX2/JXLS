@@ -7,18 +7,6 @@
 //  Copyright (c) 2013 Jan Weiß. Some rights reserved: <http://opensource.org/licenses/BSD-3-Clause>
 //
 
-#ifdef __IOS_LIBRARY__
-#import "xlstypes.h"
-#import "xlslib.h"
-#import "JXLSWorkSheet.h"
-#import "JXLSCell.h"
-#else
-#import <JXLS/common/xlstypes.h>
-#import <JXLS/xlslib.h>
-#import <JXLS/JXLSWorkSheet.h>
-#import <JXLS/JXLSCell.h>
-#endif
-
 @class JXLSWorkSheet;
 @class JXLSFont;
 @class JXLSFormat;

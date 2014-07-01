@@ -7,7 +7,7 @@
 //  Copyright (c) 2013 Jan Weiß. Some rights reserved: <http://opensource.org/licenses/BSD-3-Clause>
 //
 
-#import <JXLS/JXLSWorkBook.h>
+#import <JXLS/JXLS.h>
 
 #import "ViewController.h"
 
