@@ -7,8 +7,6 @@
 //  Copyright (c) 2013 Jan Weiß. Some rights reserved: <http://opensource.org/licenses/BSD-3-Clause>
 //
 
-#import "xlslib.h"
-
 @class JXLSWorkSheet;
 @class JXLSFont;
 @class JXLSFormat;
