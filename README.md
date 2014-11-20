@@ -73,6 +73,16 @@ Add “JXLS.framework” to the following build phases (via the +-buttons):
 * “Link Binary With Libraries”
 * “Copy Frameworks” (created above)
 
+Set “Runpath Search Paths” to  
+
+    @loader_path/../Frameworks
+
+in the “Build Settings” of your target or add
+
+    LD_RUNPATH_SEARCH_PATHS = @loader_path/../Frameworks
+
+to the respective `.xcconfig` file, if you use them.
+
 And finally import the header in your code:
 
     #import <JXLS/JXLS.h>
