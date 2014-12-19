@@ -170,4 +170,11 @@ using namespace xlslib_strings;
 	
 	return _workBook->Dump(filename);
 }
+
+#define WORKBOOK(a) ((xlslib_core::workbook *)(a))
+
+- (BOOL) setColorWithRed:(int) red green:(int) green blue:(int) blue index:(int) idx {
+    return WORKBOOK(_workBook)->setColor(red,green,blue,idx);
+}
+
 @end

@@ -27,4 +27,5 @@
 -(void)tabBarWidth:(uint16_t)width;									// void SetTabBarWidth(unsigned16_t width)
 
 -(int)writeToFile:(NSString *)fileName;								// int Dump(std::string filename);
+-(BOOL) setColorWithRed:(int) red green:(int) green blue:(int) blue index:(int) idx;
 @end

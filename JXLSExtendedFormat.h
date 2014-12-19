@@ -30,8 +30,10 @@
 -(void)setTextOrientation:(txtori_option_t)ori_option;
 -(uint8_t)textOrientation;
 -(void)setForegroundFillColor:(color_name_t)color;
+-(void)setForegroundFillColorIndex:(unsigned8_t)color;
 -(uint8_t)foregroundFillColor;
 -(void)setBackgroundFillColor:(color_name_t)color;
+-(void)setBackgroundFillColorIndex:(unsigned8_t)color;
 -(uint8_t)backgroundFillColor;
 -(void)setFillStyle:(fill_option_t)fill;
 -(uint8_t)fillStyle;
@@ -42,6 +44,7 @@
 -(void)setWraps:(BOOL)wrap_opt;
 -(void)setBorderStyle:(border_style_t)style forSide:(border_side_t)side;
 -(void)setBorderColor:(color_name_t)color forSide:(border_side_t)side;
+-(void)setBorderColorIndex:(unsigned8_t)color forSide:(border_side_t)side;
 -(void)borderStyle:(border_side_t)side;
 
 @end
