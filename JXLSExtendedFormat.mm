@@ -111,6 +111,12 @@ using namespace xlslib_strings;
 {
 	_extFormat->SetFillFGColor(color);
 }
+
+-(void)setForegroundFillColorIndex:(unsigned8_t)color
+{
+    _extFormat->SetFillFGColor(color);
+}
+
 -(uint8_t)foregroundFillColor
 {
 	return _extFormat->GetFillFGColorIdx();
@@ -119,6 +125,10 @@ using namespace xlslib_strings;
 -(void)setBackgroundFillColor:(color_name_t)color
 {
 	_extFormat->SetFillBGColor(color);
+}
+-(void)setBackgroundFillColorIndex:(unsigned8_t)color
+{
+    _extFormat->SetFillBGColor(color);
 }
 -(uint8_t)backgroundFillColor
 {
@@ -165,6 +175,10 @@ using namespace xlslib_strings;
 -(void)setBorderColor:(color_name_t)color forSide:(border_side_t)side
 {
 	_extFormat->SetBorderColor(side, color);
+}
+-(void)setBorderColorIndex:(unsigned8_t)color forSide:(border_side_t)side
+{
+    _extFormat->SetBorderColor(side, color);
 }
 -(void)borderStyle:(border_side_t)side
 {

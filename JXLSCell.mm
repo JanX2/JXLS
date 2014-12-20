@@ -76,6 +76,15 @@ using namespace xlslib_strings;
 {
 	_cell->fillbgcolor(color);
 }
+
+-(void)setBackgroundFillColorIndex:(unsigned8_t)color {
+    _cell->fillbgcolor(color);
+}
+-(void)setForegroundFillColorIndex:(unsigned8_t)color {
+    _cell->fillfgcolor(color);
+}
+
+
 -(void)setFillStyle:(fill_option_t)fill
 {
 	_cell->fillstyle(fill);
@@ -99,6 +108,10 @@ using namespace xlslib_strings;
 -(void)setBorderColor:(color_name_t)color forSide:(border_side_t)side
 {
 	_cell->bordercolor(side, color);
+}
+-(void)setBorderColorIndex:(unsigned8_t)color forSide:(border_side_t)side
+{
+    _cell->bordercolor(side, color);
 }
 
 //font_i interface
@@ -126,6 +139,11 @@ using namespace xlslib_strings;
 {
 	_cell->fontcolor(fntcolor);
 }
+-(void)setFontColorIndex:(unsigned8_t)fntcolor
+{
+    _cell->fontcolor(fntcolor);
+}
+
 -(void)setFontItalic:(BOOL)italic
 {
 	_cell->fontitalic((bool)italic);
