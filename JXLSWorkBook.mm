@@ -173,8 +173,12 @@ using namespace xlslib_strings;
 
 #define WORKBOOK(a) ((xlslib_core::workbook *)(a))
 
-- (BOOL) setColorWithRed:(int) red green:(int) green blue:(int) blue index:(int) idx {
-    return WORKBOOK(_workBook)->setColor(red,green,blue,idx);
+-(BOOL)setColorWithRed:(uint8_t)red
+				 green:(uint8_t)green
+				  blue:(uint8_t)blue
+				 index:(uint8_t)idx
+{
+	return WORKBOOK(_workBook)->setColor(red, green, blue, idx);
 }
 
 @end
