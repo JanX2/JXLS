@@ -28,7 +28,7 @@ using namespace xlslib_strings;
 	xlslib_core::format_t *_format;
 }
 
--(instancetype)initWithFormat:(void *)ft
+- (instancetype)initWithFormat:(void *)ft
 {
 	self = [super init];
 	
@@ -36,7 +36,7 @@ using namespace xlslib_strings;
 	
 	return self;
 }
--(void *)format
+- (void *)format
 {
 	return _format;
 }

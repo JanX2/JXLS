@@ -34,7 +34,7 @@ using namespace xlslib_strings;
 	xlslib_core::worksheet *_workSheet;
 }
 
--(instancetype)initWithWorkSheet:(void *)ws
+- (instancetype)initWithWorkSheet:(void *)ws
 {
 	self = [super init];
 	
@@ -43,13 +43,13 @@ using namespace xlslib_strings;
 	return self;
 }
 
--(void)makeActive
+- (void)makeActive
 {
 	_workSheet->MakeActive();
 }
--(JXLSCell *)cellAtRow:(uint32_t)row col:(uint32_t)col
+- (JXLSCell *)cellAtRow:(uint32_t)row col:(uint32_t)col
 {
-	JXLSCell			*aCell;
+	JXLSCell		*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->FindCell(row, col);
@@ -63,13 +63,13 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col
+- (JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col
 {
 	return [self addEmptyCellAtRow:row column:col withFormat:nil];
 }
--(JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(JXLSExtendedFormat *)extFormat
+- (JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col withFormat:(JXLSExtendedFormat *)extFormat
 {
-	JXLSCell			*aCell;
+	JXLSCell		*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->blank(row, col, (xf_t *)[extFormat extendedFormat]);
@@ -81,12 +81,12 @@ using namespace xlslib_strings;
 
 - (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label
 {
-	return [self setCellAtRow:row column:col toCString:label withFormat:nil ];
+	return [self setCellAtRow:row column:col toCString:label withFormat:nil];
 }
 
 - (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toCString:(char *)label withFormat:(JXLSExtendedFormat *)extFormat
 {
-	JXLSCell			*aCell;
+	JXLSCell		*aCell;
 	cell_t			*cl;
 	std::string		str;
 
@@ -101,12 +101,12 @@ using namespace xlslib_strings;
 
 - (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label
 {
-	return [self setCellAtRow:row column:col toString:label withFormat:nil ];
+	return [self setCellAtRow:row column:col toString:label withFormat:nil];
 }
 
 - (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toString:(NSString *)label withFormat:(JXLSExtendedFormat *)extFormat
 {
-	JXLSCell			*aCell;
+	JXLSCell		*aCell;
 	cell_t			*cl;
 	unichar			*uniName;
 	ustring			uniStr;
@@ -126,14 +126,14 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl
 {
 	return [self setCellAtRow:row column:col toDoubleValue:dbl withFormat:nil];
 }
 
 - (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withNumberFormat:(int)numFormat
 {
-	JXLSCell			*aCell;
+	JXLSCell		*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->number(row, col, dbl, (format_number_t)numFormat, (xf_t *)NULL);
@@ -142,9 +142,9 @@ using namespace xlslib_strings;
 	
 	return aCell;
 }
--(JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(JXLSExtendedFormat *)extFormat
+- (JXLSCell *)setCellAtRow:(uint32_t)row column:(uint32_t)col toDoubleValue:(double)dbl withFormat:(JXLSExtendedFormat *)extFormat
 {
-	JXLSCell			*aCell;
+	JXLSCell		*aCell;
 	cell_t			*cl;
 
 	cl = _workSheet->number(row, col, dbl, (xf_t *)[extFormat extendedFormat]);
@@ -154,16 +154,16 @@ using namespace xlslib_strings;
 	return aCell;
 }
 
--(void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(JXLSExtendedFormat *)extFormat
+- (void)setHeight:(uint16_t)height forRow:(uint32_t)row defaultFormat:(JXLSExtendedFormat *)extFormat
 {
 	_workSheet->rowheight(row, height, (xf_t *)[extFormat extendedFormat]);
 }
--(void)setWidth:(uint16_t)width forColumn:(uint32_t)col defaultFormat:(JXLSExtendedFormat *)extFormat
+- (void)setWidth:(uint16_t)width forColumn:(uint32_t)col defaultFormat:(JXLSExtendedFormat *)extFormat
 {
 	_workSheet->colwidth(col, width, (xf_t *)[extFormat extendedFormat]);
 }
 
--(void)mergeCellsInRect:(JXLSRECT)rect
+- (void)mergeCellsInRect:(JXLSRECT)rect
 {
 	unsigned16_t	first_row, first_col, last_row, last_col;
 
@@ -178,7 +178,7 @@ using namespace xlslib_strings;
 }
 
 #if 0
--(JXLSRange *)rangegroup:(NSRect)rect
+- (JXLSRange *)rangegroup:(NSRect)rect
 {
 	JXLSRange			*aRange;
 	range			*rg;

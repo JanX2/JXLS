@@ -24,7 +24,7 @@ using namespace xlslib_core;
 	void		*aRange;		// xlslib_core::range
 }
 
--(id)initWithRange:(void *)range
+- (id)initWithRange:(void *)range
 {
 	self = [super init];
 	
@@ -32,11 +32,11 @@ using namespace xlslib_core;
 	
 	return self;
 }
--(void *)range
+- (void *)range
 {
 	return aRange;
 }
--(void)cellColor:(color_name_t)aColor
+- (void)cellColor:(color_name_t)aColor
 {
 	RANGE(aRange)->cellcolor(aColor);
 }

@@ -38,7 +38,7 @@ using namespace xlslib_strings;
 	NSMutableArray				*_workSheets;
 }
 
--(instancetype)init
+- (instancetype)init
 {
 	self = [super init];
 	
@@ -49,14 +49,14 @@ using namespace xlslib_strings;
 	
 	return self;
 }
--(void)dealloc
+- (void)dealloc
 {
 	delete _workBook;
 }
 
--(JXLSWorkSheet *)workSheetWithName:(NSString *)name
+- (JXLSWorkSheet *)workSheetWithName:(NSString *)name
 {
-	JXLSWorkSheet			*aWorkSheet;
+	JXLSWorkSheet		*aWorkSheet;
 	worksheet			*ws;
 	unichar				*uniName;
 	ustring				uniStr;
@@ -77,16 +77,16 @@ using namespace xlslib_strings;
 	
 	return aWorkSheet;
 }
--(JXLSWorkSheet *)workSheetForOffset:(uint16_t)offset
+- (JXLSWorkSheet *)workSheetForOffset:(uint16_t)offset
 {
 	if([_workSheets count] < offset) {
 		return nil;
 	}
 	return [_workSheets objectAtIndex:offset];
 }
--(JXLSFont *)fontWithName:(NSString *)name
+- (JXLSFont *)fontWithName:(NSString *)name
 {	
-	JXLSFont				*aFont;
+	JXLSFont			*aFont;
 	font_t				*ft;
 	
 	ft = _workBook->font([name cStringUsingEncoding:NSASCIIStringEncoding]);
@@ -95,7 +95,7 @@ using namespace xlslib_strings;
 	
 	return aFont;
 }
--(JXLSFormat *)formatWithString:(NSString *)name
+- (JXLSFormat *)formatWithString:(NSString *)name
 {
 	JXLSFormat			*format;
 	format_t			*ft;
@@ -116,11 +116,11 @@ using namespace xlslib_strings;
 	
 	return format;
 }
--(JXLSExtendedFormat *)extendedFormat
+- (JXLSExtendedFormat *)extendedFormat
 {
 	return [self extendedFormatForFont:nil];
 }
--(JXLSExtendedFormat *)extendedFormatForFont:(JXLSFont *)name
+- (JXLSExtendedFormat *)extendedFormatForFont:(JXLSFont *)name
 {
 	JXLSExtendedFormat	*xFormat;
 	xf_t				*ft;
@@ -136,7 +136,7 @@ using namespace xlslib_strings;
 	return xFormat;
 }
 
--(BOOL)setValue:(NSString *)content forProperty:(property_t)prop
+- (BOOL)setValue:(NSString *)content forProperty:(property_t)prop
 {
 	bool ret;
 
@@ -144,25 +144,25 @@ using namespace xlslib_strings;
 
 	return ret ? YES : NO;
 }
--(void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert
+- (void)setWindowPositionX:(uint16_t)horz Y:(uint16_t)vert
 {
 	_workBook->windPosition((unsigned16_t)horz, (unsigned16_t)vert);
 }
--(void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert
+- (void)setWindowSizeX:(uint16_t)horz Y:(uint16_t)vert
 {
 	_workBook->windSize((unsigned16_t)horz, (unsigned16_t)vert);
 }
--(void)firstTab:(uint16_t)tab
+- (void)firstTab:(uint16_t)tab
 {
 	_workBook->firstTab((unsigned16_t)tab);
 }
--(void)tabBarWidth:(uint16_t)width
+- (void)tabBarWidth:(uint16_t)width
 {
 	_workBook->tabBarWidth((unsigned16_t)width);
 }
 
 
--(int)writeToFile:(NSString *)name
+- (int)writeToFile:(NSString *)name
 {
 	string filename;
 	
@@ -173,7 +173,7 @@ using namespace xlslib_strings;
 
 #define WORKBOOK(a) ((xlslib_core::workbook *)(a))
 
--(BOOL)setColorWithRed:(uint8_t)red
+- (BOOL)setColorWithRed:(uint8_t)red
 				 green:(uint8_t)green
 				  blue:(uint8_t)blue
 				 index:(uint8_t)idx

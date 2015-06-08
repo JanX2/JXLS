@@ -9,7 +9,7 @@
 
 @interface JXLSFormat : NSObject
 
--(instancetype)initWithFormat:(void *)ft;	// xlslib_core::CFormat *
--(void *)format;
+- (instancetype)initWithFormat:(void *)ft;	// xlslib_core::CFormat *
+- (void *)format;
 
 @end

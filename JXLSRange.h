@@ -9,9 +9,9 @@
 
 @interface JXLSRange : NSObject
 
--(id)initWithRange:(void *)rg;	// xlslib_core::range *
--(void *)range;
+- (id)initWithRange:(void *)rg;	// xlslib_core::range *
+- (void *)range;
 
--(void)cellColor:(color_name_t)aColor;
+- (void)cellColor:(color_name_t)aColor;
 
 @end
