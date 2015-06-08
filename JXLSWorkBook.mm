@@ -58,17 +58,12 @@ using namespace xlslib_strings;
 {
 	JXLSWorkSheet		*aWorkSheet;
 	worksheet			*ws;
-	unichar				*uniName;
 	ustring				uniStr;
-	size_t				len;
 	
-	len = [name length];
-	
-	uniName = (unichar *)calloc(len+1, sizeof(unichar));
-	[name getCharacters:uniName];
-	//uniStr = uniName;
-	uniStr.assign(uniName);
-	free(uniName);
+	@autoreleasepool {
+		unichar *uniName = (unichar *)[name cStringUsingEncoding:NSUnicodeStringEncoding];
+		uniStr.assign(uniName);
+	}
 	
 	ws = _workBook->sheet(uniStr);
 	
@@ -99,16 +94,12 @@ using namespace xlslib_strings;
 {
 	JXLSFormat			*format;
 	format_t			*ft;
-	unichar				*uniName;
 	ustring				uniStr;
-	size_t				len;
-
-	len = [name length];
-
-	uniName = (unichar *)calloc(len+1, sizeof(unichar));
-	[name getCharacters:uniName];
-	uniStr.assign(uniName);
-	free(uniName);
+	
+	@autoreleasepool {
+		unichar *uniName = (unichar *)[name cStringUsingEncoding:NSUnicodeStringEncoding];
+		uniStr.assign(uniName);
+	}
 
 	ft = _workBook->format(uniStr);
 

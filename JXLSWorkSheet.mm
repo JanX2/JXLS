@@ -110,15 +110,12 @@ using namespace xlslib_strings;
 	cell_t			*cl;
 	unichar			*uniName;
 	ustring			uniStr;
-	size_t			len;
 	
-	len = [label length];
+	@autoreleasepool {
+		uniName = (unichar *)[label cStringUsingEncoding:NSUnicodeStringEncoding];
+		uniStr.assign(uniName);
+	}
 	
-	uniName = (unichar *)calloc(len+1, sizeof(unichar));
-	[label getCharacters:uniName];
-	uniStr.assign(uniName);
-	free(uniName);
-
 	cl = _workSheet->label(row, col, uniStr, (xf_t *)[extFormat extendedFormat]);
 	
 	aCell = [[JXLSCell alloc] initWithCell:cl];
