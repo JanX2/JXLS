@@ -24,6 +24,14 @@
 
 - (void)makeActive;
 
+// Note: While writing files with row indexes above 65,535 and column indexes above 255 appears to work,
+// I have yet to find an XLS parser that doesn’t cut off above 65,535/255, which is the official limit.
+// Please bear in mind, that these are 0-based! So the count limits are one above these limits.
+// For more details, see:
+// http://superuser.com/questions/366468/what-is-the-maximum-allowed-rows-in-a-microsoft-excel-xls-or-xlsx
+
+// Note 2: Ordinary Excel cells are limited to 32,767 characters, while headers and footers are limited to 255 characters.
+
 - (JXLSCell *)cellAtRow:(uint32_t)row col:(uint32_t)col;
 
 - (JXLSCell *)addEmptyCellAtRow:(uint32_t)row column:(uint32_t)col;
