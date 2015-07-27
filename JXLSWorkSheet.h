@@ -31,6 +31,7 @@
 // http://superuser.com/questions/366468/what-is-the-maximum-allowed-rows-in-a-microsoft-excel-xls-or-xlsx
 
 // Note 2: Ordinary Excel cells are limited to 32,767 characters, while headers and footers are limited to 255 characters.
+// Limitations in the implementation of xlslib cap cells at 2048 characters.
 
 - (JXLSCell *)cellAtRow:(uint32_t)row col:(uint32_t)col;
 
