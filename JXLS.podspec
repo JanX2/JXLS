@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JXLS"
-  s.version      = "1.0"
+  s.version      = "1.01"
   s.summary      = "JXLS is an ObjC++ wrapper and framework for xlslib. xlslib is a C++/C library to construct Microsoft Excel™ .xls files in code."
   s.homepage     = "https://github.com/JanX2/JXLS"
   s.license      = { :type => "BSD", :file => "LICENSE" }
