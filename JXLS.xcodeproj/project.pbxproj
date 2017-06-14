@@ -1039,7 +1039,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1058,7 +1058,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
