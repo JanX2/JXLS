@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.header_mappings_dir = '.'
   s.requires_arc = true
   s.libraries    = "c++"
-  s.xcconfig     = { "HEADER_SEARCH_PATHS" => "/Users/simkoviktor/iOSDev/JXLS/External/xlslib/xlslib/src/**" }
+  s.xcconfig     = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/JXLS/External/xlslib/xlslib/src/**" }
   s.ios.prefix_header_file = "JXLS_Prefix.pch"
   s.osx.prefix_header_file = "JXLS_Prefix.pch"
   s.ios.deployment_target = "6.1"
