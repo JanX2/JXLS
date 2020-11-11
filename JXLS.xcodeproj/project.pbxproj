@@ -663,7 +663,6 @@
 				GCC_PREFIX_HEADER = JXLS_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
 				SDKROOT = macosx;
@@ -682,7 +681,6 @@
 				GCC_PREFIX_HEADER = JXLS_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
 				SDKROOT = macosx;
@@ -783,6 +781,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "External/xlslib/xlslib/src/**";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Release;
 		};
