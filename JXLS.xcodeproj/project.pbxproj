@@ -1039,7 +1039,6 @@
 				INSTALL_PATH = "@rpath";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
-				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1057,7 +1056,6 @@
 				INSTALL_PATH = "@rpath";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
-				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
