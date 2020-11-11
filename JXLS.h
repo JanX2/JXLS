@@ -9,8 +9,13 @@
 
 #import <Foundation/Foundation.h>
 
+//! Project version number for JXLSiOS.
+FOUNDATION_EXPORT double JXLSVersionNumber;
+
+//! Project version string for JXLSiOS.
+FOUNDATION_EXPORT const unsigned char JXLSVersionString[];
+
 #if (TARGET_OS_IPHONE || defined(COCOAPODS_POD_AVAILABLE_JXLS))
-#import "common/xlstypes.h"
 #import "xlslib.h"
 #import "JXLSWorkBook.h"
 #import "JXLSWorkSheet.h"
@@ -20,7 +25,6 @@
 #import "JXLSFormat.h"
 #import "JXLSRange.h"
 #elif TARGET_OS_MAC
-#import <JXLS/common/xlstypes.h>
 #import <JXLS/xlslib.h>
 #import <JXLS/JXLSWorkBook.h>
 #import <JXLS/JXLSWorkSheet.h>

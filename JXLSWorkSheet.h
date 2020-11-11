@@ -10,6 +10,7 @@
 #if defined(NSRect)
 #define JXLSRECT NSRect
 #else
+#import <CoreGraphics/CoreGraphics.h>
 #define JXLSRECT CGRect
 #endif
 

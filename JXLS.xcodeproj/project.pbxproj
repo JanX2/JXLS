@@ -7,8 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2833EEAB1EEC399500D5FCEB /* JXLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2833EEA21EEC399500D5FCEB /* JXLS.framework */; };
+		2833EEB01EEC399500D5FCEB /* JXLSiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2833EEAF1EEC399500D5FCEB /* JXLSiOSTests.m */; };
+		2833EEBA1EEC3A3B00D5FCEB /* formula.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEF79B5716EE18D800E4B803 /* formula.txt */; };
+		2833EEBD1EEC3B0B00D5FCEB /* JXLSWorkBook.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84220E9AF6C1005F2430 /* JXLSWorkBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEBE1EEC3B0B00D5FCEB /* JXLSWorkSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84C70E9B9942005F2430 /* JXLSWorkSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEBF1EEC3B0B00D5FCEB /* JXLSCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEFF5B800EB5636900F6F6C6 /* JXLSCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEC01EEC3B0B00D5FCEB /* JXLSFont.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A858B0E9BB216005F2430 /* JXLSFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEC11EEC3B0B00D5FCEB /* JXLSFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A858F0E9BB227005F2430 /* JXLSFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEC21EEC3B0B00D5FCEB /* JXLSExtendedFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A85930E9BB245005F2430 /* JXLSExtendedFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEC31EEC3B0B00D5FCEB /* JXLSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D2784196093DA00DFB38B /* JXLSRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2833EEC41EEC3B6900D5FCEB /* JXLSWorkBook.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A84230E9AF6C1005F2430 /* JXLSWorkBook.mm */; };
+		2833EEC51EEC3B6900D5FCEB /* JXLSWorkSheet.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A84C80E9B9942005F2430 /* JXLSWorkSheet.mm */; };
+		2833EEC61EEC3B6900D5FCEB /* JXLSCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEFF5B810EB5636900F6F6C6 /* JXLSCell.mm */; };
+		2833EEC71EEC3B6900D5FCEB /* JXLSFont.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A858C0E9BB216005F2430 /* JXLSFont.mm */; };
+		2833EEC81EEC3B6900D5FCEB /* JXLSFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A85900E9BB227005F2430 /* JXLSFormat.mm */; };
+		2833EEC91EEC3B6900D5FCEB /* JXLSExtendedFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE1A85940E9BB245005F2430 /* JXLSExtendedFormat.mm */; };
+		2833EECA1EEC3B6900D5FCEB /* JXLSRange.mm in Sources */ = {isa = PBXBuildFile; fileRef = 633D2785196093DA00DFB38B /* JXLSRange.mm */; };
+		2833EECB1EEC3B6900D5FCEB /* binfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B2E16EE18D700E4B803 /* binfile.cpp */; };
+		2833EECC1EEC3B6900D5FCEB /* oledoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3016EE18D700E4B803 /* oledoc.cpp */; };
+		2833EECD1EEC3B6900D5FCEB /* olefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3216EE18D700E4B803 /* olefs.cpp */; };
+		2833EECE1EEC3B6900D5FCEB /* oleprop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3416EE18D700E4B803 /* oleprop.cpp */; };
+		2833EECF1EEC3B6900D5FCEB /* assert_assist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3716EE18D800E4B803 /* assert_assist.cpp */; };
+		2833EED01EEC3B6900D5FCEB /* blank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3916EE18D800E4B803 /* blank.cpp */; };
+		2833EED11EEC3B6900D5FCEB /* boolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3B16EE18D800E4B803 /* boolean.cpp */; };
+		2833EED21EEC3B6900D5FCEB /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B3F16EE18D800E4B803 /* cell.cpp */; };
+		2833EED31EEC3B6900D5FCEB /* colinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4116EE18D800E4B803 /* colinfo.cpp */; };
+		2833EED41EEC3B6900D5FCEB /* colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4316EE18D800E4B803 /* colors.cpp */; };
+		2833EED51EEC3B6900D5FCEB /* continue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4616EE18D800E4B803 /* continue.cpp */; };
+		2833EED61EEC3B6900D5FCEB /* datast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4816EE18D800E4B803 /* datast.cpp */; };
+		2833EED71EEC3B6900D5FCEB /* docsumminfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4A16EE18D800E4B803 /* docsumminfo.cpp */; };
+		2833EED81EEC3B6900D5FCEB /* err.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4C16EE18D800E4B803 /* err.cpp */; };
+		2833EED91EEC3B6900D5FCEB /* extformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B4E16EE18D800E4B803 /* extformat.cpp */; };
+		2833EEDA1EEC3B6900D5FCEB /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5016EE18D800E4B803 /* font.cpp */; };
+		2833EEDB1EEC3B6900D5FCEB /* format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5216EE18D800E4B803 /* format.cpp */; };
+		2833EEDC1EEC3B6900D5FCEB /* formula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5516EE18D800E4B803 /* formula.cpp */; };
+		2833EEDD1EEC3B6900D5FCEB /* formula_cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5816EE18D800E4B803 /* formula_cell.cpp */; };
+		2833EEDE1EEC3B6900D5FCEB /* formula_estimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5B16EE18D800E4B803 /* formula_estimate.cpp */; };
+		2833EEDF1EEC3B6900D5FCEB /* formula_expr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5D16EE18D800E4B803 /* formula_expr.cpp */; };
+		2833EEE01EEC3B6900D5FCEB /* globalrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B5F16EE18D800E4B803 /* globalrec.cpp */; };
+		2833EEE11EEC3B6900D5FCEB /* HPSF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6116EE18D800E4B803 /* HPSF.cpp */; };
+		2833EEE21EEC3B6900D5FCEB /* index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6316EE18D800E4B803 /* index.cpp */; };
+		2833EEE31EEC3B6900D5FCEB /* label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6516EE18D800E4B803 /* label.cpp */; };
+		2833EEE41EEC3B6900D5FCEB /* merged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6716EE18D800E4B803 /* merged.cpp */; };
+		2833EEE51EEC3B6900D5FCEB /* note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6916EE18D800E4B803 /* note.cpp */; };
+		2833EEE61EEC3B6900D5FCEB /* number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6B16EE18D800E4B803 /* number.cpp */; };
+		2833EEE71EEC3B6900D5FCEB /* range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6D16EE18D800E4B803 /* range.cpp */; };
+		2833EEE81EEC3B6900D5FCEB /* recdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B6F16EE18D800E4B803 /* recdef.cpp */; };
+		2833EEE91EEC3B6900D5FCEB /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B7116EE18D800E4B803 /* record.cpp */; };
+		2833EEEA1EEC3B6900D5FCEB /* row.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B7416EE18D800E4B803 /* row.cpp */; };
+		2833EEEB1EEC3B6900D5FCEB /* sheetrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B7616EE18D800E4B803 /* sheetrec.cpp */; };
+		2833EEEC1EEC3B6900D5FCEB /* summinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B7816EE18D800E4B803 /* summinfo.cpp */; };
+		2833EEED1EEC3B6900D5FCEB /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B7B16EE18D800E4B803 /* unit.cpp */; };
+		2833EEEE1EEC3B6900D5FCEB /* workbook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF79B7D16EE18D800E4B803 /* workbook.cpp */; };
+		2833EEFF1EEC516C00D5FCEB /* binfile.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B2F16EE18D700E4B803 /* binfile.h */; };
+		2833EF001EEC516C00D5FCEB /* oledoc.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B3116EE18D700E4B803 /* oledoc.h */; };
+		2833EF011EEC516C00D5FCEB /* olefs.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B3316EE18D700E4B803 /* olefs.h */; };
+		2833EF021EEC516C00D5FCEB /* oleprop.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B3516EE18D700E4B803 /* oleprop.h */; };
+		2833EF031EEC516C00D5FCEB /* biffsection.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B3816EE18D800E4B803 /* biffsection.h */; };
+		2833EF051EEC516C00D5FCEB /* boolean.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B3C16EE18D800E4B803 /* boolean.h */; };
+		2833EF061EEC516C00D5FCEB /* cell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4016EE18D800E4B803 /* cell.h */; };
+		2833EF071EEC516C00D5FCEB /* colinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4216EE18D800E4B803 /* colinfo.h */; };
+		2833EF081EEC516C00D5FCEB /* colors.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4416EE18D800E4B803 /* colors.h */; };
+		2833EF091EEC516C00D5FCEB /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4516EE18D800E4B803 /* common.h */; };
+		2833EF0A1EEC516C00D5FCEB /* continue.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4716EE18D800E4B803 /* continue.h */; };
+		2833EF0B1EEC516C00D5FCEB /* datast.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4916EE18D800E4B803 /* datast.h */; };
+		2833EF0C1EEC516C00D5FCEB /* docsumminfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4B16EE18D800E4B803 /* docsumminfo.h */; };
+		2833EF0E1EEC516C00D5FCEB /* extformat.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4F16EE18D800E4B803 /* extformat.h */; };
+		2833EF0F1EEC516C00D5FCEB /* font.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5116EE18D800E4B803 /* font.h */; };
+		2833EF101EEC516C00D5FCEB /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5316EE18D800E4B803 /* format.h */; };
+		2833EF111EEC516C00D5FCEB /* formtags.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5416EE18D800E4B803 /* formtags.h */; };
+		2833EF121EEC516C00D5FCEB /* formula.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5616EE18D800E4B803 /* formula.h */; };
+		2833EF131EEC516C00D5FCEB /* formula_cell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5916EE18D800E4B803 /* formula_cell.h */; };
+		2833EF141EEC516C00D5FCEB /* formula_const.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5A16EE18D800E4B803 /* formula_const.h */; };
+		2833EF151EEC516C00D5FCEB /* formula_estimate.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5C16EE18D800E4B803 /* formula_estimate.h */; };
+		2833EF161EEC516C00D5FCEB /* formula_expr.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B5E16EE18D800E4B803 /* formula_expr.h */; };
+		2833EF171EEC516C00D5FCEB /* globalrec.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6016EE18D800E4B803 /* globalrec.h */; };
+		2833EF181EEC516C00D5FCEB /* HPSF.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6216EE18D800E4B803 /* HPSF.h */; };
+		2833EF191EEC516C00D5FCEB /* index.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6416EE18D800E4B803 /* index.h */; };
+		2833EF1A1EEC516C00D5FCEB /* label.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6616EE18D800E4B803 /* label.h */; };
+		2833EF1B1EEC516C00D5FCEB /* merged.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6816EE18D800E4B803 /* merged.h */; };
+		2833EF1C1EEC516C00D5FCEB /* note.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6A16EE18D800E4B803 /* note.h */; };
+		2833EF1D1EEC516C00D5FCEB /* number.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6C16EE18D800E4B803 /* number.h */; };
+		2833EF1E1EEC516C00D5FCEB /* range.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B6E16EE18D800E4B803 /* range.h */; };
+		2833EF1F1EEC516C00D5FCEB /* recdef.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7016EE18D800E4B803 /* recdef.h */; };
+		2833EF201EEC516C00D5FCEB /* record.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7216EE18D800E4B803 /* record.h */; };
+		2833EF211EEC516C00D5FCEB /* rectypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7316EE18D800E4B803 /* rectypes.h */; };
+		2833EF221EEC516C00D5FCEB /* row.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7516EE18D800E4B803 /* row.h */; };
+		2833EF231EEC516C00D5FCEB /* sheetrec.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7716EE18D800E4B803 /* sheetrec.h */; };
+		2833EF241EEC516C00D5FCEB /* summinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7916EE18D800E4B803 /* summinfo.h */; };
+		2833EF251EEC516C00D5FCEB /* tostr.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7A16EE18D800E4B803 /* tostr.h */; };
+		2833EF261EEC516C00D5FCEB /* unit.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7C16EE18D800E4B803 /* unit.h */; };
+		2833EF271EEC516C00D5FCEB /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B7E16EE18D800E4B803 /* workbook.h */; };
+		284A6E851EF07C9400C4EA69 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B4D16EE18D800E4B803 /* err.h */; };
+		28DCE2051EED57090012B2EE /* JXLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D277C19608FF200DFB38B /* JXLS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DCE2061EED57110012B2EE /* JXLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D277C19608FF200DFB38B /* JXLS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DCE2141EED86E80012B2EE /* blank.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF79B3A16EE18D800E4B803 /* blank.h */; };
+		28DCE2331EED94360012B2EE /* xlslib.h in Headers */ = {isa = PBXBuildFile; fileRef = DE85A2A516E3E82A00CBE726 /* xlslib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DCE2391EEDA2B60012B2EE /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DE85A29B16E3E4EE00CBE726 /* xlstypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DB8300E17F33AF600EB5E36 /* common in Headers */ = {isa = PBXBuildFile; fileRef = 3DB8300D17F33AF300EB5E36 /* common */; settings = {ATTRIBUTES = (Private, ); }; };
-		633D277D19608FF200DFB38B /* JXLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D277C19608FF200DFB38B /* JXLS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		633D2786196093DA00DFB38B /* JXLSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D2784196093DA00DFB38B /* JXLSRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		633D2787196093DA00DFB38B /* JXLSRange.mm in Sources */ = {isa = PBXBuildFile; fileRef = 633D2785196093DA00DFB38B /* JXLSRange.mm */; };
 		DE1A84240E9AF6C1005F2430 /* JXLSWorkBook.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1A84220E9AF6C1005F2430 /* JXLSWorkBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -110,10 +207,26 @@
 		DEFF5B830EB5636900F6F6C6 /* JXLSCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEFF5B810EB5636900F6F6C6 /* JXLSCell.mm */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2833EEAC1EEC399500D5FCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2833EEA11EEC399500D5FCEB;
+			remoteInfo = JXLSiOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2833EEA21EEC399500D5FCEB /* JXLS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXLS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2833EEA51EEC399500D5FCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2833EEAA1EEC399500D5FCEB /* JXLSiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXLSiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2833EEAF1EEC399500D5FCEB /* JXLSiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXLSiOSTests.m; sourceTree = "<group>"; };
+		2833EEB11EEC399500D5FCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2833EEF01EEC501600D5FCEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32DBCF5E0370ADEE00C91783 /* JXLS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS_Prefix.pch; sourceTree = "<group>"; };
 		3DB8300D17F33AF300EB5E36 /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = External/xlslib/xlslib/src/common; sourceTree = "<group>"; };
 		633D277C19608FF200DFB38B /* JXLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLS.h; sourceTree = "<group>"; };
@@ -225,6 +338,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2833EE9E1EEC399500D5FCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2833EEA71EEC399500D5FCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2833EEAB1EEC399500D5FCEB /* JXLS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF560486A6940098B216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +368,8 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* JXLS.framework */,
+				2833EEA21EEC399500D5FCEB /* JXLS.framework */,
+				2833EEAA1EEC399500D5FCEB /* JXLSiOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,7 +384,10 @@
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				2833EEA31EEC399500D5FCEB /* JXLSiOS */,
+				2833EEAE1EEC399500D5FCEB /* JXLSiOSTests */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				2833EEEF1EEC501600D5FCEB /* Frameworks */,
 			);
 			name = JXLS;
 			sourceTree = "<group>";
@@ -306,6 +439,31 @@
 				DEFF65580EB92BD900F6F6C6 /* JXLS.framework */,
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2833EEA31EEC399500D5FCEB /* JXLSiOS */ = {
+			isa = PBXGroup;
+			children = (
+				2833EEA51EEC399500D5FCEB /* Info.plist */,
+			);
+			path = JXLSiOS;
+			sourceTree = "<group>";
+		};
+		2833EEAE1EEC399500D5FCEB /* JXLSiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2833EEAF1EEC399500D5FCEB /* JXLSiOSTests.m */,
+				2833EEB11EEC399500D5FCEB /* Info.plist */,
+			);
+			path = JXLSiOSTests;
+			sourceTree = "<group>";
+		};
+		2833EEEF1EEC501600D5FCEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2833EEF01EEC501600D5FCEB /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -455,6 +613,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2833EE9F1EEC399500D5FCEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2833EEBD1EEC3B0B00D5FCEB /* JXLSWorkBook.h in Headers */,
+				2833EEBE1EEC3B0B00D5FCEB /* JXLSWorkSheet.h in Headers */,
+				2833EEBF1EEC3B0B00D5FCEB /* JXLSCell.h in Headers */,
+				2833EEC01EEC3B0B00D5FCEB /* JXLSFont.h in Headers */,
+				2833EEC11EEC3B0B00D5FCEB /* JXLSFormat.h in Headers */,
+				2833EEC21EEC3B0B00D5FCEB /* JXLSExtendedFormat.h in Headers */,
+				2833EEC31EEC3B0B00D5FCEB /* JXLSRange.h in Headers */,
+				28DCE2141EED86E80012B2EE /* blank.h in Headers */,
+				28DCE2391EEDA2B60012B2EE /* xlstypes.h in Headers */,
+				28DCE2331EED94360012B2EE /* xlslib.h in Headers */,
+				284A6E851EF07C9400C4EA69 /* err.h in Headers */,
+				2833EEFF1EEC516C00D5FCEB /* binfile.h in Headers */,
+				2833EF001EEC516C00D5FCEB /* oledoc.h in Headers */,
+				2833EF011EEC516C00D5FCEB /* olefs.h in Headers */,
+				2833EF021EEC516C00D5FCEB /* oleprop.h in Headers */,
+				2833EF031EEC516C00D5FCEB /* biffsection.h in Headers */,
+				2833EF051EEC516C00D5FCEB /* boolean.h in Headers */,
+				2833EF061EEC516C00D5FCEB /* cell.h in Headers */,
+				2833EF071EEC516C00D5FCEB /* colinfo.h in Headers */,
+				2833EF081EEC516C00D5FCEB /* colors.h in Headers */,
+				2833EF091EEC516C00D5FCEB /* common.h in Headers */,
+				2833EF0A1EEC516C00D5FCEB /* continue.h in Headers */,
+				2833EF0B1EEC516C00D5FCEB /* datast.h in Headers */,
+				2833EF0C1EEC516C00D5FCEB /* docsumminfo.h in Headers */,
+				2833EF0E1EEC516C00D5FCEB /* extformat.h in Headers */,
+				2833EF0F1EEC516C00D5FCEB /* font.h in Headers */,
+				2833EF101EEC516C00D5FCEB /* format.h in Headers */,
+				2833EF111EEC516C00D5FCEB /* formtags.h in Headers */,
+				2833EF121EEC516C00D5FCEB /* formula.h in Headers */,
+				2833EF131EEC516C00D5FCEB /* formula_cell.h in Headers */,
+				2833EF141EEC516C00D5FCEB /* formula_const.h in Headers */,
+				2833EF151EEC516C00D5FCEB /* formula_estimate.h in Headers */,
+				2833EF161EEC516C00D5FCEB /* formula_expr.h in Headers */,
+				2833EF171EEC516C00D5FCEB /* globalrec.h in Headers */,
+				2833EF181EEC516C00D5FCEB /* HPSF.h in Headers */,
+				2833EF191EEC516C00D5FCEB /* index.h in Headers */,
+				2833EF1A1EEC516C00D5FCEB /* label.h in Headers */,
+				2833EF1B1EEC516C00D5FCEB /* merged.h in Headers */,
+				2833EF1C1EEC516C00D5FCEB /* note.h in Headers */,
+				2833EF1D1EEC516C00D5FCEB /* number.h in Headers */,
+				2833EF1E1EEC516C00D5FCEB /* range.h in Headers */,
+				2833EF1F1EEC516C00D5FCEB /* recdef.h in Headers */,
+				2833EF201EEC516C00D5FCEB /* record.h in Headers */,
+				2833EF211EEC516C00D5FCEB /* rectypes.h in Headers */,
+				2833EF221EEC516C00D5FCEB /* row.h in Headers */,
+				2833EF231EEC516C00D5FCEB /* sheetrec.h in Headers */,
+				2833EF241EEC516C00D5FCEB /* summinfo.h in Headers */,
+				2833EF251EEC516C00D5FCEB /* tostr.h in Headers */,
+				28DCE2051EED57090012B2EE /* JXLS.h in Headers */,
+				2833EF261EEC516C00D5FCEB /* unit.h in Headers */,
+				2833EF271EEC516C00D5FCEB /* workbook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF500486A6940098B216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,7 +685,6 @@
 				3DB8300E17F33AF600EB5E36 /* common in Headers */,
 				DE85A29F16E3E4EE00CBE726 /* xls_poppack.h in Headers */,
 				DE85A2A016E3E4EE00CBE726 /* xls_pshpack1.h in Headers */,
-				633D277D19608FF200DFB38B /* JXLS.h in Headers */,
 				DE85A2A116E3E4EE00CBE726 /* xls_pshpack2.h in Headers */,
 				DE85A2A216E3E4EE00CBE726 /* xls_pshpack4.h in Headers */,
 				DE85A2A416E3E4EE00CBE726 /* xlsys.h in Headers */,
@@ -513,6 +728,7 @@
 				DEF79BC716EE18D800E4B803 /* sheetrec.h in Headers */,
 				DEF79BC916EE18D800E4B803 /* summinfo.h in Headers */,
 				DEF79BCA16EE18D800E4B803 /* tostr.h in Headers */,
+				28DCE2061EED57110012B2EE /* JXLS.h in Headers */,
 				DEF79BCC16EE18D800E4B803 /* unit.h in Headers */,
 				DEF79BCE16EE18D800E4B803 /* workbook.h in Headers */,
 			);
@@ -521,6 +737,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2833EEA11EEC399500D5FCEB /* JXLSiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2833EEB31EEC399500D5FCEB /* Build configuration list for PBXNativeTarget "JXLSiOS" */;
+			buildPhases = (
+				2833EEB91EEC3A0300D5FCEB /* ShellScript */,
+				2833EE9D1EEC399500D5FCEB /* Sources */,
+				2833EE9E1EEC399500D5FCEB /* Frameworks */,
+				2833EE9F1EEC399500D5FCEB /* Headers */,
+				2833EEA01EEC399500D5FCEB /* Resources */,
+				28DCE2381EED9AEA0012B2EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXLSiOS;
+			productName = JXLSiOS;
+			productReference = 2833EEA21EEC399500D5FCEB /* JXLS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2833EEA91EEC399500D5FCEB /* JXLSiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2833EEB61EEC399500D5FCEB /* Build configuration list for PBXNativeTarget "JXLSiOSTests" */;
+			buildPhases = (
+				2833EEA61EEC399500D5FCEB /* Sources */,
+				2833EEA71EEC399500D5FCEB /* Frameworks */,
+				2833EEA81EEC399500D5FCEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2833EEAD1EEC399500D5FCEB /* PBXTargetDependency */,
+			);
+			name = JXLSiOSTests;
+			productName = JXLSiOSTests;
+			productReference = 2833EEAA1EEC399500D5FCEB /* JXLSiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8DC2EF4F0486A6940098B216 /* JXLS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "JXLS" */;
@@ -548,6 +802,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2833EEA11EEC399500D5FCEB = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = F372T8TBR9;
+					};
+					2833EEA91EEC399500D5FCEB = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = F372T8TBR9;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "JXLS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -563,11 +827,28 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* JXLS */,
+				2833EEA11EEC399500D5FCEB /* JXLSiOS */,
+				2833EEA91EEC399500D5FCEB /* JXLSiOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2833EEA01EEC399500D5FCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2833EEBA1EEC3A3B00D5FCEB /* formula.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2833EEA81EEC399500D5FCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF520486A6940098B216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -579,6 +860,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2833EEB91EEC3A0300D5FCEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/ksh;
+			shellScript = "exit 0\n\nif [ ! -e xlslib/configure ]\nthen\ncd xlslib && ./bootstrap &&\t./configure\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28DCE2381EED9AEA0012B2EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers/common\" ]; then\n    mkdir \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers/common\"\nfi\nmv \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers/xlstypes.h\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers/common\"";
+		};
 		DEFF5B0C0EB53E6200F6F6C6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +904,64 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2833EE9D1EEC399500D5FCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2833EEC41EEC3B6900D5FCEB /* JXLSWorkBook.mm in Sources */,
+				2833EEC51EEC3B6900D5FCEB /* JXLSWorkSheet.mm in Sources */,
+				2833EEC61EEC3B6900D5FCEB /* JXLSCell.mm in Sources */,
+				2833EEC71EEC3B6900D5FCEB /* JXLSFont.mm in Sources */,
+				2833EEC81EEC3B6900D5FCEB /* JXLSFormat.mm in Sources */,
+				2833EEC91EEC3B6900D5FCEB /* JXLSExtendedFormat.mm in Sources */,
+				2833EECA1EEC3B6900D5FCEB /* JXLSRange.mm in Sources */,
+				2833EECB1EEC3B6900D5FCEB /* binfile.cpp in Sources */,
+				2833EECC1EEC3B6900D5FCEB /* oledoc.cpp in Sources */,
+				2833EECD1EEC3B6900D5FCEB /* olefs.cpp in Sources */,
+				2833EECE1EEC3B6900D5FCEB /* oleprop.cpp in Sources */,
+				2833EECF1EEC3B6900D5FCEB /* assert_assist.cpp in Sources */,
+				2833EED01EEC3B6900D5FCEB /* blank.cpp in Sources */,
+				2833EED11EEC3B6900D5FCEB /* boolean.cpp in Sources */,
+				2833EED21EEC3B6900D5FCEB /* cell.cpp in Sources */,
+				2833EED31EEC3B6900D5FCEB /* colinfo.cpp in Sources */,
+				2833EED41EEC3B6900D5FCEB /* colors.cpp in Sources */,
+				2833EED51EEC3B6900D5FCEB /* continue.cpp in Sources */,
+				2833EED61EEC3B6900D5FCEB /* datast.cpp in Sources */,
+				2833EED71EEC3B6900D5FCEB /* docsumminfo.cpp in Sources */,
+				2833EED81EEC3B6900D5FCEB /* err.cpp in Sources */,
+				2833EED91EEC3B6900D5FCEB /* extformat.cpp in Sources */,
+				2833EEDA1EEC3B6900D5FCEB /* font.cpp in Sources */,
+				2833EEDB1EEC3B6900D5FCEB /* format.cpp in Sources */,
+				2833EEDC1EEC3B6900D5FCEB /* formula.cpp in Sources */,
+				2833EEDD1EEC3B6900D5FCEB /* formula_cell.cpp in Sources */,
+				2833EEDE1EEC3B6900D5FCEB /* formula_estimate.cpp in Sources */,
+				2833EEDF1EEC3B6900D5FCEB /* formula_expr.cpp in Sources */,
+				2833EEE01EEC3B6900D5FCEB /* globalrec.cpp in Sources */,
+				2833EEE11EEC3B6900D5FCEB /* HPSF.cpp in Sources */,
+				2833EEE21EEC3B6900D5FCEB /* index.cpp in Sources */,
+				2833EEE31EEC3B6900D5FCEB /* label.cpp in Sources */,
+				2833EEE41EEC3B6900D5FCEB /* merged.cpp in Sources */,
+				2833EEE51EEC3B6900D5FCEB /* note.cpp in Sources */,
+				2833EEE61EEC3B6900D5FCEB /* number.cpp in Sources */,
+				2833EEE71EEC3B6900D5FCEB /* range.cpp in Sources */,
+				2833EEE81EEC3B6900D5FCEB /* recdef.cpp in Sources */,
+				2833EEE91EEC3B6900D5FCEB /* record.cpp in Sources */,
+				2833EEEA1EEC3B6900D5FCEB /* row.cpp in Sources */,
+				2833EEEB1EEC3B6900D5FCEB /* sheetrec.cpp in Sources */,
+				2833EEEC1EEC3B6900D5FCEB /* summinfo.cpp in Sources */,
+				2833EEED1EEC3B6900D5FCEB /* unit.cpp in Sources */,
+				2833EEEE1EEC3B6900D5FCEB /* workbook.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2833EEA61EEC399500D5FCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2833EEB01EEC399500D5FCEB /* JXLSiOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF540486A6940098B216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -648,6 +1014,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2833EEAD1EEC399500D5FCEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2833EEA11EEC399500D5FCEB /* JXLSiOS */;
+			targetProxy = 2833EEAC1EEC399500D5FCEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		1DEB91AE08733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -665,7 +1039,7 @@
 				INSTALL_PATH = "@rpath";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -683,7 +1057,7 @@
 				INSTALL_PATH = "@rpath";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhoerl.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = JXLS;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -785,6 +1159,182 @@
 			};
 			name = Release;
 		};
+		2833EEB41EEC399500D5FCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F372T8TBR9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JXLS_prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JXLSiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = viktorsimko.JXLSiOS;
+				PRODUCT_NAME = JXLS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2833EEB51EEC399500D5FCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F372T8TBR9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JXLS_prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JXLSiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = viktorsimko.JXLSiOS;
+				PRODUCT_NAME = JXLS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2833EEB71EEC399500D5FCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = F372T8TBR9;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JXLSiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = viktorsimko.JXLSiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2833EEB81EEC399500D5FCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F372T8TBR9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JXLSiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = viktorsimko.JXLSiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -802,6 +1352,24 @@
 			buildConfigurations = (
 				1DEB91B308733DA50010E9CD /* Release */,
 				1DEB91B208733DA50010E9CD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2833EEB31EEC399500D5FCEB /* Build configuration list for PBXNativeTarget "JXLSiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2833EEB41EEC399500D5FCEB /* Release */,
+				2833EEB51EEC399500D5FCEB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2833EEB61EEC399500D5FCEB /* Build configuration list for PBXNativeTarget "JXLSiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2833EEB71EEC399500D5FCEB /* Release */,
+				2833EEB81EEC399500D5FCEB /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
